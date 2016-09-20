@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>经典密码学 | Codelogger</title>
+  <meta name="description" content="Recored every thing." />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Codelogger">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/03/git-introduce/">Git快速入门</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/26/cors/">跨域源资源共享</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/15/maven/">Maven的使用</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/lod/">迪米特法则</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Web/">&nbsp;&nbsp;&nbsp;Web</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/版本控制/">&nbsp;&nbsp;&nbsp;版本控制</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/CORS/">&nbsp;&nbsp;&nbsp;CORS</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/HttpClient/">&nbsp;&nbsp;&nbsp;HttpClient</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Maven/">&nbsp;&nbsp;&nbsp;Maven</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/SSL/">&nbsp;&nbsp;&nbsp;SSL</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ThreadLocal/">&nbsp;&nbsp;&nbsp;ThreadLocal</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Web相关概念/">&nbsp;&nbsp;&nbsp;Web相关概念</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/code-style/">&nbsp;&nbsp;&nbsp;code style</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cryptology/">&nbsp;&nbsp;&nbsp;cryptology</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/eclipse/">&nbsp;&nbsp;&nbsp;eclipse</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/git/">&nbsp;&nbsp;&nbsp;git</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/i18n/">&nbsp;&nbsp;&nbsp;i18n</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ubuntu/">&nbsp;&nbsp;&nbsp;ubuntu</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/web项目/">&nbsp;&nbsp;&nbsp;web项目</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/国际化/">&nbsp;&nbsp;&nbsp;国际化</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/多线程安全/">&nbsp;&nbsp;&nbsp;多线程安全</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/密码学/">&nbsp;&nbsp;&nbsp;密码学</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/线程共享变量/">&nbsp;&nbsp;&nbsp;线程共享变量</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/迪米特法则/">&nbsp;&nbsp;&nbsp;迪米特法则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                    <li><a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/defei" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                
+                    <a  data-pjax href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                
+                    <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
+                
+                    <a  data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                
+                    <a  data-pjax href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                
+                    <a  data-pjax href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                
+                    <a  data-pjax href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                
+                    <a  data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                
+                    <a  data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
+                
+                    <a  data-pjax href="/2014/11/15/maven/">Maven的使用</a>
+                
+                    <a  data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                
+                    <a  data-pjax href="/2014/10/28/lod/">迪米特法则</a>
+                
+                    <a  data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                
+                
+                    <a data-pjax href="/categories/IDE/">&nbsp;&nbsp;IDE</a>
+                
+                    <a data-pjax href="/categories/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/categories/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Java/Web/">&nbsp;&nbsp;Web</a>
+                
+                    <a data-pjax href="/categories/版本控制/">&nbsp;&nbsp;版本控制</a>
+                
+                    <a data-pjax href="/categories/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                
+                    <a data-pjax href="/tags/CORS/">&nbsp;&nbsp;CORS</a>
+                
+                    <a data-pjax href="/tags/HttpClient/">&nbsp;&nbsp;HttpClient</a>
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Maven/">&nbsp;&nbsp;Maven</a>
+                
+                    <a data-pjax href="/tags/SSL/">&nbsp;&nbsp;SSL</a>
+                
+                    <a data-pjax href="/tags/ThreadLocal/">&nbsp;&nbsp;ThreadLocal</a>
+                
+                    <a data-pjax href="/tags/Web相关概念/">&nbsp;&nbsp;Web相关概念</a>
+                
+                    <a data-pjax href="/tags/code-style/">&nbsp;&nbsp;code style</a>
+                
+                    <a data-pjax href="/tags/cryptology/">&nbsp;&nbsp;cryptology</a>
+                
+                    <a data-pjax href="/tags/eclipse/">&nbsp;&nbsp;eclipse</a>
+                
+                    <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
+                
+                    <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
+                
+                    <a data-pjax href="/tags/web项目/">&nbsp;&nbsp;web项目</a>
+                
+                    <a data-pjax href="/tags/国际化/">&nbsp;&nbsp;国际化</a>
+                
+                    <a data-pjax href="/tags/多线程安全/">&nbsp;&nbsp;多线程安全</a>
+                
+                    <a data-pjax href="/tags/密码学/">&nbsp;&nbsp;密码学</a>
+                
+                    <a data-pjax href="/tags/线程共享变量/">&nbsp;&nbsp;线程共享变量</a>
+                
+                    <a data-pjax href="/tags/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/tags/迪米特法则/">&nbsp;&nbsp;迪米特法则</a>
+                
+                <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                <a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Codelogger</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">经典密码学</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/密码学/' style='color:#D5D5D5'>密码学</a>
+                      
+                      <a data-pjax href='/tags/cryptology/' style='color:#D5D5D5'>cryptology</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">经典密码学</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2014-12-22T10:46:01.000Z"
+                              itemprop="datePublished">2014-12-22 18:46</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>本文将带领你了解什么是密码学，密码学都是神秘而富有冒险色彩的世界。本文素材部分来自于《classical and contemporary cryptology》。</p>
+<p>那么，我们开始吧。</p>
+<h4 id="什么是密码学"><a href="#什么是密码学" class="headerlink" title="什么是密码学"></a>什么是密码学</h4><p>假如发件人和收件人两个人分隔两地，但两人之间又需要共享一些机密信息，这就要求他们之前进行通讯。在通讯过程中，不法份子有能力截获他们之前的通讯信息。那么，发件人决定以某种她和收件人都知道的密码，来编写她和收件人的信件，然后发送给收件人，收件人在收到这封用密码写成的信件后，根据他们之间约定的密码，把这封信件翻译成可读的内容。在传递过程中，即使不法份子拿到这封信件，并知道了其中的内容，也不能明白其中要表达的是什么意思，这就达到了通讯加密的效果。</p>
+<p>通俗一点的比喻就是，发件人把信放在一个上了锁的箱子里，然后寄给收件人。在寄送途中，不法份子拿到了这个箱子，但他没有钥匙，打不开箱子，这样就不能够知道箱子里信件的内容，他不得不把这个箱子原封不动的转交给收件人，收件人拿到箱子后，用钥匙把锁打开，轻易的就拿到了信件并知道了发件人要传递给他的什么信息了。</p>
+<p>发件人用密码写信件（对箱子上锁）的过程，我称之前<strong>加密</strong>，收件人通过密码把信息翻译成普通人可读的内容（把箱子上的锁打开）称之为<strong>解密</strong>，加密与解密就构成了密码学。</p>
+<p>密码学已经存在几千年的历史，后面我们将一步一步的深入了解。在我们了解密码学的时候，我们需要了解两个概念，“数论”及“概率论”。</p>
+<h4 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h4><p>假设骰子有6个面，分别是1、2、3、4、5、6，你猜中某一个数的概率就是1/6。</p>
+<p>那么扔出一对（即[1,1]、[2,2]、[3,3]）的概率呢？两个骰子，分别有6个面，组合起来一共就是36种组合方式，对子占了6种，所以猜中对子的概率同样是1/6，[1,1]的概率则是1/36。</p>
+<p>那么三点（[即[1,1,1]、[2,2,2]）呢？三点一共只有6种组合，但所有组合却有216种，所以猜中任意相同三点的概率是1/36，某一点（豹子[6,6,6]）的概率则是1/216。</p>
+<p>用在赌博中尤其有效，你可以根据组合的奖励比例，然后和概率进行比较，就能找到奖励比概率更高的进行投注，科学的投注，想不赢都难。</p>
+<h4 id="恺撒密码"><a href="#恺撒密码" class="headerlink" title="恺撒密码"></a>恺撒密码</h4><p><a href="http://en.wikipedia.org/wiki/Caesar_cipher" target="_blank" rel="external">恺撒密码</a>是一种最简单且最广为人知的加密技术。它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例如，当偏移量是3的时候，所有的字母A将被替换成D，B变成E，以此类推。这个加密方法是以恺撒的名字命名的，当年恺撒曾用此方法与其将军们进行联系。</p>
+<p><img src="/resources/images/856px-Caesar3.svg.png?raw=true" alt="*Secret Security Card"></p>
+<h5 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h5><p>恺撒密码的替换方法是通过排列明文和密文字母表，密文字母表示通过将明文字母表向左或向右移动一个固定数目的位置。例如，当偏移量是左移3的时候（解密时的密钥就是3）：</p>
+<pre><code>明文字母表：ABCDEFGHIJKLMNOPQRSTUVWXYZ
+密文字母表：DEFGHIJKLMNOPQRSTUVWXYZABC
+</code></pre><p>使用时，加密者查找明文字母表中需要加密的消息中的每一个字母所在位置，并且写下密文字母表中对应的字母。需要解密的人则根据事先已知的密钥反过来操作，得到原来的明文。例如：</p>
+<pre><code>明文：THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+密文：WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
+</code></pre><h5 id="破解"><a href="#破解" class="headerlink" title="破解"></a>破解</h5><p>然而根据水桶原理，盛水的多少由最低的木片决定，密码学也有其最弱的环节。</p>
+<p>恺撒密码在发明及使用800年后，由阿拉伯数学家<a href="http://en.wikipedia.org/wiki/Al-Kindi" target="_blank" rel="external">Al-Kindi</a>破解。如果你扫描任何一本英文书籍，对英文字母进行频率统计，就能发现一个非常一致的规律，那就是英文字母的使用频率是几乎固定的（中文也几乎一样），我们只需要对加密后的密文进行统计，按照频率分步进行位移推算，就能推算出偏移量，然后进行破解了。</p>
+<p><img src="/resources/images/English-slf.png?raw=true" alt="*Secret Security Card"></p>
+<p>我们称这种方式为频率分析，但是频率分析也有其局限性，它对于较短或故意省略元音字母或者其他缩写方式写成的明文加密出来的密文进行解密并不适用。</p>
+<p>另外，通过多次使用恺撒密码来加密并不能获得更大的安全性，因为使用偏移量A加密得到的结果再用偏移量B加密，等同于使用A+B的偏移量进行加密的结果。</p>
+<h4 id="多表密码"><a href="#多表密码" class="headerlink" title="多表密码"></a>多表密码</h4><p><a href="http://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" target="_blank" rel="external">维吉尼亚密码</a>是使用一系列凯撒密码组成密码字母表的加密算法，属于多表密码的一种简单形式。</p>
+<p>在一个恺撒密码中，字母表中的每一字母都会作一定的偏移，例如偏移量为3时，A就转换为了D、B转换为了E……。而维吉尼亚密码则是由一些偏移量不同的恺撒密码组成。</p>
+<p>为了生成密码，需要使用表格法。这一表格包括了26行字母表，每一行都由前一行向左偏移一位得到。具体使用哪一行字母表进行编译是基于密钥进行的，在过程中会不断地变换。</p>
+<p><img src="/resources/images/864px-Vigenère_square.svg.png?raw=true" alt="*Secret Security Card"></p>
+<h5 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h5><p>例如，假设明文为：</p>
+<pre><code>ATTACKATDAWN
+</code></pre><p>选择某一关键词并重复而得到密钥，如关键词为LEMON时，密钥为：</p>
+<pre><code>LEMONLEMONLE
+</code></pre><p>对于明文的第一个字母A，对应密钥的第一个字母L，于是使用表格中L行字母表进行加密，得到密文第一个字母L。类似地，明文第二个字母为T，在表格中使用对应的E行进行加密，得到密文第二个字母X。以此类推，可以得到：</p>
+<pre><code>明文：ATTACKATDAWN
+密钥：LEMONLEMONLE
+密文：LXFOPVEFRNHR
+</code></pre><h5 id="破解-1"><a href="#破解-1" class="headerlink" title="破解"></a>破解</h5><p>对包括维吉尼亚密码在内的所有多表密码的破译都是以字母频率为基础的，但直接的频率分析却并不适用。例如，如果P是密文中出现次数最多的字母，则P很有可能对应E（前提是明文的语言为英语）。原因在于E是英语中使用频率最高的字母。然而，由于在维吉尼亚密码中，E可以被加密成不同的密文，因而简单的频率分析在这里并没有用。</p>
+<p>破译维吉尼亚密码的关键在于它的密钥是循环重复的。如果我们知道了密钥的长度，那密文就可以被看作是交织在一起的恺撒密码，而其中每一个都可以单独破解。使用卡西斯基试验和弗里德曼试验来得到密钥的长度。</p>
+<p>假设密钥为<code>secret</code>，其长度为6，我们需要对全部信息进行统计，检查不同间隔的频率分布，当我们检查到间隔为6的频率分布时，就能匹配上文字的分布频率，现在的问题就是要破解6个恺撒密码的偏移量而已，然后根据这6个恺撒密码破译密文，整个工作需要的只是时间而已，在现在计算机的计算能力面前，只不过是秒秒种的事情。</p>
+<p>这也只是频率分析的变种。</p>
+<p>其实我们早期的密保卡就是一个多表加密的典型例子。<br><img src="/resources/images/SecretSecurityCard.jpg?raw=true" alt="*Secret Security Card"></p>
+<h4 id="一次一密"><a href="#一次一密" class="headerlink" title="一次一密"></a>一次一密</h4><p>我们要怎样避免由频率分布而造成密码被破译呢？答案就是随机。</p>
+<p>我们知道英文总共有26个字母，所以当使用恺撒密码的时候，偏移量最多也只有26种情况，而使用维吉尼亚密码，也只不过是把这种情况变得更多而已。</p>
+<p>但，当我们对加密的文字每个字母都取随机的偏移量时，即10字的密文就给一组10个长度的随机数，情况就不同了。解密者可以根据这组随机数轻易的破译这组密文。但拦截都如果想破译这10个字符，则有141167095653376种情况，因为每个字符的偏移量都是随机的，所以根本不能用频率分析进行破解，而暴力破解的工作量太大，等你破解出来的时候，也许这个信息已经过时了。</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2015/01/06/first-java-web-project/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2014/12/19/ThreadLocal/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Codelogger 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+        <section>
+            <a target="_blank" href="http://info.flagcounter.com/hIg9">
+                <img src="http://s01.flagcounter.com/count/hIg9/bg_F7FAFB/txt_000000/border_F7FAFB/columns_4/maxflags_8/viewers_3/labels_0/pageviews_1/flags_0/" alt="Flag Counter" border="0" style="opacity: 1;" lightbox='false'>
+            </a>
+        </section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

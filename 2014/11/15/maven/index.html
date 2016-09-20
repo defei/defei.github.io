@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Maven的使用 | Codelogger</title>
+  <meta name="description" content="Recored every thing." />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Codelogger">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/03/git-introduce/">Git快速入门</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/26/cors/">跨域源资源共享</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/15/maven/">Maven的使用</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/lod/">迪米特法则</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Web/">&nbsp;&nbsp;&nbsp;Web</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/版本控制/">&nbsp;&nbsp;&nbsp;版本控制</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/CORS/">&nbsp;&nbsp;&nbsp;CORS</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/HttpClient/">&nbsp;&nbsp;&nbsp;HttpClient</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Maven/">&nbsp;&nbsp;&nbsp;Maven</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/SSL/">&nbsp;&nbsp;&nbsp;SSL</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ThreadLocal/">&nbsp;&nbsp;&nbsp;ThreadLocal</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Web相关概念/">&nbsp;&nbsp;&nbsp;Web相关概念</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/code-style/">&nbsp;&nbsp;&nbsp;code style</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cryptology/">&nbsp;&nbsp;&nbsp;cryptology</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/eclipse/">&nbsp;&nbsp;&nbsp;eclipse</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/git/">&nbsp;&nbsp;&nbsp;git</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/i18n/">&nbsp;&nbsp;&nbsp;i18n</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ubuntu/">&nbsp;&nbsp;&nbsp;ubuntu</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/web项目/">&nbsp;&nbsp;&nbsp;web项目</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/国际化/">&nbsp;&nbsp;&nbsp;国际化</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/多线程安全/">&nbsp;&nbsp;&nbsp;多线程安全</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/密码学/">&nbsp;&nbsp;&nbsp;密码学</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/线程共享变量/">&nbsp;&nbsp;&nbsp;线程共享变量</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/迪米特法则/">&nbsp;&nbsp;&nbsp;迪米特法则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                    <li><a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/defei" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                
+                    <a  data-pjax href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                
+                    <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
+                
+                    <a  data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                
+                    <a  data-pjax href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                
+                    <a  data-pjax href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                
+                    <a  data-pjax href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                
+                    <a  data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                
+                    <a  data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
+                
+                    <a  data-pjax href="/2014/11/15/maven/">Maven的使用</a>
+                
+                    <a  data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                
+                    <a  data-pjax href="/2014/10/28/lod/">迪米特法则</a>
+                
+                    <a  data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                
+                
+                    <a data-pjax href="/categories/IDE/">&nbsp;&nbsp;IDE</a>
+                
+                    <a data-pjax href="/categories/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/categories/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Java/Web/">&nbsp;&nbsp;Web</a>
+                
+                    <a data-pjax href="/categories/版本控制/">&nbsp;&nbsp;版本控制</a>
+                
+                    <a data-pjax href="/categories/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                
+                    <a data-pjax href="/tags/CORS/">&nbsp;&nbsp;CORS</a>
+                
+                    <a data-pjax href="/tags/HttpClient/">&nbsp;&nbsp;HttpClient</a>
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Maven/">&nbsp;&nbsp;Maven</a>
+                
+                    <a data-pjax href="/tags/SSL/">&nbsp;&nbsp;SSL</a>
+                
+                    <a data-pjax href="/tags/ThreadLocal/">&nbsp;&nbsp;ThreadLocal</a>
+                
+                    <a data-pjax href="/tags/Web相关概念/">&nbsp;&nbsp;Web相关概念</a>
+                
+                    <a data-pjax href="/tags/code-style/">&nbsp;&nbsp;code style</a>
+                
+                    <a data-pjax href="/tags/cryptology/">&nbsp;&nbsp;cryptology</a>
+                
+                    <a data-pjax href="/tags/eclipse/">&nbsp;&nbsp;eclipse</a>
+                
+                    <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
+                
+                    <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
+                
+                    <a data-pjax href="/tags/web项目/">&nbsp;&nbsp;web项目</a>
+                
+                    <a data-pjax href="/tags/国际化/">&nbsp;&nbsp;国际化</a>
+                
+                    <a data-pjax href="/tags/多线程安全/">&nbsp;&nbsp;多线程安全</a>
+                
+                    <a data-pjax href="/tags/密码学/">&nbsp;&nbsp;密码学</a>
+                
+                    <a data-pjax href="/tags/线程共享变量/">&nbsp;&nbsp;线程共享变量</a>
+                
+                    <a data-pjax href="/tags/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/tags/迪米特法则/">&nbsp;&nbsp;迪米特法则</a>
+                
+                <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                <a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Codelogger</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">Maven的使用</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/Maven/' style='color:#D5D5D5'>Maven</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Maven的使用</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2014-11-15T06:48:34.000Z"
+                              itemprop="datePublished">2014-11-15 14:48</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>不知道你是否以前经常遇到把一个project的相关依赖配置好，想启动看看效果，但却遇到一个ClassNotFoundException的失败？<br>不知道你是不是有不知道把src文件一test文件放哪的选择困难，或者不知道resources文件放哪的纠结？<br><strong><a href="http://maven.apache.org/" target="_blank" rel="external">Maven</a></strong>，就是它。有了它，java项目管理不再是问题。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><h5 id="前期准备-安装JDK环境。"><a href="#前期准备-安装JDK环境。" class="headerlink" title="前期准备:安装JDK环境。"></a>前期准备:安装JDK环境。</h5><p>Ubuntu jdk7：<br><code>sudo apt-get install openjdk-7-jdk -y</code></p>
+<p>Windows请到<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">Oracle JDK</a>下载安装，现在应该都会自动配置环境变量，如果没配置成功，请自行搜索配置。</p>
+<p>安装完成后，在命令行运行：<br><code>java -version</code><br>如果显示了java的版本信息，表示安装成功。</p>
+<h5 id="安装Maven"><a href="#安装Maven" class="headerlink" title="安装Maven"></a>安装Maven</h5><p>在ubuntu下面直接执行：<br><code>sudo apt-get install maven -y</code><br>就能直接安装并配置好相关的环境变量。</p>
+<p>windows下需要到<a href="http://maven.apache.org/" target="_blank" rel="external">Maven</a>下载页面下载maven开发包，比如解压到D:/maven下，设置环境变量：<br><code>M2_HOME = D:/maven</code></p>
+<p>运行<code>mvn -v</code>如果看到版本信息，说明安装配置成功。</p>
+<blockquote>
+<p>maven仓库默认在用户目录下的.m2目录下，linux可以用<code>cd ~/.m2</code>快速切换到该目录下，windows用户请到Users\user.m2目录下查看。<br>maven项目查找依赖的时候首先会在本地仓库查找，如果找不到，就会到远程仓库查找并同步到本地，下一次再用的时候就能快速定位到本地仓库的资源。</p>
+</blockquote>
+<h4 id="创建Maven项目"><a href="#创建Maven项目" class="headerlink" title="创建Maven项目"></a>创建Maven项目</h4><p>快速创建一个webapp<br><code>mvn archetype:generate -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DgroupId=org.codelogger -DartifactId=web-demo -Dversion=1.0.0-SNAPSHOT</code></p>
+<p>也可以通过交互式创建<code>mvn archetype:generate</code></p>
+<p>当然，你也可以用IDE来创建Maven项目，Eclipse如下：<br>File &gt; New &gt; Other &gt; Maven Project, 如果按原型创建，就按Next，如果要自定义创建，就勾上Create a simple project。<br>自定义创建里面可以比较详细的定义项目属性，尤其是parennt project非常有用，我自己就创建了一个<a href="http://search.maven.org/#artifactdetails%7Corg.codelogger%7Cparent-pom%7C1.0.0%7Cpom" target="_blank" rel="external">Codelogger Parent Pom</a>, 里面定义了常用的工具集(Codelogger Utils,Guava,Common-lang Utils)，及常用的项目版本整合(Spring,Hibernate,etc)，及测试环境。</p>
+<h4 id="关于pom-xml"><a href="#关于pom-xml" class="headerlink" title="关于pom.xml"></a>关于pom.xml</h4><p>下面是一个pom.xml的示例，有点长，可以略过这里直接住下看：</p>
+<pre><code>&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+    xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;parent&gt;
+        &lt;groupId&gt;org.codelogger&lt;/groupId&gt;
+        &lt;artifactId&gt;parent-pom&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/parent&gt;
+
+    &lt;artifactId&gt;web-demo&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+    &lt;packaging&gt;war&lt;/packaging&gt;
+
+    &lt;name&gt;Codelogger Web Project Demo&lt;/name&gt;
+    &lt;description&gt;Codelogger webapp demo, build with Spring MVC, Spring JPA and Hibernate&lt;/description&gt;
+
+    &lt;url&gt;https://github.com/defei/codelogger-core&lt;/url&gt;
+    &lt;licenses&gt;
+        &lt;license&gt;
+            &lt;name&gt;The Apache Software License, Version 2.0&lt;/name&gt;
+            &lt;url&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/url&gt;
+        &lt;/license&gt;
+    &lt;/licenses&gt;
+
+    &lt;developers&gt;
+        &lt;developer&gt;
+            &lt;name&gt;Deng Defei&lt;/name&gt;
+            &lt;email&gt;dengdefei@gmail.com&lt;/email&gt;
+        &lt;/developer&gt;
+    &lt;/developers&gt;
+
+    &lt;scm&gt;
+        &lt;connection&gt;scm:git:git@github.com:defei/web-demo.git&lt;/connection&gt;
+        &lt;developerConnection&gt;scm:git:git@github.com:defei/web-demo.git&lt;/developerConnection&gt;
+        &lt;url&gt;git@github.com:defei/codelogger-core.git&lt;/url&gt;
+    &lt;/scm&gt;
+
+    &lt;properties&gt;
+        &lt;web.version&gt;1.0.0&lt;/web.version&gt;
+        &lt;maven-compiler-plugin.version&gt;3.1&lt;/maven-compiler-plugin.version&gt;
+        &lt;java.version&gt;1.7&lt;/java.version&gt;
+    &lt;/properties&gt;
+
+    &lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.codelogger&lt;/groupId&gt;
+            &lt;artifactId&gt;web&lt;/artifactId&gt;
+            &lt;version&gt;${web.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;commons-fileupload&lt;/groupId&gt;
+            &lt;artifactId&gt;commons-fileupload&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;dev-mysql&lt;/id&gt;
+            &lt;activation&gt;
+                &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+            &lt;/activation&gt;
+            &lt;properties&gt;
+                &lt;profileName&gt;dev-mysql&lt;/profileName&gt;
+                &lt;logPath&gt;~/Desktop&lt;/logPath&gt;
+            &lt;/properties&gt;
+        &lt;/profile&gt;
+        &lt;profile&gt;
+            &lt;id&gt;production&lt;/id&gt;
+            &lt;properties&gt;
+                &lt;profileName&gt;production&lt;/profileName&gt;
+                &lt;logFile&gt;/var/www/codelogger.org/web-demo/logs&lt;/logFile&gt;
+            &lt;/properties&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+
+    &lt;build&gt;
+        &lt;resources&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;docs/commons&lt;/directory&gt;
+                &lt;filtering&gt;true&lt;/filtering&gt;
+            &lt;/resource&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;src/main/resources&lt;/directory&gt;
+                &lt;filtering&gt;true&lt;/filtering&gt;
+            &lt;/resource&gt;
+            &lt;resource&gt;
+                &lt;directory&gt;docs/profiles/${profileName}&lt;/directory&gt;
+                &lt;filtering&gt;true&lt;/filtering&gt;
+            &lt;/resource&gt;
+        &lt;/resources&gt;
+        &lt;plugins&gt;
+            &lt;plugin&gt;
+                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+                &lt;version&gt;${maven-compiler-plugin.version}&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;source&gt;${java.version}&lt;/source&gt;
+                    &lt;target&gt;${java.version}&lt;/target&gt;
+                &lt;/configuration&gt;
+            &lt;/plugin&gt;
+        &lt;/plugins&gt;
+    &lt;/build&gt;
+&lt;/project&gt;
+</code></pre><h5 id="Maven项目的唯一性"><a href="#Maven项目的唯一性" class="headerlink" title="Maven项目的唯一性"></a>Maven项目的唯一性</h5><p>pom里面的下面三个属性非常重要：</p>
+<ul>
+<li>项目 groupId（组织名：隶属于哪个公司或组织，如org.codelogger</li>
+<li>项目 artifactId（构件名）：该组织下，项目的唯一标识符</li>
+<li>项目 version（版本号）:原则做到<a href="http://semver.org/lang/zh-CN/" target="_blank" rel="external">语义化版本</a>最好</li>
+</ul>
+<p>【groupId】,【artifactId】,【version】可以精确定位到一项目的指定版本，所以具有唯一性，你在<a href="http://search.maven.org/" target="_blank" rel="external">Maven中央库</a>中就能通过这三个属性找到对应的项目，这样才能准确的管理好项目依赖。</p>
+<blockquote>
+<p>小提示：version可以指定为<code>RELEASED</code>，这样项目就会去找最新的released的版本，好处是可以用到新特性，缺点是可能造成项目不稳定。</p>
+</blockquote>
+<h5 id="Maven的继承关系"><a href="#Maven的继承关系" class="headerlink" title="Maven的继承关系"></a>Maven的继承关系</h5><p>pom是可以继承的，所以我们可以在<a href="https://github.com/defei/codelogger-parent-pom/blob/master/pom.xml" target="_blank" rel="external">Parent Pom</a>里面做依赖管理等操作，然后在<a href="https://github.com/defei/codelogger-core/blob/master/pom.xml" target="_blank" rel="external">子项目</a>里面，只需要定义需要哪些依赖,然后依赖版本就会自动从父级继承下来。</p>
+<p>比如上面展示的:</p>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;commons-fileupload&lt;/groupId&gt;
+    &lt;artifactId&gt;commons-fileupload&lt;/artifactId&gt;
+&lt;/dependency&gt;
+</code></pre><p>没有指定version，但一样能用，就是因为我们在<a href="https://github.com/defei/codelogger-parent-pom/blob/master/pom.xml" target="_blank" rel="external">Parent Pom</a>的<code>&lt;dependencyManagement&gt;</code>里面已经定义过版本信息了。</p>
+<p>其它的，比如properties, plugins, profile, dependency, resources等，都是可继承的。</p>
+<h5 id="项目说明信息"><a href="#项目说明信息" class="headerlink" title="项目说明信息"></a>项目说明信息</h5><ul>
+<li>name：项目的名称</li>
+<li>description：项目的具体描述</li>
+<li>url：项目页面Web地址</li>
+<li>licenses：版权信息</li>
+<li>developers：开发者</li>
+<li>scm：软件配置管理，如git,cvs信息</li>
+</ul>
+<h5 id="properties"><a href="#properties" class="headerlink" title="properties"></a>properties</h5><pre><code>&lt;properties&gt;
+    &lt;web.version&gt;1.0.0&lt;/web.version&gt;
+    &lt;java.version&gt;1.7&lt;/java.version&gt;
+&lt;/properties&gt;
+</code></pre><p>properties定义了一系列的property，使用的时候，用<code>${property.key}</code>就能输出里面的值。</p>
+<p>除了定义公共的<code>&lt;properties&gt;</code>外，我们还可以在<code>&lt;profiles&gt;</code>里面的<code>&lt;profile&gt;</code>里定义私有的properties，如下：</p>
+<pre><code>&lt;profiles&gt;
+    &lt;profile&gt;
+        &lt;id&gt;dev-mysql&lt;/id&gt;
+        &lt;properties&gt;
+            &lt;profileName&gt;dev-mysql&lt;/profileName&gt;
+            &lt;logPath&gt;~/Desktop&lt;/logPath&gt;
+        &lt;/properties&gt;
+    &lt;/profile&gt;
+&lt;/profiles&gt;
+</code></pre><p>profile里面的properties权限比公共的大，也就是说如果名称都是一样的，会复写掉公共properties里面的数据，这样我们就可以做到非常灵活的定制了。</p>
+<h5 id="dependencies"><a href="#dependencies" class="headerlink" title="dependencies"></a>dependencies</h5><p>dependencies定义了该项目的依赖关系，如果你需要引入一个依赖，只需要在dependencies里面定义一个dependency，并指定正确的<strong>groupId</strong>,<strong>artifactId</strong>以及<strong>version</strong>，就能自动载入这个依赖，如下：</p>
+<pre><code>&lt;dependencies&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.codelogger&lt;/groupId&gt;
+        &lt;artifactId&gt;web&lt;/artifactId&gt;
+        &lt;version&gt;${web.version}&lt;/version&gt;
+    &lt;/dependency&gt;
+&lt;/dependencies&gt;
+</code></pre><p>同properties一样，我们也可以在profile里面自定义dependencies，权重关系也是以profile的重，并且是profile隔离的。</p>
+<h5 id="profiles"><a href="#profiles" class="headerlink" title="profiles"></a>profiles</h5><p>profiles我们可以理解为pipeline，项目在运行的时候，只能选择一个profile，所以我们可以根据不同的profile做出不同的响应，比如dev这个profile，我们的数据库可以采用dbunit数据库，production的可以采用mysql数据库。<br>profile和<code>&lt;build&gt;</code>的<code>&lt;resources&gt;</code>一起使用的话，就可以做到根据不同的profile，载入不同的配置文件。</p>
+<p>maven切换profile的命令是<br><code>maven -P profileId</code></p>
+<h5 id="build"><a href="#build" class="headerlink" title="build"></a>build</h5><p>build定义了maven在管理项目的时候的配置，下面主要介绍resources和plugins，示例如下：</p>
+<pre><code>&lt;build&gt;
+    &lt;resources&gt;
+        &lt;resource&gt;
+            &lt;directory&gt;docs/commons&lt;/directory&gt;
+            &lt;filtering&gt;true&lt;/filtering&gt;
+        &lt;/resource&gt;
+        &lt;resource&gt;
+            &lt;directory&gt;src/main/resources&lt;/directory&gt;
+            &lt;filtering&gt;true&lt;/filtering&gt;
+        &lt;/resource&gt;
+        &lt;resource&gt;
+            &lt;directory&gt;docs/profiles/${profileName}&lt;/directory&gt;
+            &lt;filtering&gt;true&lt;/filtering&gt;
+        &lt;/resource&gt;
+    &lt;/resources&gt;
+    &lt;plugins&gt;
+        &lt;plugin&gt;
+            &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+            &lt;version&gt;${maven-compiler-plugin.version}&lt;/version&gt;
+            &lt;configuration&gt;
+                &lt;source&gt;${java.version}&lt;/source&gt;
+                &lt;target&gt;${java.version}&lt;/target&gt;
+            &lt;/configuration&gt;
+        &lt;/plugin&gt;
+    &lt;/plugins&gt;
+&lt;/build&gt;
+</code></pre><p>resources定义了该项目的classPath，我们可以添加多个resource目录，并且当把filtering设置为true的时候，该目录下所有的文件，都会被扫描，如果有<code>${property.key}</code>，并且在properties里面有匹配的数据，则<code>${property.key}</code>会被替换为其对应的值，这样就能在pom.xml里对对项目乃至对profile做特定配置了。</p>
+<p>plugins定义了build的时候会用到哪些插件，比如上面，我们用到的maven-compiler-plugin，在项目用<code>mvn compile</code>的时候，就会按我们指定的java版本编译。</p>
+<h4 id="Maven命令"><a href="#Maven命令" class="headerlink" title="Maven命令"></a>Maven命令</h4><p>maven的命令有两种响应方式：</p>
+<ol>
+<li><strong>mvn &lt;插件&gt;:&lt;目标&gt; [参数]</strong></li>
+<li><strong>mvn &lt;行为&gt;</strong></li>
+</ol>
+<p>第二种方式是我们使用最频繁的，例如：</p>
+<ul>
+<li><code>mvn clean</code>：清空输出目录（即 target 目录）</li>
+<li><code>mvn compile</code>：编译源代码</li>
+<li><code>mvn package</code>：打包为构件（如jar、war包）</li>
+<li><code>mvn install</code>：将构件包安装到本地仓库</li>
+<li><code>mvn deploy</code>：将构件包部署到远程仓库</li>
+</ul>
+<p>可以多个命令组合使用，如<code>mvn clean install</code></p>
+<p>执行 Maven 命令必须在 Maven 项目的根目录执行，也就是当前目录下一定存在一个名为 pom.xml 的文件。</p>
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>接触maven也有三年时间了，一直想详细的整理下资料，但由于懒惰与时间关系，直到现在才写出来，真的感到汗颜。<br>以上也只是对maven的一个大致介绍，更详尽的内容，请参考<a href="http://maven.apache.org" target="_blank" rel="external">Maven官方文档</a>。</p>
+<p>感谢Maven，感谢<a href="http://maven.apache.org/background/history-of-maven.html" target="_blank" rel="external">Jason van Zyl</a>。</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2014/11/26/cors/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2014/11/14/install-java-develop-environment-on-ubuntu/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Codelogger 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+        <section>
+            <a target="_blank" href="http://info.flagcounter.com/hIg9">
+                <img src="http://s01.flagcounter.com/count/hIg9/bg_F7FAFB/txt_000000/border_F7FAFB/columns_4/maxflags_8/viewers_3/labels_0/pageviews_1/flags_0/" alt="Flag Counter" border="0" style="opacity: 1;" lightbox='false'>
+            </a>
+        </section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

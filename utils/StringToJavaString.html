@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  
+<head lang="zh">
+	<meta charset="UTF-8">
+	<title>String转换为JavaString | Codelogger</title>
+  <link rel="stylesheet" type="text/css" href="http://cdn.staticfile.org/semantic-ui/0.19.3/css/semantic.css" />
+  <script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+  
+<style type="text/css">
+	.ui.form textarea{
+		height: 40em;
+		max-height: 40em;
+	}
+</style>
+<div class="ui form">
+	<div class="two fields">
+		<div class="field source">
+			<label>Source String:</label>
+			<textarea></textarea>
+		</div>
+		<div class="field output">
+			<label>Output String:</label>
+			<textarea></textarea>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('.field.source textarea').bind('input propertychange', function() {
+		var originText = $('.field.source textarea').val();
+		originText = originText.replace(/(^[^<{])|([^}>]$)/g, '');
+		originText = originText.replace(/([,"{}\[\]])\s+(["{}\[\]])/g, '$1$2');
+		originText = originText.replace(/([,"{}\[\]])\s+(["{}\[\]])/g, '$1$2');
+		originText = originText.replace(/(":)\s+(["\[{])/g, '$1$2');
+		originText = originText.replace(/(<[^<>]+>)\s+/g, '$1');
+		originText = originText.replace(/\s+(<[^<>]+>)/g, '$1');
+		originText = originText.replace(/"/g, '\\"');
+		originText = originText.replace(/>\s+</g, '\><');
+	    $('.field.output textarea').val(originText);
+	});
+</script>
+</body>
+</body>
+</html>

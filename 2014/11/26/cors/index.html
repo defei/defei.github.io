@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>跨域源资源共享 | Codelogger</title>
+  <meta name="description" content="Recored every thing." />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Codelogger">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/03/git-introduce/">Git快速入门</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/26/cors/">跨域源资源共享</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/15/maven/">Maven的使用</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/lod/">迪米特法则</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Web/">&nbsp;&nbsp;&nbsp;Web</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/版本控制/">&nbsp;&nbsp;&nbsp;版本控制</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/CORS/">&nbsp;&nbsp;&nbsp;CORS</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/HttpClient/">&nbsp;&nbsp;&nbsp;HttpClient</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Maven/">&nbsp;&nbsp;&nbsp;Maven</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/SSL/">&nbsp;&nbsp;&nbsp;SSL</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ThreadLocal/">&nbsp;&nbsp;&nbsp;ThreadLocal</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Web相关概念/">&nbsp;&nbsp;&nbsp;Web相关概念</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/code-style/">&nbsp;&nbsp;&nbsp;code style</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cryptology/">&nbsp;&nbsp;&nbsp;cryptology</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/eclipse/">&nbsp;&nbsp;&nbsp;eclipse</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/git/">&nbsp;&nbsp;&nbsp;git</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/i18n/">&nbsp;&nbsp;&nbsp;i18n</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ubuntu/">&nbsp;&nbsp;&nbsp;ubuntu</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/web项目/">&nbsp;&nbsp;&nbsp;web项目</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/国际化/">&nbsp;&nbsp;&nbsp;国际化</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/多线程安全/">&nbsp;&nbsp;&nbsp;多线程安全</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/密码学/">&nbsp;&nbsp;&nbsp;密码学</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/线程共享变量/">&nbsp;&nbsp;&nbsp;线程共享变量</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/迪米特法则/">&nbsp;&nbsp;&nbsp;迪米特法则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                    <li><a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/defei" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                
+                    <a  data-pjax href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                
+                    <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
+                
+                    <a  data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                
+                    <a  data-pjax href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                
+                    <a  data-pjax href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                
+                    <a  data-pjax href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                
+                    <a  data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                
+                    <a  data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
+                
+                    <a  data-pjax href="/2014/11/15/maven/">Maven的使用</a>
+                
+                    <a  data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                
+                    <a  data-pjax href="/2014/10/28/lod/">迪米特法则</a>
+                
+                    <a  data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                
+                
+                    <a data-pjax href="/categories/IDE/">&nbsp;&nbsp;IDE</a>
+                
+                    <a data-pjax href="/categories/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/categories/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Java/Web/">&nbsp;&nbsp;Web</a>
+                
+                    <a data-pjax href="/categories/版本控制/">&nbsp;&nbsp;版本控制</a>
+                
+                    <a data-pjax href="/categories/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                
+                    <a data-pjax href="/tags/CORS/">&nbsp;&nbsp;CORS</a>
+                
+                    <a data-pjax href="/tags/HttpClient/">&nbsp;&nbsp;HttpClient</a>
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Maven/">&nbsp;&nbsp;Maven</a>
+                
+                    <a data-pjax href="/tags/SSL/">&nbsp;&nbsp;SSL</a>
+                
+                    <a data-pjax href="/tags/ThreadLocal/">&nbsp;&nbsp;ThreadLocal</a>
+                
+                    <a data-pjax href="/tags/Web相关概念/">&nbsp;&nbsp;Web相关概念</a>
+                
+                    <a data-pjax href="/tags/code-style/">&nbsp;&nbsp;code style</a>
+                
+                    <a data-pjax href="/tags/cryptology/">&nbsp;&nbsp;cryptology</a>
+                
+                    <a data-pjax href="/tags/eclipse/">&nbsp;&nbsp;eclipse</a>
+                
+                    <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
+                
+                    <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
+                
+                    <a data-pjax href="/tags/web项目/">&nbsp;&nbsp;web项目</a>
+                
+                    <a data-pjax href="/tags/国际化/">&nbsp;&nbsp;国际化</a>
+                
+                    <a data-pjax href="/tags/多线程安全/">&nbsp;&nbsp;多线程安全</a>
+                
+                    <a data-pjax href="/tags/密码学/">&nbsp;&nbsp;密码学</a>
+                
+                    <a data-pjax href="/tags/线程共享变量/">&nbsp;&nbsp;线程共享变量</a>
+                
+                    <a data-pjax href="/tags/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/tags/迪米特法则/">&nbsp;&nbsp;迪米特法则</a>
+                
+                <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                <a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Codelogger</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">跨域源资源共享</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/CORS/' style='color:#D5D5D5'>CORS</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">跨域源资源共享</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2014-11-26T13:34:58.000Z"
+                              itemprop="datePublished">2014-11-26 21:34</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <p>由于本人的VPS资源有限，所以将一些静态的资源放在了一个BAE上，本来使用得挺好的，但今天在使用Semantic-UI的时候，发现图标不能显示，打开Chrome控制台发现有错误提示：</p>
+<blockquote>
+<p>Font from origin has been blocked from loading by Cross-Origin Resource Sharing policy</p>
+</blockquote>
+<p>确定是<a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target="_blank" rel="external">跨域源资源共享（CORS）</a>的问题，跨域问题简单来说就是</p>
+<blockquote>
+<p>CORS（Cross-Origin Resource Sharing）规范在服务器支持跨站请求的情况下，使用XMLHttpRequest 对象从网页发送和接收跨域HTTP 请求。接收请求的服务器必须返回Access-Control-Allow-Origin头信息，值为*或者发送请求的原域名。如果其中不包含原域名，请求会失败。</p>
+</blockquote>
+<p>由于BAE不可能因为我个人的一个需求，马上做出变动，所以只有自己相办法解决了。</p>
+<p>前面说了，因为资源有限，不想加大VPS负载，并且在全国各个地方都能达到理想的连接速度，那必定要用到CDN加速了,因为经常用到<a href="http://dict.cn/" target="_blank" rel="external">海词</a>查单词，感觉其速度不错，然后就发现了它<a href="http://www.jiasule.com/" target="_blank" rel="external">加速乐</a>，看了下免费套餐，一小时3G流量，完全够用了，并且支持回源，所以应该不存在不能访问的问题。</p>
+<p>服务器上用的Nginx做的转发服务器，所以只用在配置文件里加上一条Header信息，允许ACAO信息即可。</p>
+<pre><code>server {
+    listen 80;
+    server_name static.codelogger.org;
+
+    root /var/www/codelogger.org/static;
+    location ~* \.(eot|ttf|woff) {
+        add_header Access-Control-Allow-Origin *;
+    }
+}
+</code></pre><p>这里我配置是的是 <code>*</code>，表示对所有域名开放。如果你要对指定网站开放，只需要把<code>*</code>改为你的白名单域名，如<code>http://codelogger.org</code>这样就可以了。</p>
+<p>其它配置：</p>
+<ul>
+<li><code>add_header Access-Control-Allow-Credentials true;</code> 是否允许请求带有验证信息。</li>
+<li><code>add_header Access-Control-Allow-Methods &#39;GET&#39;;</code>限定请求的方法，可以是GET，POST等，用逗号分开。</li>
+<li><code>add_header Access-Control-Max-Age 600;</code>缓存此次请求的秒数。在这个时间范围内，所有同类型的请求都将不再发送预检请求而是直接使用此次返回的头作为判断依据，非常有用，大幅优化请求次数。</li>
+</ul>
+<p>更多配置请参看<a href="http://www.w3.org/TR/cors/" target="_blank" rel="external">W3C-CORS</a>。</p>
+<p>注：<br>Access-Control-Allow-Origin设置为允许来自所有域的跨域请求。那么cors的安全机制几乎就无效了。xmlhttprequest发送的请求需要使用“withCredentials”来带上cookie，如果一个目标域设置成了允许任意域的跨域请求，这个请求又带着cookie的话，这个请求是不合法的，浏览器会屏蔽掉返回的结果。</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2014/11/30/Spring-MVC-i18n/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2014/11/15/maven/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Codelogger 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+        <section>
+            <a target="_blank" href="http://info.flagcounter.com/hIg9">
+                <img src="http://s01.flagcounter.com/count/hIg9/bg_F7FAFB/txt_000000/border_F7FAFB/columns_4/maxflags_8/viewers_3/labels_0/pageviews_1/flags_0/" alt="Flag Counter" border="0" style="opacity: 1;" lightbox='false'>
+            </a>
+        </section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

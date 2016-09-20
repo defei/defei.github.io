@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Git快速入门 | Codelogger</title>
+  <meta name="description" content="Recored every thing." />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Codelogger">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/03/git-introduce/">Git快速入门</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/26/cors/">跨域源资源共享</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/15/maven/">Maven的使用</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/lod/">迪米特法则</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Web/">&nbsp;&nbsp;&nbsp;Web</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/版本控制/">&nbsp;&nbsp;&nbsp;版本控制</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/CORS/">&nbsp;&nbsp;&nbsp;CORS</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/HttpClient/">&nbsp;&nbsp;&nbsp;HttpClient</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Maven/">&nbsp;&nbsp;&nbsp;Maven</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/SSL/">&nbsp;&nbsp;&nbsp;SSL</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ThreadLocal/">&nbsp;&nbsp;&nbsp;ThreadLocal</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Web相关概念/">&nbsp;&nbsp;&nbsp;Web相关概念</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/code-style/">&nbsp;&nbsp;&nbsp;code style</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cryptology/">&nbsp;&nbsp;&nbsp;cryptology</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/eclipse/">&nbsp;&nbsp;&nbsp;eclipse</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/git/">&nbsp;&nbsp;&nbsp;git</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/i18n/">&nbsp;&nbsp;&nbsp;i18n</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ubuntu/">&nbsp;&nbsp;&nbsp;ubuntu</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/web项目/">&nbsp;&nbsp;&nbsp;web项目</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/国际化/">&nbsp;&nbsp;&nbsp;国际化</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/多线程安全/">&nbsp;&nbsp;&nbsp;多线程安全</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/密码学/">&nbsp;&nbsp;&nbsp;密码学</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/线程共享变量/">&nbsp;&nbsp;&nbsp;线程共享变量</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/迪米特法则/">&nbsp;&nbsp;&nbsp;迪米特法则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                    <li><a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/defei" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2015/06/17/codelogger-core-design/">codelogger-core-design</a>
+                
+                    <a  data-pjax href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">Httpclient4.4忽略SSL Certificate</a>
+                
+                    <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
+                
+                    <a  data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                
+                    <a  data-pjax href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                
+                    <a  data-pjax href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                
+                    <a  data-pjax href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                
+                    <a  data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                
+                    <a  data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
+                
+                    <a  data-pjax href="/2014/11/15/maven/">Maven的使用</a>
+                
+                    <a  data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                
+                    <a  data-pjax href="/2014/10/28/lod/">迪米特法则</a>
+                
+                    <a  data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                
+                
+                    <a data-pjax href="/categories/IDE/">&nbsp;&nbsp;IDE</a>
+                
+                    <a data-pjax href="/categories/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/categories/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Java/Web/">&nbsp;&nbsp;Web</a>
+                
+                    <a data-pjax href="/categories/版本控制/">&nbsp;&nbsp;版本控制</a>
+                
+                    <a data-pjax href="/categories/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                
+                    <a data-pjax href="/tags/CORS/">&nbsp;&nbsp;CORS</a>
+                
+                    <a data-pjax href="/tags/HttpClient/">&nbsp;&nbsp;HttpClient</a>
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Maven/">&nbsp;&nbsp;Maven</a>
+                
+                    <a data-pjax href="/tags/SSL/">&nbsp;&nbsp;SSL</a>
+                
+                    <a data-pjax href="/tags/ThreadLocal/">&nbsp;&nbsp;ThreadLocal</a>
+                
+                    <a data-pjax href="/tags/Web相关概念/">&nbsp;&nbsp;Web相关概念</a>
+                
+                    <a data-pjax href="/tags/code-style/">&nbsp;&nbsp;code style</a>
+                
+                    <a data-pjax href="/tags/cryptology/">&nbsp;&nbsp;cryptology</a>
+                
+                    <a data-pjax href="/tags/eclipse/">&nbsp;&nbsp;eclipse</a>
+                
+                    <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
+                
+                    <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
+                
+                    <a data-pjax href="/tags/web项目/">&nbsp;&nbsp;web项目</a>
+                
+                    <a data-pjax href="/tags/国际化/">&nbsp;&nbsp;国际化</a>
+                
+                    <a data-pjax href="/tags/多线程安全/">&nbsp;&nbsp;多线程安全</a>
+                
+                    <a data-pjax href="/tags/密码学/">&nbsp;&nbsp;密码学</a>
+                
+                    <a data-pjax href="/tags/线程共享变量/">&nbsp;&nbsp;线程共享变量</a>
+                
+                    <a data-pjax href="/tags/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/tags/迪米特法则/">&nbsp;&nbsp;迪米特法则</a>
+                
+                <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                <a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Codelogger</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">Git快速入门</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/git/' style='color:#D5D5D5'>git</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Git快速入门</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2015-04-03T04:17:52.000Z"
+                              itemprop="datePublished">2015-04-03 12:17</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p><a href="http://zh.wikipedia.org/wiki/Git" target="_blank" rel="external">Git</a>是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。<br>分布式相比于集中式的最大区别在于开发者可以提交到本地，每个开发者机器上都是一个完整的数据库，所以公共服务器压力和数据量都不会太大。并且它速度快、灵活，任意两个开发者之间可以很容易的解决冲突。并且可以快速新建及切换分支，重置任意文件或文件夹到某个历史版本，把以对于突发需求能更做到更快更好的响应，对敏捷开发尤其方便。</p>
+<p>本文将对git的使用进行流程化的介绍，如果你只是想查看相关命令，可以移步<a href="http://gitref.org/zh/" target="_blank" rel="external">Git 参考手册</a>，本文部分内容摘自该手册。</p>
+<h4 id="Git的配置"><a href="#Git的配置" class="headerlink" title="Git的配置"></a>Git的配置</h4><p>配置用户名：<code>git config --global user.name &quot;YOUR NAME&quot;</code><br>配置邮箱：<code>git config --global user.email &quot;YOUR EMAIL ADDRESS&quot;</code><br>当你在本机配置好用户名和邮箱后，以后你在本机的所有git提交，都会以你设置的用户名和邮箱进行签名。</p>
+<h4 id="获取与创建项目"><a href="#获取与创建项目" class="headerlink" title="获取与创建项目"></a>获取与创建项目</h4><p>拥有一个 Git 仓库的途径有两种:</p>
+<ol>
+<li><strong>在已有的目录中，初始化一个新的.</strong>比如一个新的项目，或者一个已存在的项目，但该项目尚未有版本控制。</li>
+<li><strong>仓库克隆.</strong>如果你想要复制一份别人的项目， 或者与别人合作某个项目，也可以从一个公开的 Git 仓库克隆。</li>
+</ol>
+<h5 id="git-clone-复制一个-Git-仓库"><a href="#git-clone-复制一个-Git-仓库" class="headerlink" title="git clone 复制一个 Git 仓库"></a><strong>git clone</strong> 复制一个 Git 仓库</h5><p>如果你需要与他人合作一个项目，或者想要复制一个项目，看看代码，你就可以克隆那个项目。 执行：<code>git clone [GIT_REPOSITORY_URL]</code>进行克隆，如<code>https://github.com/defei/codelogger-utils.git</code></p>
+<blockquote>
+<p>如果该项目需要进行身份授权验证，你可能需要输入用户名及密码。推荐的方式是使用ssh key进行身份授权验证。</p>
+</blockquote>
+<p>上述操作将复制该项目的全部记录，让你本地拥有这些。并且该操作将拷贝该项目的主分支， 使你能够查看代码，或编辑、修改。进到该目录中，你会看到 .git 子目录。 所有的项目数据都存在那里。</p>
+<h5 id="git-init-将一个目录初始化为-Git-仓库"><a href="#git-init-将一个目录初始化为-Git-仓库" class="headerlink" title="git init 将一个目录初始化为 Git 仓库"></a><strong>git init</strong> 将一个目录初始化为 Git 仓库</h5><p>如果你还没有git项目，可以进行<code>git init</code>来新建及初始化项目：</p>
+<h4 id="Git的版本管理"><a href="#Git的版本管理" class="headerlink" title="Git的版本管理"></a>Git的版本管理</h4><p>Git 的工作就是创建和保存你的项目的快照及与之后的快照进行对比，在此我们将这个快照称作版本。</p>
+<blockquote>
+<p><strong>Summary</strong>:使用 <code>git add</code> 添加需要追踪的新文件和待提交的更改， 然后使用 <code>git status</code> 和 <code>git diff</code> 查看有何改动， 最后用 <code>git commit</code> 将你的快照记录。这就是你要用的基本流程，绝大部分时候都是这样的。</p>
+</blockquote>
+<p>#####<strong>git add</strong> 添加文件到缓存<br>在 Git 中，在提交你修改的文件之前，你需要把它们添加到缓存，只有在缓存中的文件才会在commit的时候添加到版本管理中去。</p>
+<p>命令说明：<code>git add [target]</code><br>target可以是单个文件，或该git仓库中的任意目录中的所有文件。</p>
+<p>假设当前git仓库中有如下文件结构：</p>
+<pre><code>.
+|-- hello.md
+`-- resources
+    |-- hello.app
+    `-- hello.jpg
+1 directory, 3 files
+</code></pre><p>则有如下几种操作方法：</p>
+<ul>
+<li><code>git add .</code>：表示将当前目录下的所有文件及文件夹加入到git缓存中去。</li>
+<li><code>git add hello.md</code>：表示只将hello.md这个文件添加到git缓存中去。</li>
+<li><code>git add resources</code>：表示只将resources文件夹添加到git缓存中去。</li>
+<li><code>git add resources/hello.app</code>：表示只将resources目录下的hello.app添加到git缓存中去。</li>
+</ul>
+<p>如果要一次添加多个文件或文件夹，可以用空格分开，如:<code>git add hello.md resources</code>，这个命令会把hello.md和resources都添加到git缓存中去。</p>
+<h5 id="git-status-查看你的文件在工作目录与缓存的状态"><a href="#git-status-查看你的文件在工作目录与缓存的状态" class="headerlink" title="git status 查看你的文件在工作目录与缓存的状态"></a><strong>git status</strong> 查看你的文件在工作目录与缓存的状态</h5><p>执行 <code>git status</code> 命令可查看从你上次提交之后当前git仓库中文件的状态，查看文件的增删改情况，以决定是否需要进行版本提交。</p>
+<blockquote>
+<p><code>git status</code>会列出完整的变更信息及git操作提示。如果你已经非常熟练的知道git操作，可以用<code>git status -s</code>来简化输出信息。</p>
+</blockquote>
+<h5 id="git-diff-显示已缓存与已修改但未缓存的改动的区别"><a href="#git-diff-显示已缓存与已修改但未缓存的改动的区别" class="headerlink" title="git diff 显示已缓存与已修改但未缓存的改动的区别"></a><strong>git diff</strong> 显示已缓存与已修改但未缓存的改动的区别</h5><p><code>git diff</code>命命用于检查版本之间的数据变动，常用命令如下：</p>
+<ul>
+<li><code>git diff [FILE | DIRECTORY]</code>：显示当前工程中，指定的file或directory与已经缓存版本的区别，如果已提交的文件没有使用git add添加到缓存中，则该文件会与前一个版本做比较。</li>
+<li><code>git diff --cached [FILE | DIRECTORY]</code>：显示已添加到缓存中的文件与前一个版本的区别。</li>
+<li><code>git diff [HEAD | COMMIT-HASH]</code>：显示当前git仓库中所有文件与指定版本之间的所有更改，HEAD表示上一次提交的版本，不区分大小写。</li>
+<li><code>git diff --stat</code>：如果我们不想要看整个 diff 输出，但是又想比 git status 详细点， 就可以用 –stat 选项。该选项使它显示摘要而非全文。</li>
+<li><code>git diff [COMMIT-HASH] [COMMIT-HASH]</code>显示两个版本之前的所有差异。</li>
+</ul>
+<h5 id="git-commit-提交一个版本"><a href="#git-commit-提交一个版本" class="headerlink" title="git commit 提交一个版本"></a><strong>git commit</strong> 提交一个版本</h5><p>当我们已经用<code>git add</code>添加了要提交的文件，并且通过<code>git diff</code>确认你的提交无误后，就可以用<code>git commit</code>来进行版本提交了。</p>
+<blockquote>
+<p>如果只使用<code>git commit</code>来提交，会打开本机的默认文本编辑器，让你输入本次提交的说明信息，如果你不想使用文本编辑器来输入，可以使用<code>git commit -m &#39;commit informations&#39;</code>来快速设置本次提交的说明信息。<br>如果你觉得提交流程太过繁锁，可以使用<code>git commit -a</code>来提交已受版本管理的所有提交，包括对文件的删除及重命名，不过该操作不适用于新加文件。对于新建的文件，因为没有受版本管理，所以还是需要用到<code>git add</code>来添加到缓存中来提交。</p>
+</blockquote>
+<h5 id="git-reset-重置版本信息"><a href="#git-reset-重置版本信息" class="headerlink" title="git reset 重置版本信息"></a><strong>git reset</strong> 重置版本信息</h5><p>如果你想放弃本次更改或快速清除提交到缓存中的信息，就可以用到<code>git reset</code>命令了，常用命令如下：</p>
+<ul>
+<li><code>git reset [HEAD | COMMIT-HASH]</code>：清除当前缓存中的所有信息，相当于你从上次提交(HEAD)或指定版本(COMMIT-HASH)后，没有执行过<code>git add</code>或<code>git rm</code>操作。</li>
+<li><code>git reset [HEAD | COMMIT-HASH] --hard</code>：强制恢复到指定版本，并清除所有更改。注意，该操作不可恢复，所以除非你非常确定不保留任何更改信息，不然尽量少用–hard参数。</li>
+</ul>
+<h5 id="git-rm-将文件从版本控制中移除"><a href="#git-rm-将文件从版本控制中移除" class="headerlink" title="git rm 将文件从版本控制中移除"></a><strong>git rm</strong> 将文件从版本控制中移除</h5><p><code>git rm [FILE | DIRECTORY]</code> 会将条目从版本控制中移除。这与 <code>git reset HEAD</code> 将条目取消缓存是有区别的。 “取消缓存”的意思就是将缓存区恢复为我们做出修改之前的样子。 在另一方面，<code>git rm</code>则将该文件彻底从版本控制中踢出。</p>
+<p>如果你只想删除该文件的版本控制，但保留该文件，可用<code>git rm --cached [FILE | DIRECTORY]</code>进行移除版本控制操作。</p>
+<h5 id="git-mv-移动被版本控制的文件"><a href="#git-mv-移动被版本控制的文件" class="headerlink" title="git mv 移动被版本控制的文件"></a><strong>git mv</strong> 移动被版本控制的文件</h5><p>不像绝大多数其他版本控制系统，Git 并不记录记录文件重命名。它反而只记录版本提交，并对比版本提交以找到有啥文件可能被重命名了。 如果一个文件从更新中删除了，而在下次版本提交中新添加的另一个文件的内容与它很相似，Git 就知道这极有可能是个重命名。 因此，虽然有 <code>git mv</code> 命令，但它做得所有事情就是 <code>git rm --cached</code>， 重命名磁盘上的文件，然后再执行 <code>git add</code> 把新文件添加到缓存区。 </p>
+<h4 id="分支与合并"><a href="#分支与合并" class="headerlink" title="分支与合并"></a>分支与合并</h4><p>分支Git的精华所在，你可以用<code>git branch [branch name]</code>在不同的分支之间来回切换，然你在一条主线上做开发，但有bug需要马上处理的时候，它就能发挥用处了。</p>
+<p>大致流程就是：你可以执行 git branch (branch-name) 来创建分支， 使用 git checkout (branch-name) 命令切换到该分支，在该分支的上下文环境中， 提交版本等，之后可以很容易地来回切换。当你切换分支的时候，Git 会用该分支的最后提交的版本替换你的工作目录的内容， 所以多个分支不需要多个目录。使用 git merge 来合并分支。你可以多次合并到统一分支， 也可以选择在合并之后直接删除被并入的分支。</p>
+<h5 id="git-branch-列出、创建与管理分支"><a href="#git-branch-列出、创建与管理分支" class="headerlink" title="git branch 列出、创建与管理分支"></a><strong>git branch</strong> 列出、创建与管理分支</h5><p><code>git branch</code>可以查看及管理当前git仓库中的分支，常用命令如下：</p>
+<ul>
+<li><code>git branch [-a]</code>：列出本地仓库的所有分支，如果加上-a则会列出本地及远程的所有分支情况。你所在的分支前会以’*’号进行标记。</li>
+<li><code>git branch [branch-name]</code>： 创建新分支。新创建的分支停留在你最后一次提交的版本，并拥有你当前分支的所有版本信息。在创建分支成功以后，你在当前分支做的所有更改，并不会影响已创建的分支。</li>
+<li><code>git branch -d [branch-name]</code>：删除本地分支。</li>
+</ul>
+<blockquote>
+<p>使用<code>git checkout -b [branch-name]</code>可以快速创建并切换到分支。</p>
+</blockquote>
+<h5 id="git-checkout-检出文件-切换分支"><a href="#git-checkout-检出文件-切换分支" class="headerlink" title="git checkout 检出文件/切换分支"></a><strong>git checkout</strong> 检出文件/切换分支</h5><ul>
+<li><code>git checkout [branch-name]</code>：切换分支到给定的分支。</li>
+<li><code>git checkout [FILE | DIRECTORY]</code>：重置指定的文件或文件夹到最后一次提交的版本。</li>
+</ul>
+<blockquote>
+<p>如果你有一个文件和分支名相同的时候，checkout只能用于重置文件，并且只能使用命名<code>git checkout -- [FILE | DIRECTORY]</code>。</p>
+</blockquote>
+<h5 id="git-stash临时缓存所有更改"><a href="#git-stash临时缓存所有更改" class="headerlink" title="git stash临时缓存所有更改"></a><strong>git stash</strong>临时缓存所有更改</h5><p><code>git stash</code>可以将当前git仓库下新的更改放入git的临时工作目录下，以方便快速切换到其它工作上去。<br><code>git stash pop</code>可以取出前一次stash的所有更改.</p>
+<blockquote>
+<p>git stash是以栈(stack)模式工作的，也就是遵循后进先出的原则，你可以进行多次stash及stash pop。</p>
+</blockquote>
+<h5 id="git-merge-合并分支"><a href="#git-merge-合并分支" class="headerlink" title="git merge 合并分支"></a><strong>git merge</strong> 合并分支</h5><p>一旦某分支完成了新的功能开发并且测试充分，你可以使用 <code>git merge [branch-name]</code> 命令将任何分支合并到当前分支中去。</p>
+<p>只要没有多个人员同时更改同一个文件中的同一块代码区域，一般就不会出现版本冲突，包括并不限于内容的理发，重命名，位置移动，删除等操作。</p>
+<p>在自动合并完成后，git会自动提交一个版本信息，标明该合并信息。</p>
+<p>如果合并中出现冲突，git会给出下的提示信息：</p>
+<pre><code>$ git merge test
+Auto-merging test
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+$ cat README.md 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+version 1.0.0
+=======
+version 1.0.1
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; test
+</code></pre><p>提示README.md有冲突，需要你手动解决冲突。”&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD” 到 “=======” 之间的代码是你当前分支的内容，”=======” 到 “&gt;&gt;&gt;&gt;&gt;&gt;&gt; test” 之间的内容是合并的分支的内容，你可以根据你的情况删除不需要的内容（包括”&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD” ， “=======” 和 “&gt;&gt;&gt;&gt;&gt;&gt;&gt; test”），使用<code>git add</code>添加到缓存，并<code>git commit</code>提交这次合并。</p>
+<p>到此，你已经将要全并的分支合并到当前分支了，如果被合并的分支已经没有用了，可以用`git branch -d [branch-name]’删除。</p>
+<h5 id="git-log显示一个分支中提交的版本更改记录"><a href="#git-log显示一个分支中提交的版本更改记录" class="headerlink" title="git log显示一个分支中提交的版本更改记录"></a><strong>git log</strong>显示一个分支中提交的版本更改记录</h5><p><code>git log</code>可以查看当前分支中以提交时间倒序排列的所有版本信息，常用命令如下：</p>
+<ul>
+<li><code>git log</code>：显示完整的版本提交信息，包括版本hash值，提交者及邮件，提交日期，提交说明。</li>
+<li><code>git log --oneline</code>：提示版本提交的简要信息，包括版本hash的前7位及提交说明。一般情况下，版本hash的前7位已经足以定位一个版本，所以我们可以只用这7位值进行版本操作，比如<code>git reset dd574cc</code>。</li>
+<li><code>git log --graph</code>：开启了拓扑图显示。</li>
+</ul>
+<blockquote>
+<p>使用<code>git log --oneline --graph</code>可以更清楚明了地看到何时工作分叉、又何时归并。 这对查看发生了什么、应用了什么改变很有帮助，并且极大地帮助你管理你的分支。<br>在git log视图中，可以按’h’键打开帮助界面，获取更多信息。其实操作的vim几乎一样，如 ‘b’:上一页, ‘f’:下一页, ‘/RegExp’:按正则表达示查找.</p>
+</blockquote>
+<h5 id="git-tag-给一个里程碑打上标签"><a href="#git-tag-给一个里程碑打上标签" class="headerlink" title="git tag 给一个里程碑打上标签"></a><strong>git tag</strong> 给一个里程碑打上标签</h5><p>如果你的项目已经达到一个里程碑阶段，并希望永远记住这个版本，你可以使用 <code>git tag</code> 给它打上标签。 通常，你会在切取一个发布版本或者交付一些东西的时候打个标签，如：</p>
+<p><code>git tag -a &quot;v1.0.0&quot; [COMMIT-HASH]</code></p>
+<ul>
+<li>“v1.0.0”：是当前标签的值</li>
+<li>-a：“创建一个带注解的标签”，从而使你为标签添加注解。不用 -a 选项也可以执行的，但它不会记录这标签是什么时候打的，谁打的，也不会让你添加个标签的注解，我并不推荐这样操作。</li>
+<li>[COMMIT-HASH]：指定提交版本的hash值，如果不全，默认为最后一次提交。</li>
+</ul>
+<p>如果你想要查看tag信息，可以使用<code>git log --decorate</code>来进行查看。</p>
+<h4 id="分享与更新"><a href="#分享与更新" class="headerlink" title="分享与更新"></a>分享与更新</h4><p>Git 并不像 Subversion 那样有个中心服务器。你自己本身就是一个git服务器，并且你可以添加多个远程服务器，进行代码的提交及合并。</p>
+<p>简要流程就是，使用 <code>git fetch</code> 更新你的项目，使用 <code>git push</code> 分享你的改动。 你可以用 <code>git remote</code> 管理你的远程仓库。</p>
+<h5 id="git-remote-显示和管理远端仓库"><a href="#git-remote-显示和管理远端仓库" class="headerlink" title="git remote 显示和管理远端仓库"></a><strong>git remote</strong> 显示和管理远端仓库</h5><p>不像中心化的版本控制系统（客户端与服务端很不一样），Git 仓库基本上都是一致的，并且并可以同步他们，这使得当前仓库可以拥有多个远端仓库。</p>
+<p>常用命令列表：</p>
+<ul>
+<li><code>git remote [-a]</code>：列出所有远端仓库，加上-a则会显示出具体的仓库地址，否则只显示仓库别名。</li>
+<li><code>git remote add [alias] [url]</code>：如果你想要以任何方式与一个新仓库沟通，最简单的方式通常就是把它添加为一个远端仓库。比如，我们在在本地新建一个codelogger-utils的文件夹<code>mkdir codelogger-utils &amp;&amp; cd codelogger-utils</code>，执行<code>git init</code>以初史化仓库，并执行<code>git remote add origin https://github.com/defei/codelogger-utils.git</code>以添加一个origin远程仓库，再执行’git pull origin master’就可以把远程仓库的master分支pull下来了。</li>
+<li><code>git remote rm [alias]</code>：删除远程仓库别名。注意，该操作只会删除本地远程仓库的信息，但远程仓库还是存在的，并不会被删除。</li>
+</ul>
+<h5 id="git-fetch从远端仓库下载新分支与数据"><a href="#git-fetch从远端仓库下载新分支与数据" class="headerlink" title="git fetch从远端仓库下载新分支与数据"></a><strong>git fetch</strong>从远端仓库下载新分支与数据</h5><p><code>git fetch [remote-alias]</code> 会使你与另一仓库同步，提取你本地所没有的数据，为你在同步时的该远端的每一分支提供书签。 这些分支被叫做“远端分支”，你可以将它们合并到当前分支，与其他分支作比较差异，查看那些分支的历史日志，等等。</p>
+<h5 id="git-pull从远端仓库提取数据并尝试合并到当前分支"><a href="#git-pull从远端仓库提取数据并尝试合并到当前分支" class="headerlink" title="git pull从远端仓库提取数据并尝试合并到当前分支"></a><strong>git pull</strong>从远端仓库提取数据并尝试合并到当前分支</h5><p><code>git pull [remote-alias] [branch]</code>，该命令就是在 git fetch 之后紧接着 git merge 远端分支到你所在的任意分支。 </p>
+<h5 id="git-push-推送你的分支数据到远端仓库"><a href="#git-push-推送你的分支数据到远端仓库" class="headerlink" title="git push 推送你的分支数据到远端仓库"></a><strong>git push</strong> 推送你的分支数据到远端仓库</h5><p><code>git push [remote-alias] [branch]</code>，就会将你的 [branch] 分支推送到 [alias] 远端上的 [branch] 分支。 </p>
+<p>当你试图推送到某个以被更新的远端分支时，会出现下面这种情况：</p>
+<pre><code>$ git push origin master
+To https://github.com/defei/codelogger-utils.git
+ ! [rejected]        master -&gt; master (non-fast-forward)
+error: failed to push some refs to &apos;https://github.com/defei/codelogger-utils.git&apos;
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes before pushing again.  See the &apos;Note about
+fast-forwards&apos; section of &apos;git push --help&apos; for details.
+</code></pre><p>你可以执行<code>git pull origin master</code>以获取并合并无端的数据，当合并成功后，你就可以执行<code>git push origin master</code>把你本地数据提交到远程仓库了。</p>
+<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>到此，git的基本操作已经全部介绍完了，git与Subversion等仓库还是有很大的不同的，其去中心化与branch是其精华所在，能够快速的做到版本切换，离线提交等快，大大提高工作效率。</p>
+<p>希望本文对你有所帮助。</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2015/05/28/ignor-ssl-certificate-error-apache-httpclient-4-4/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2015/01/06/first-java-web-project/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Codelogger 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+        <section>
+            <a target="_blank" href="http://info.flagcounter.com/hIg9">
+                <img src="http://s01.flagcounter.com/count/hIg9/bg_F7FAFB/txt_000000/border_F7FAFB/columns_4/maxflags_8/viewers_3/labels_0/pageviews_1/flags_0/" alt="Flag Counter" border="0" style="opacity: 1;" lightbox='false'>
+            </a>
+        </section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
