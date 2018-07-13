@@ -1060,3 +1060,27 @@ span.ds-thread-count:after {
     display: block;
 }
 
+#reward-box {
+    text-align: center;
+}
+
+#reward-box .support-author{
+    margin: 0 20px;
+    line-height: 160px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#reward-box img{
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 5px;
+}
+
+#reward-box img.ali{
+    border: 10px solid #009fe4;
+}
+
+#reward-box img.wechat{
+    border: 10px solid #00ab42;
+}

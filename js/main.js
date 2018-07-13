@@ -43,15 +43,15 @@ function  duoshuoInlineComment(){
         var jsonURL = 'http://api.duoshuo.com/threads/counts.jsonp?short_name=' +
             duoshuoName + '&threads=' + identifier +
             '&callback=?';
-        $.getJSON(jsonURL,function(data) {
-            $.each(data.response, function(i, item) {
-                if (item.comments !== 0){
-                    self.text(item.comments);
-                    self.css('opacity','0.4');
-                    self.addClass('has-comment');
-                }
-            });
-        });
+        // $.getJSON(jsonURL,function(data) {
+        //     $.each(data.response, function(i, item) {
+        //         if (item.comments !== 0){
+        //             self.text(item.comments);
+        //             self.css('opacity','0.4');
+        //             self.addClass('has-comment');
+        //         }
+        //     });
+        // });
         $(this).after('<div class="inline-comment"></div>');
     });
 
