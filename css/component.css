@@ -1065,8 +1065,8 @@ span.ds-thread-count:after {
 }
 
 #reward-box .support-author{
-    margin: 0 20px;
     line-height: 160px;
+    margin: 0 20px;
     display: inline-block;
     vertical-align: top;
 }
@@ -1075,6 +1075,14 @@ span.ds-thread-count:after {
     max-width: 160px;
     max-height: 160px;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 608px) {
+    #reward-box .support-author{
+        line-height: 30px;
+        margin: 0 10px;
+        display: block;
+    }
 }
 
 #reward-box img.ali{
