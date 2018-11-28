@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>自动化运维工具 Ansible | Codelogger</title>
+  <meta name="description" content="Recored every thing." />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Codelogger">
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2018/10/30/export-swagger2-api-document/">Swagger离线文档输出</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/12/13/change-myself/">改变自己</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/12/13/twelve-ball/">十二个球</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/03/git-introduce/">Git快速入门</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/26/cors/">跨域源资源共享</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/15/maven/">Maven的使用</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/lod/">迪米特法则</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Life/">&nbsp;&nbsp;&nbsp;Life</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/运维/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Web/">&nbsp;&nbsp;&nbsp;Web</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/版本控制/">&nbsp;&nbsp;&nbsp;版本控制</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/运维/">&nbsp;&nbsp;&nbsp;运维</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/逻辑思考/">&nbsp;&nbsp;&nbsp;逻辑思考</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Ansible/">&nbsp;&nbsp;&nbsp;Ansible</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/CORS/">&nbsp;&nbsp;&nbsp;CORS</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Maven/">&nbsp;&nbsp;&nbsp;Maven</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ThreadLocal/">&nbsp;&nbsp;&nbsp;ThreadLocal</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Web相关概念/">&nbsp;&nbsp;&nbsp;Web相关概念</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/code-style/">&nbsp;&nbsp;&nbsp;code style</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cryptology/">&nbsp;&nbsp;&nbsp;cryptology</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/eclipse/">&nbsp;&nbsp;&nbsp;eclipse</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/git/">&nbsp;&nbsp;&nbsp;git</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/i18n/">&nbsp;&nbsp;&nbsp;i18n</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/swagger/">&nbsp;&nbsp;&nbsp;swagger</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ubuntu/">&nbsp;&nbsp;&nbsp;ubuntu</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/web项目/">&nbsp;&nbsp;&nbsp;web项目</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/国际化/">&nbsp;&nbsp;&nbsp;国际化</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/多线程安全/">&nbsp;&nbsp;&nbsp;多线程安全</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/密码学/">&nbsp;&nbsp;&nbsp;密码学</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/线程共享变量/">&nbsp;&nbsp;&nbsp;线程共享变量</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/迪米特法则/">&nbsp;&nbsp;&nbsp;迪米特法则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/逻辑-分析/">&nbsp;&nbsp;&nbsp;逻辑 分析</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/顿悟/">&nbsp;&nbsp;&nbsp;顿悟</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                    <li><a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/defei" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
+                
+                    <a  data-pjax href="/2018/10/30/export-swagger2-api-document/">Swagger离线文档输出</a>
+                
+                    <a  data-pjax href="/2016/12/13/change-myself/">改变自己</a>
+                
+                    <a  data-pjax href="/2016/12/13/twelve-ball/">十二个球</a>
+                
+                    <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
+                
+                    <a  data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                
+                    <a  data-pjax href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                
+                    <a  data-pjax href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                
+                    <a  data-pjax href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                
+                    <a  data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                
+                    <a  data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
+                
+                    <a  data-pjax href="/2014/11/15/maven/">Maven的使用</a>
+                
+                    <a  data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                
+                    <a  data-pjax href="/2014/10/28/lod/">迪米特法则</a>
+                
+                    <a  data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                
+                
+                    <a data-pjax href="/categories/IDE/">&nbsp;&nbsp;IDE</a>
+                
+                    <a data-pjax href="/categories/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/categories/Life/">&nbsp;&nbsp;Life</a>
+                
+                    <a data-pjax href="/categories/运维/Linux/">&nbsp;&nbsp;Linux</a>
+                
+                    <a data-pjax href="/categories/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Java/Web/">&nbsp;&nbsp;Web</a>
+                
+                    <a data-pjax href="/categories/版本控制/">&nbsp;&nbsp;版本控制</a>
+                
+                    <a data-pjax href="/categories/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/categories/运维/">&nbsp;&nbsp;运维</a>
+                
+                    <a data-pjax href="/categories/逻辑思考/">&nbsp;&nbsp;逻辑思考</a>
+                
+                
+                    <a data-pjax href="/tags/Ansible/">&nbsp;&nbsp;Ansible</a>
+                
+                    <a data-pjax href="/tags/CORS/">&nbsp;&nbsp;CORS</a>
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Maven/">&nbsp;&nbsp;Maven</a>
+                
+                    <a data-pjax href="/tags/ThreadLocal/">&nbsp;&nbsp;ThreadLocal</a>
+                
+                    <a data-pjax href="/tags/Web相关概念/">&nbsp;&nbsp;Web相关概念</a>
+                
+                    <a data-pjax href="/tags/code-style/">&nbsp;&nbsp;code style</a>
+                
+                    <a data-pjax href="/tags/cryptology/">&nbsp;&nbsp;cryptology</a>
+                
+                    <a data-pjax href="/tags/eclipse/">&nbsp;&nbsp;eclipse</a>
+                
+                    <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
+                
+                    <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/swagger/">&nbsp;&nbsp;swagger</a>
+                
+                    <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
+                
+                    <a data-pjax href="/tags/web项目/">&nbsp;&nbsp;web项目</a>
+                
+                    <a data-pjax href="/tags/国际化/">&nbsp;&nbsp;国际化</a>
+                
+                    <a data-pjax href="/tags/多线程安全/">&nbsp;&nbsp;多线程安全</a>
+                
+                    <a data-pjax href="/tags/密码学/">&nbsp;&nbsp;密码学</a>
+                
+                    <a data-pjax href="/tags/线程共享变量/">&nbsp;&nbsp;线程共享变量</a>
+                
+                    <a data-pjax href="/tags/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/tags/迪米特法则/">&nbsp;&nbsp;迪米特法则</a>
+                
+                    <a data-pjax href="/tags/逻辑-分析/">&nbsp;&nbsp;逻辑 分析</a>
+                
+                    <a data-pjax href="/tags/顿悟/">&nbsp;&nbsp;顿悟</a>
+                
+                <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                <a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Codelogger</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">自动化运维工具 Ansible</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/Ansible/' style='color:#D5D5D5'>Ansible</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">自动化运维工具 Ansible</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2018-11-28T12:23:26.000Z"
+                              itemprop="datePublished">2018-11-28 20:23</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <p>随着分布式应用越来越热，微服务划分出更细，对应的部署服务器节点也越来越多，针对这些服务器，我们需要统一的管理，如果通过传统的人肉操作，不仅效率低，而且容易出错，维护困难，所以我们需要借助一个linux服务器管理工具，Ansible是一个不错的选择。</p>
+<h2 id="什么是Ansible"><a href="#什么是Ansible" class="headerlink" title="什么是Ansible"></a>什么是Ansible</h2><p><a href="https://www.ansible.com/" target="_blank" rel="noopener">Ansible</a>，自动化运维工具，基于Python开发，集合了众多运维工具（puppet、cfengine、chef、func、fabric）的优点，实现了批量系统配置、批量程序部署、批量运行命令等功能。</p>
+<p>ansible是基于模块工作的，本身没有批量部署的能力。真正具有批量部署的是ansible所运行的模块，ansible只是提供一种框架。主要包括：</p>
+<p>(1)、连接插件connection plugins：负责和被监控端实现通信；</p>
+<p>(2)、host inventory：指定操作的主机，是一个配置文件里面定义监控的主机；</p>
+<p>(3)、各种模块核心模块、command模块、自定义模块；</p>
+<p>(4)、借助于插件完成记录日志邮件等功能；</p>
+<p>(5)、playbook：剧本执行多个任务时，非必需可以让节点一次性运行多个任务。</p>
+<h2 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h2><p>以下命令使用的ansible版本为2.3.2.0，不保证其它版本兼容性</p>
+<h2 id="常用使用场景"><a href="#常用使用场景" class="headerlink" title="常用使用场景"></a>常用使用场景</h2><h3 id="批量ssh-copy-id"><a href="#批量ssh-copy-id" class="headerlink" title="批量ssh-copy-id"></a>批量ssh-copy-id</h3><ol>
+<li>指定Hosts文件</li>
+</ol>
+<p>假设文件位置为<code>~/.ansible/hosts</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[test-servers]</span><br><span class="line">192.168.100.1 ansible_user=test ansible_ssh_pass=&quot;testPwd&quot;</span><br><span class="line">192.168.100.2 ansible_user=test ansible_ssh_pass=&quot;testPwd&quot;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>ansible_user即为你目标机器的用户，ansible_ssh_pass则为目标机器用户的登录密码</p>
+</blockquote>
+<ol start="2">
+<li>准备配置脚本</li>
+</ol>
+<p>脚本文件<code>push.ssh.yml</code>内容:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">- hosts:</span> <span class="string">test-servers</span></span><br><span class="line"><span class="attr">  user:</span> <span class="string">test</span></span><br><span class="line"><span class="attr">  tasks:</span></span><br><span class="line"><span class="attr">   - name:</span> <span class="string">ssh-copy</span></span><br><span class="line"><span class="attr">     authorized_key:</span> <span class="string">user=test</span> <span class="string">key="&#123;&#123;</span> <span class="string">lookup('file',</span> <span class="string">'/home/test/.ssh/id_rsa.pub'</span><span class="string">)</span> <span class="string">&#125;&#125;"</span></span><br><span class="line"><span class="attr">     tags:</span></span><br><span class="line"><span class="bullet">       -</span> <span class="string">sshkey</span></span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>执行命令<code>ansible-playbook -i ~/.ansible/hosts push.ssh.yml</code></li>
+</ol>
+<h3 id="批量修改密码"><a href="#批量修改密码" class="headerlink" title="批量修改密码"></a>批量修改密码</h3><p>脚本文件<code>change_password.yml</code>内容:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">- hosts:</span> <span class="string">test-servers</span></span><br><span class="line"><span class="attr">  gather_facts:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  tasks:</span></span><br><span class="line"><span class="attr">  - name:</span> <span class="string">Change</span> <span class="string">password</span></span><br><span class="line"><span class="attr">    user:</span> <span class="string">name=&#123;&#123;</span> <span class="string">targetUser</span> <span class="string">&#125;&#125;</span>  <span class="string">password=&#123;&#123;</span> <span class="string">newPwd</span> <span class="string">| password_hash('sha512') &#125;&#125;  update_password=always</span></span><br></pre></td></tr></table></figure>
+<p>执行命令<code>ansible-playbook -i ~/.ansible/hosts change_password.yml -e &quot;targetUser=test newPwd=admin#123&quot;</code></p>
+<h3 id="执行默认模块"><a href="#执行默认模块" class="headerlink" title="执行默认模块"></a>执行默认模块</h3><p>在使用ansible中的时候，默认的模块是-m command，直接使用即可。</p>
+<p>如<code>ansible -i ~/.ansible/hosts test-servers -v -m ping -u root --private-key=~/.ssh/id_rsa</code></p>
+<h4 id="lineinfile模块"><a href="#lineinfile模块" class="headerlink" title="lineinfile模块"></a>lineinfile模块</h4><p>lineinfile:文件内容修改、在某行前面添加一行、在某行后面添加一行、删除某一行、末尾加入一行、替换或添加某一行</p>
+<table>
+<thead>
+<tr>
+<th>行为</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="文件内容修改"><a href="#文件内容修改" class="headerlink" title="文件内容修改"></a>文件内容修改</h5><p><code>ansible all -m lineinfile -a &quot;dest=/root/test.txt regexp=&#39;bbb&#39; line=&#39;bbbbbbb&#39;&quot;</code></p>
+<h5 id="在某一行前面插入一行"><a href="#在某一行前面插入一行" class="headerlink" title="在某一行前面插入一行"></a>在某一行前面插入一行</h5><p><code>ansible all -m lineinfile -a &quot;dest=/root/test.txt insertbefore=&#39;aa(.*)&#39; line=&#39;eeee&#39;&quot;</code></p>
+<h5 id="在某一行后面插入一行"><a href="#在某一行后面插入一行" class="headerlink" title="在某一行后面插入一行"></a>在某一行后面插入一行</h5><p><code>ansible all -m lineinfile -a &quot;dest=/root/test.txt regexp=&#39;aa(.*)&#39; state=absent&quot;</code></p>
+<h5 id="末尾加入一行"><a href="#末尾加入一行" class="headerlink" title="末尾加入一行"></a>末尾加入一行</h5><p><code>ansible all -m lineinfile -a &quot;dest=/root/test.txt line=&#39;hehe&#39;&quot;</code></p>
+<blockquote>
+<p>允许指定IP进行ssh登录，编辑<code>/etc/hosts.allow</code>文件，在末尾加上<code>sshd:192.168.2.1,192.168.1.</code> 表示允许192.168.2.1这台机器和192.168.1.* 的所有机器ssh登录</p>
+</blockquote>
+<h5 id="替换或添加某一行"><a href="#替换或添加某一行" class="headerlink" title="替换或添加某一行"></a>替换或添加某一行</h5><p><code>ansible all -m lineinfile -a &quot;dest=/root/test.txt regexp=&#39;he(.*)&#39; line=&#39;lllll&#39; state=present&quot;</code></p>
+<h5 id="删除某一行"><a href="#删除某一行" class="headerlink" title="删除某一行"></a>删除某一行</h5><p><code>ansible all -m lineinfile -a &quot;dest=/root/test.txt regexp=&#39;xxxx&#39; state=&#39;absent&#39;&quot;</code></p>
+<h4 id="file模块"><a href="#file模块" class="headerlink" title="file模块"></a>file模块</h4><h5 id="删除文件或目录"><a href="#删除文件或目录" class="headerlink" title="删除文件或目录"></a>删除文件或目录</h5><p><code>ansible test-servers -m file -a &quot;dest=/tmp/test.txt state=absent&quot;</code></p>
+<h3 id="在目标机器上执行自定义命令"><a href="#在目标机器上执行自定义命令" class="headerlink" title="在目标机器上执行自定义命令"></a>在目标机器上执行自定义命令</h3><ul>
+<li>使用 SSH-Key执行</li>
+</ul>
+<p><code>ansible -i ~/.ansible/hosts test-servers -m command -a &quot;date&quot; -u test --private-key=~/.ssh/id_rsa</code></p>
+<blockquote>
+<p>如果ssh private-key有密码，请加上参数 <code>--ask-pass</code></p>
+</blockquote>
+<h3 id="传送文件"><a href="#传送文件" class="headerlink" title="传送文件"></a>传送文件</h3><p><code>ansible test-servers -m copy -a &quot;src=/tmp/source/test.sh dest=/tmp/target/&quot;</code></p>
+<p>其中<code>/tmp/source/test.sh</code>为本地文件， <code>/tmp/target/</code>为目标文件夹，如果文件夹为空会报错</p>
+<h3 id="批量修改HostName"><a href="#批量修改HostName" class="headerlink" title="批量修改HostName"></a>批量修改HostName</h3><p>playbook:<code>change_hostname.yml</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">hosts</span> <span class="string">:</span> <span class="string">test-servers</span></span><br><span class="line">  <span class="string">remote_user</span> <span class="string">:</span> <span class="string">root</span></span><br><span class="line">  <span class="string">tasks</span> <span class="string">:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">name</span> <span class="string">:</span> <span class="string">show</span> <span class="string">hostname</span></span><br><span class="line">    <span class="string">shell</span> <span class="string">:</span> <span class="string">hostname</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">name</span> <span class="string">:</span> <span class="string">show</span> <span class="string">ip</span></span><br><span class="line">    <span class="string">command</span> <span class="string">:</span> <span class="string">ip</span> <span class="string">a</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">hostname</span> <span class="string">:</span> <span class="string">name=test-server-&#123;&#123;</span> <span class="string">ansible_default_ipv4.address.split('.')[-1]</span> <span class="string">&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>执行命令<code>ansible-playbook -i ~/.ansible/hosts test-servers change_hostname.yml -u root --private-key=~/.ssh/id_rsa --ask-pass</code></p>
+<hr>
+<p>本文会持续更新</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2018/10/30/export-swagger2-api-document/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+        <section id="reward-box">
+          <img class="ali" src="/resources/images/defei_alipay.png?raw=true" />
+          <span class="support-author">写作不易，谢谢支持</span>
+          <img class="wechat" src="/resources/images/defei_wechatPay.png?raw=true" />
+        </section>
+
+    </article>
+</main>
+
+
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Codelogger 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+        <section>
+            <a target="_blank" href="http://info.flagcounter.com/hIg9">
+                <img src="http://s01.flagcounter.com/count/hIg9/bg_F7FAFB/txt_000000/border_F7FAFB/columns_4/maxflags_8/viewers_3/labels_0/pageviews_1/flags_0/" alt="Flag Counter" border="0" style="opacity: 1;" lightbox='false'>
+            </a>
+        </section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
