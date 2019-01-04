@@ -42,6 +42,10 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2019/01/04/ssh/">SSH使用指北</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
                                 </li>
                                 
@@ -50,11 +54,11 @@
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2016/12/13/change-myself/">改变自己</a>
+                                    <a href="/2016/12/13/twelve-ball/">十二个球</a>
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
-                                    <a href="/2016/12/13/twelve-ball/">十二个球</a>
+                                    <a href="/2016/12/13/change-myself/">改变自己</a>
                                 </li>
                                 
                                 <li class="search-archive-li mp-pjax">
@@ -136,7 +140,7 @@
                                 
                                 <li class="search-category-li mp-pjax">
                                     <a href="/categories/运维/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
-                                    <small>1</small>
+                                    <small>2</small>
                                 </li>
                                 
                                 <li class="search-category-li mp-pjax">
@@ -166,7 +170,7 @@
                                 
                                 <li class="search-category-li mp-pjax">
                                     <a href="/categories/运维/">&nbsp;&nbsp;&nbsp;运维</a>
-                                    <small>1</small>
+                                    <small>2</small>
                                 </li>
                                 
                                 <li class="search-category-li mp-pjax">
@@ -247,6 +251,11 @@
                                 </li>
                                 
                                 <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ssh/">&nbsp;&nbsp;&nbsp;ssh</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
                                     <a href="/tags/swagger/">&nbsp;&nbsp;&nbsp;swagger</a>
                                     <small>1</small>
                                 </li>
@@ -317,13 +326,15 @@
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
                 
+                    <a  data-pjax href="/2019/01/04/ssh/">SSH使用指北</a>
+                
                     <a  data-pjax href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
                 
                     <a  data-pjax href="/2018/10/30/export-swagger2-api-document/">Swagger离线文档输出</a>
                 
-                    <a  data-pjax href="/2016/12/13/change-myself/">改变自己</a>
-                
                     <a  data-pjax href="/2016/12/13/twelve-ball/">十二个球</a>
+                
+                    <a  data-pjax href="/2016/12/13/change-myself/">改变自己</a>
                 
                     <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
                 
@@ -393,6 +404,8 @@
                 
                     <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
                 
+                    <a data-pjax href="/tags/ssh/">&nbsp;&nbsp;ssh</a>
+                
                     <a data-pjax href="/tags/swagger/">&nbsp;&nbsp;swagger</a>
                 
                     <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
@@ -447,6 +460,37 @@
 
 <main class="content" role="main">
 
+    
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/ssh/'>ssh</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2019/01/04/ssh/">SSH使用指北</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2019-01-04T15:23:26.000Z"
+                      itemprop="datePublished">2019-01-04 23:23</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                SSH使用手册端口转发ssh -N user@targetHost -p 22 -L localPort:127.0.0.1:targetHostPort
+ssh -L 就是做端口转发的，比如我想将本地的13306端口上的流量用proxy用户通过ssh 2022端口转发到目标主机10.10.10.233的3306端口上, 命令为 ssh -N proxy@10.10.10.233 -p 2202 -L 13306:127.0.0.1:3
+                
+            </p>
+            
+        </section>
+    </article>
     
     <article class="post">
 
@@ -518,38 +562,6 @@
             <div class="tag-tile">
                 
                 
-                <a data-pjax href='/tags/顿悟/'>顿悟</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2016/12/13/change-myself/">改变自己</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2016-12-13T08:00:00.000Z"
-                      itemprop="datePublished">2016-12-13 16:00</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                　　在伦敦闻名世界的威斯敏斯特大教堂地下室的墓碑林中，有一块名扬世界的墓碑。
-　　其实这只是一块很普通的墓碑，粗糙的花岗石质地，造型也很一般，同周围那些质地上乘、做工优良的亨利三世到乔治二世等二十多位英国前国王墓碑，以及牛顿、达尔文、狄更斯等名人的墓碑比较起来，它显得微不足道，不值一提。并且它没有姓名，没有生卒年月，甚至上面连墓主的介绍文字也没有。
-　　但是，就是这样一块无名氏墓碑，却成为名扬全球的著名墓碑。每一个到过威斯特敏斯特大教堂
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
                 <a data-pjax href='/tags/逻辑-分析/'>逻辑 分析</a>
                 
                 
@@ -574,6 +586,38 @@
 解法维基百科-称球问题
 百度百科-十二球
 
+                
+            </p>
+            
+        </section>
+    </article>
+    
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/顿悟/'>顿悟</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2016/12/13/change-myself/">改变自己</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2016-12-13T08:00:00.000Z"
+                      itemprop="datePublished">2016-12-13 16:00</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                　　在伦敦闻名世界的威斯敏斯特大教堂地下室的墓碑林中，有一块名扬世界的墓碑。
+　　其实这只是一块很普通的墓碑，粗糙的花岗石质地，造型也很一般，同周围那些质地上乘、做工优良的亨利三世到乔治二世等二十多位英国前国王墓碑，以及牛顿、达尔文、狄更斯等名人的墓碑比较起来，它显得微不足道，不值一提。并且它没有姓名，没有生卒年月，甚至上面连墓主的介绍文字也没有。
+　　但是，就是这样一块无名氏墓碑，却成为名扬全球的著名墓碑。每一个到过威斯特敏斯特大教堂
                 
             </p>
             
@@ -745,40 +789,6 @@ When？ Where？ Why？对于ThreadLocal，相信如果没有了解及使用过�
                 前言一个好的format配置，可以让代码更整洁易读，而且可以 组合操作，减少开发的工作量，提升工作效率。
 本文主要讲一讲关于eclipse中format的配置。
 协议说明Google Java Style文档详细的定义了谷歌在Java开发中的详细代码风格，当然其中也不乏有争议的地方，你也可以根据自己的需求做相应的细节调整，如果你不想做任何调整，可以直接下载Eclipse Java Google Style，然后通过Window -&gt
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/i18n/'>i18n</a>
-                
-                <a data-pjax href='/tags/国际化/'>国际化</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2014-11-30T06:39:41.000Z"
-                      itemprop="datePublished">2014-11-30 14:39</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                最近在做一个项目，因为同时涉及到国内及国外的客户，所以需要对项目做国际化，不管是页面显示，还是后台交互的模板，都要做出正确的响应。
-因为前面用到的是Spring MVC，而Spring对国际化的支持已经非常完善，所以只需要一些简单的配置即可完成。
-第一步：添加applicationContext-i18n.xml&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt
                 
             </p>
             

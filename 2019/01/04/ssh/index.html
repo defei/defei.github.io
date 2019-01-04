@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Archives | Codelogger</title>
+  <title>SSH使用指北 | Codelogger</title>
   <meta name="description" content="Recored every thing." />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -439,7 +439,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">undefined</a></li>
+                        <li id="navbar-title"><a href="#">SSH使用指北</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -458,214 +458,62 @@
 
 
 
+
 <main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/ssh/' style='color:#D5D5D5'>ssh</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">SSH使用指北</h1>
 
-    
-    <article class="post">
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2019-01-04T15:23:26.000Z"
+                              itemprop="datePublished">2019-01-04 23:23</time>
+                    </div>
+    </span>
 
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/i18n/'>i18n</a>
-                
-                <a data-pjax href='/tags/国际化/'>国际化</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
-            </h1>
+        <section class="post-content">
+            <h2 id="SSH使用手册"><a href="#SSH使用手册" class="headerlink" title="SSH使用手册"></a>SSH使用手册</h2><h3 id="端口转发"><a href="#端口转发" class="headerlink" title="端口转发"></a>端口转发</h3><p><code>ssh -N user@targetHost -p 22 -L localPort:127.0.0.1:targetHostPort</code></p>
+<p>ssh -L 就是做端口转发的，比如我想将本地的13306端口上的流量用proxy用户通过ssh 2022端口转发到目标主机10.10.10.233的3306端口上, 命令为 <code>ssh -N proxy@10.10.10.233 -p 2202 -L 13306:127.0.0.1:3306</code>, </p>
+<p>同时也可以使用ssh config，写法如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host db-proxy</span><br><span class="line">    Host 10.10.10.233</span><br><span class="line">    LocalForward 3306 127.0.0.1:13306</span><br><span class="line">    User: proxy</span><br></pre></td></tr></table></figure>
+<h3 id="SSH代理"><a href="#SSH代理" class="headerlink" title="SSH代理"></a>SSH代理</h3><p><code>ssh -TND localPort user@targetHost</code></p>
+<p>使用ssh -D命令可以直接代理到目标，而且目标将会自动监听和转发。支持socks4 socks5代理。ssh可以在此充当一个sock5代理服务器。指定一个端口，然后由这个端口作为socks代理服务器进行转发。</p>
+<h3 id="ProxyCommand"><a href="#ProxyCommand" class="headerlink" title="ProxyCommand"></a>ProxyCommand</h3><p>比如<code>ssh -o  ProxyCommand=&quot;ssh -W %h:%p jumphost.example.org&quot; server.example.org</code></p>
+<p>简单解释一下<strong>ProxyCommand</strong>的<strong>-W</strong>参数 可以指定一个hostname:port参数</p>
+<p>这里的jumphost.xx是跳板机的地址， 后面的server.xx是要去往的目标地址</p>
+<p>同样<strong>ProxyCommand</strong>允许使用config配置文件，如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host gitlab.codelogger.org</span><br><span class="line">    HostName gitlab.codelogger.org</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line">    ProxyCommand ssh -W %h:%p gateway.codelogger.org</span><br></pre></td></tr></table></figure>
 
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2014-11-30T06:39:41.000Z"
-                      itemprop="datePublished">2014-11-30 14:39</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                最近在做一个项目，因为同时涉及到国内及国外的客户，所以需要对项目做国际化，不管是页面显示，还是后台交互的模板，都要做出正确的响应。
-因为前面用到的是Spring MVC，而Spring对国际化的支持已经非常完善，所以只需要一些简单的配置即可完成。
-第一步：添加applicationContext-i18n.xml&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt
-                
-            </p>
-            
         </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/CORS/'>CORS</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2014-11-26T13:34:58.000Z"
-                      itemprop="datePublished">2014-11-26 21:34</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                由于本人的VPS资源有限，所以将一些静态的资源放在了一个BAE上，本来使用得挺好的，但今天在使用Semantic-UI的时候，发现图标不能显示，打开Chrome控制台发现有错误提示：
-
-Font from origin has been blocked from loading by Cross-Origin Resource Sharing policy
-
-确定是跨域源资源共享（CORS）的问题，跨域问题简单来说就是
-
-CORS（Cr
-                
-            </p>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
             
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Maven/'>Maven</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2014/11/15/maven/">Maven的使用</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2014-11-15T06:48:34.000Z"
-                      itemprop="datePublished">2014-11-15 14:48</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                前言不知道你是否以前经常遇到把一个project的相关依赖配置好，想启动看看效果，但却遇到一个ClassNotFoundException的失败？不知道你是不是有不知道把src文件一test文件放哪的选择困难，或者不知道resources文件放哪的纠结？Maven，就是它。有了它，java项目管理不再是问题。
-安装前期准备:安装JDK环境。Ubuntu jdk7：sudo apt-get install openjdk-7-jdk -y
-                
-            </p>
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
             
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Java/'>Java</a>
-                
-                <a data-pjax href='/tags/ubuntu/'>ubuntu</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2014-11-14T02:19:50.000Z"
-                      itemprop="datePublished">2014-11-14 10:19</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                本文不仅会教您何搭建一个在Ubuntu下的Java开发环境，并会搭配上一些实用的Tips，提高程序猿的开发效率。
-一、创建Ubuntu虚拟机Windows + VMware Player是一个不错的选择，当然您可以根据您自己的需求自行调整。
-桌面版Ubuntu请下载64位LTS版的，VMware Player请下载最新版的。新建虚拟机的时候，VMware Player在选择好镜像文件后，会自动判断系统类型及版本，我们只要求一些基本的设置
-                
-            </p>
+            <a class="share-button" data-original-title title>Share this Post</a>
             
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/迪米特法则/'>迪米特法则</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2014/10/28/lod/">迪米特法则</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2014-10-28T04:18:18.000Z"
-                      itemprop="datePublished">2014-10-28 12:18</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                法则定义迪米特法则（Law of Demeter）又叫作最少知识原则（Least Knowledge Principle 简写LKP），就是说一个对象应当对其他对象有尽可能少的了解,不和陌生人说话。英文简写为: LoD.
-来源历史1987年秋天由美国Northeastern University的Ian Holland提出，被UML的创始者之一Booch等普及。后来，因为在经典著作《 The Pragmatic Programmer》而
-                
-            </p>
+            <a data-pjax class="older-posts" href="/2018/11/28/ansible/">Next Post →</a>
             
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
         </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/设计原则/'>设计原则</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2014-10-28T04:06:53.000Z"
-                      itemprop="datePublished">2014-10-28 12:06</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                良好的编程原则与良好的设计工程原则密切相关。本文总结的这些设计原则，帮助开发者更有效率的编写代码，并帮助成为一名优秀的程序员
-避免重复原则(DRY - Don’t repeat yourself)编程的最基本原则是避免重复。在程序代码中总会有很多结构体，如循环、函数、类等等。一旦你重复某个语句或概念，就会很容易形成一个抽象体。
-抽象原则(Abstraction Principle )与DRY原则相关。要记住，程序代码中每一个重要的功能，
-                
-            </p>
-            
+        <section id="reward-box">
+          <img class="ali" src="/resources/images/defei_alipay.png?raw=true" />
+          <span class="support-author">写作不易，谢谢支持</span>
+          <img class="wechat" src="/resources/images/defei_wechatPay.png?raw=true" />
         </section>
+
     </article>
-    
-    <nav class="pagination" role="pagination">
-        
-        <a data-pjax class="newer-posts" href="/archives/">← Newer Posts</a>
-        
-        <span class="page-number">Page 2 of 2</span>
-        
-    </nav>
 </main>
 
 
