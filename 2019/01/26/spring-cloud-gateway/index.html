@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Spring Cloud Gateway | Codelogger</title>
+  <meta name="description" content="Recored every thing." />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Codelogger">
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2019/01/26/spring-cloud-gateway/">Spring Cloud Gateway</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2019/01/04/ssh/">SSH使用指北</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2018/10/30/export-swagger2-api-document/">Swagger离线文档输出</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/12/13/change-myself/">改变自己</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/12/13/twelve-ball/">十二个球</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/03/git-introduce/">Git快速入门</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/26/cors/">跨域源资源共享</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/15/maven/">Maven的使用</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/lod/">迪米特法则</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Life/">&nbsp;&nbsp;&nbsp;Life</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/运维/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Web/">&nbsp;&nbsp;&nbsp;Web</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/版本控制/">&nbsp;&nbsp;&nbsp;版本控制</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/运维/">&nbsp;&nbsp;&nbsp;运维</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/逻辑思考/">&nbsp;&nbsp;&nbsp;逻辑思考</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Ansible/">&nbsp;&nbsp;&nbsp;Ansible</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/CORS/">&nbsp;&nbsp;&nbsp;CORS</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Maven/">&nbsp;&nbsp;&nbsp;Maven</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Spring-Cloud/">&nbsp;&nbsp;&nbsp;Spring Cloud</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ThreadLocal/">&nbsp;&nbsp;&nbsp;ThreadLocal</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Web相关概念/">&nbsp;&nbsp;&nbsp;Web相关概念</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/code-style/">&nbsp;&nbsp;&nbsp;code style</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cryptology/">&nbsp;&nbsp;&nbsp;cryptology</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/eclipse/">&nbsp;&nbsp;&nbsp;eclipse</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/gateway/">&nbsp;&nbsp;&nbsp;gateway</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/git/">&nbsp;&nbsp;&nbsp;git</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/i18n/">&nbsp;&nbsp;&nbsp;i18n</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ssh/">&nbsp;&nbsp;&nbsp;ssh</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/swagger/">&nbsp;&nbsp;&nbsp;swagger</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ubuntu/">&nbsp;&nbsp;&nbsp;ubuntu</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/web项目/">&nbsp;&nbsp;&nbsp;web项目</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/国际化/">&nbsp;&nbsp;&nbsp;国际化</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/多线程安全/">&nbsp;&nbsp;&nbsp;多线程安全</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/密码学/">&nbsp;&nbsp;&nbsp;密码学</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/线程共享变量/">&nbsp;&nbsp;&nbsp;线程共享变量</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/迪米特法则/">&nbsp;&nbsp;&nbsp;迪米特法则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/逻辑-分析/">&nbsp;&nbsp;&nbsp;逻辑 分析</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/顿悟/">&nbsp;&nbsp;&nbsp;顿悟</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                    <li><a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/defei" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2019/01/26/spring-cloud-gateway/">Spring Cloud Gateway</a>
+                
+                    <a  data-pjax href="/2019/01/04/ssh/">SSH使用指北</a>
+                
+                    <a  data-pjax href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
+                
+                    <a  data-pjax href="/2018/10/30/export-swagger2-api-document/">Swagger离线文档输出</a>
+                
+                    <a  data-pjax href="/2016/12/13/change-myself/">改变自己</a>
+                
+                    <a  data-pjax href="/2016/12/13/twelve-ball/">十二个球</a>
+                
+                    <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
+                
+                    <a  data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                
+                    <a  data-pjax href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                
+                    <a  data-pjax href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                
+                    <a  data-pjax href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                
+                    <a  data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                
+                    <a  data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
+                
+                    <a  data-pjax href="/2014/11/15/maven/">Maven的使用</a>
+                
+                    <a  data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                
+                    <a  data-pjax href="/2014/10/28/lod/">迪米特法则</a>
+                
+                    <a  data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                
+                
+                    <a data-pjax href="/categories/IDE/">&nbsp;&nbsp;IDE</a>
+                
+                    <a data-pjax href="/categories/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/categories/Life/">&nbsp;&nbsp;Life</a>
+                
+                    <a data-pjax href="/categories/运维/Linux/">&nbsp;&nbsp;Linux</a>
+                
+                    <a data-pjax href="/categories/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Java/Web/">&nbsp;&nbsp;Web</a>
+                
+                    <a data-pjax href="/categories/版本控制/">&nbsp;&nbsp;版本控制</a>
+                
+                    <a data-pjax href="/categories/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/categories/运维/">&nbsp;&nbsp;运维</a>
+                
+                    <a data-pjax href="/categories/逻辑思考/">&nbsp;&nbsp;逻辑思考</a>
+                
+                
+                    <a data-pjax href="/tags/Ansible/">&nbsp;&nbsp;Ansible</a>
+                
+                    <a data-pjax href="/tags/CORS/">&nbsp;&nbsp;CORS</a>
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Maven/">&nbsp;&nbsp;Maven</a>
+                
+                    <a data-pjax href="/tags/Spring-Cloud/">&nbsp;&nbsp;Spring Cloud</a>
+                
+                    <a data-pjax href="/tags/ThreadLocal/">&nbsp;&nbsp;ThreadLocal</a>
+                
+                    <a data-pjax href="/tags/Web相关概念/">&nbsp;&nbsp;Web相关概念</a>
+                
+                    <a data-pjax href="/tags/code-style/">&nbsp;&nbsp;code style</a>
+                
+                    <a data-pjax href="/tags/cryptology/">&nbsp;&nbsp;cryptology</a>
+                
+                    <a data-pjax href="/tags/eclipse/">&nbsp;&nbsp;eclipse</a>
+                
+                    <a data-pjax href="/tags/gateway/">&nbsp;&nbsp;gateway</a>
+                
+                    <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
+                
+                    <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/ssh/">&nbsp;&nbsp;ssh</a>
+                
+                    <a data-pjax href="/tags/swagger/">&nbsp;&nbsp;swagger</a>
+                
+                    <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
+                
+                    <a data-pjax href="/tags/web项目/">&nbsp;&nbsp;web项目</a>
+                
+                    <a data-pjax href="/tags/国际化/">&nbsp;&nbsp;国际化</a>
+                
+                    <a data-pjax href="/tags/多线程安全/">&nbsp;&nbsp;多线程安全</a>
+                
+                    <a data-pjax href="/tags/密码学/">&nbsp;&nbsp;密码学</a>
+                
+                    <a data-pjax href="/tags/线程共享变量/">&nbsp;&nbsp;线程共享变量</a>
+                
+                    <a data-pjax href="/tags/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/tags/迪米特法则/">&nbsp;&nbsp;迪米特法则</a>
+                
+                    <a data-pjax href="/tags/逻辑-分析/">&nbsp;&nbsp;逻辑 分析</a>
+                
+                    <a data-pjax href="/tags/顿悟/">&nbsp;&nbsp;顿悟</a>
+                
+                <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                <a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Codelogger</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">Spring Cloud Gateway</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/gateway/' style='color:#D5D5D5'>gateway</a>
+                      
+                      <a data-pjax href='/tags/Spring-Cloud/' style='color:#D5D5D5'>Spring Cloud</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Spring Cloud Gateway</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2019-01-26T06:56:25.000Z"
+                              itemprop="datePublished">2019-01-26 14:56</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <p>原文:<a href="https://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.0.1.RELEASE/single/spring-cloud-gateway.html" target="_blank" rel="noopener">Spring Cloud Gateway Reference Doc.</a></p>
+<p>Spring Cloud Gateway 构建于Spring生态之上，包含 Spring 5, Spring Boot 2 和 Project Reactor.</p>
+<p> Spring Cloud Gateway立志于提供一个简单而有效的方式来做api路由，拼提供灵活的切入点，用于提供如:安全、监控等。</p>
+<h3 id="1-如何引入Spring-Cloud-Gateway"><a href="#1-如何引入Spring-Cloud-Gateway" class="headerlink" title="1. 如何引入Spring Cloud Gateway"></a>1. 如何引入Spring Cloud Gateway</h3><p>要在项目中包含Spring Cloud Gateway，请使用组 <code>org.springframework.cloud</code>和工件id <code>spring-cloud-starter-gateway</code>。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>请参阅Spring Cloud Project页面，以获取有关使用当前Spring Cloud Release Train设置构建系统的详细信息。</p>
+<p>如果你项目中包含了Spring Cloud Gateway这个starter，但你由于业务需要，不想启用路由功能，可以通过配置<code>spring.cloud.gateway.enabled=false</code>来禁用。</p>
+<blockquote>
+<p><strong>Spring Cloud Gateway 需要由 Spring Boot 和 Spring Webflux 提供的 Netty 支持。 也这意味着该工程不能在传统的Servlet Container(tomcat,jetty等)中运行，也就是说不能打成一个WAR包运行。</strong></p>
+</blockquote>
+<h3 id="2-术语"><a href="#2-术语" class="headerlink" title="2.术语"></a>2.术语</h3><ul>
+<li><strong>Route(路由)</strong>: ，是网关的基本构建模块。它由一个ID，一个目标URI，一组断言和一组过滤器的集合定义。如果聚合谓词为真，则路由匹配。</li>
+<li><strong>Predicate(谓词)</strong>:这是一个Java 8函数谓词。输入类型是一个Spring框架的ServerWebExchange。这允许开发人员匹配来自HTTP请求的任何内容，例如 headers 或 参数</li>
+<li><strong>Filter(过滤器)</strong>:这是由Spring Framework GatewayFilter 由特定的工厂类构建的一系统过滤器，通过过滤器，我们可以添加或修改请求和返回值</li>
+</ul>
+<h3 id="3-如何工作"><a href="#3-如何工作" class="headerlink" title="3.如何工作"></a>3.如何工作</h3><p><img src="/resources/images/spring_cloud_gateway_diagram.png?raw=true" alt="spring_cloud_gateway_diagram"></p>
+<p>由客户端发送请求到Spring Cloud Gateway. 如果网关Gateway Handler Mapping匹配到了对应的路由规则，则转交Gateway Web Handler处理。Gateway Web Handler通过 filter chain来处理请求.  Filter包含前置Filter和后置Filter，前置Filter在代理请求发起之前执行，后置Filter在代理完成之后执行。类似于Spirng MVC中的Interceptor。</p>
+<blockquote>
+<p>URIs 中 80 和 443 分别为 http 和 https 的默认端口，这两个端口可以默认省略，其它端口在路由的时候，需要显示申明。</p>
+</blockquote>
+<h3 id="4-路由谓词工厂"><a href="#4-路由谓词工厂" class="headerlink" title="4. 路由谓词工厂"></a>4. 路由谓词工厂</h3><p>Spring Cloud Gateway 的路由匹配是 Spring WebFlux HandlerMapping 的基础组件之一。 Spring Cloud Gateway 内置了一批路由谓词工厂，不同的路由谓词判断器，可以完成不同的路由匹配判断，多个谓词判断器可以通过<code>and</code>组合使用。</p>
+<h4 id="4-1-请求时间After谓词器"><a href="#4-1-请求时间After谓词器" class="headerlink" title="4.1 请求时间After谓词器"></a>4.1 请求时间After谓词器</h4><p>接受请求时间在指定日间之后的请求，比如新功能定时上线。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">after_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">After=2017-01-20T17:42:47.789-07:00[America/Denver]</span></span><br></pre></td></tr></table></figure>
+<p>该路由接受 在 Jan 20, 2017 17:42 Mountain Time (Denver) 之后的任意请求，在该时间之前则匹配不到路由。</p>
+<h4 id="4-2-请求时间Before谓词器"><a href="#4-2-请求时间Before谓词器" class="headerlink" title="4.2 请求时间Before谓词器"></a>4.2 请求时间Before谓词器</h4><p>接受请求时间在指定日间之前的请求，比如老功能定时下线，或指定业务限制服务时间。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">before_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Before=2017-01-20T17:42:47.789-07:00[America/Denver]</span></span><br></pre></td></tr></table></figure>
+<p>该路由接受 在 Jan 20, 2017 17:42 Mountain Time (Denver) 之前的任意请求，在该时间之后则匹配不到该路由。</p>
+<h4 id="4-3-请求时间Between谓词器"><a href="#4-3-请求时间Between谓词器" class="headerlink" title="4.3 请求时间Between谓词器"></a>4.3 请求时间Between谓词器</h4><p>接受请求时间在指定日间之内的请求，比如定业务限制服务时间，做限时活动。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">before_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Between=2017-01-20T17:42:47.789-07:00[America/Denver],</span> <span class="number">2017</span><span class="bullet">-01</span><span class="bullet">-21</span><span class="attr">T17:42:47.789-07:00[America/Denver]</span></span><br></pre></td></tr></table></figure>
+<p>该路由接受 在 Jan 20, 2017 17:42 Mountain Time (Denver) 后并且在 Jan 21, 2017 17:42 Mountain Time (Denver) 之前的任意请求，不在该时间范围内的请求则匹配不到该路由。</p>
+<h4 id="4-4-Cookie谓词器"><a href="#4-4-Cookie谓词器" class="headerlink" title="4.4 Cookie谓词器"></a>4.4 Cookie谓词器</h4><p>按正则表达式匹配是否有对应的cookie值</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">cookie_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Cookie=chocolate,</span> <span class="string">ch.p</span></span><br></pre></td></tr></table></figure>
+<p>该路由接受包含<code>chocolate</code>这个cookie，并且cookie的值需要匹配<code>ch.p</code>这个正则表达式</p>
+<blockquote>
+<p><a href="https://regexr.com/" target="_blank" rel="noopener">正则表达式在线验证器</a></p>
+</blockquote>
+<h4 id="4-5-Header谓词器"><a href="#4-5-Header谓词器" class="headerlink" title="4.5 Header谓词器"></a>4.5 Header谓词器</h4><p>按正则表达式匹配是否有对应的Header值</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">cookie_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Header=X-Request-Id,</span> <span class="string">\d+</span></span><br></pre></td></tr></table></figure>
+<p>该路由接受包含<code>X-Request-Id</code>Header的请求，并且值需要匹配<code>\d+</code>这个正则表达式</p>
+<h4 id="4-6-Host谓词器"><a href="#4-6-Host谓词器" class="headerlink" title="4.6 Host谓词器"></a>4.6 Host谓词器</h4><p>按<strong><a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/util/AntPathMatcher.html" target="_blank" rel="noopener">Ant Path Matcher</a></strong>判断访问的Host是否匹配</p>
+<p>多用于同一个网关接受来自不同的应用的访问请求，然后转发到对应的内部服务</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">cookie_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Host=**.somehost.org</span></span><br></pre></td></tr></table></figure>
+<p>该路由接受请求的Host匹配任意以 <code>somehost.org</code> 结尾的域名，比如 <code>www.somehost.org</code> 或 <code>beta.somehost.org</code></p>
+<blockquote>
+<p>端口属于Host的一部分，除 80 和 443外，其它都不能忽略</p>
+</blockquote>
+<h4 id="4-7-HttpMethod谓词器"><a href="#4-7-HttpMethod谓词器" class="headerlink" title="4.7 HttpMethod谓词器"></a>4.7 HttpMethod谓词器</h4><p>匹配是否满足指定的Http Method</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">method_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Method=GET</span></span><br></pre></td></tr></table></figure>
+<p>只接受GET请求</p>
+<h4 id="4-8-Path-路径-谓词器"><a href="#4-8-Path-路径-谓词器" class="headerlink" title="4.8 Path(路径)谓词器"></a>4.8 Path(路径)谓词器</h4><p>匹配请求的PATH(host后面的部分，不包括参数)是否满足指定的Path，匹配器采用的<a href="https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/util/PathMatcher.html" target="_blank" rel="noopener">PathMatcher</a>，本质上还是一个Ant Path Matcher</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">host_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Path=/foo/&#123;segment&#125;</span></span><br></pre></td></tr></table></figure>
+<p>比如该路由匹配 <code>/foo/1</code> 或 <code>/foo/bar</code>，并且匹配器还会把匹配到的值放到<code>segment</code>这个临时变量中，该变通可以通过<code>ServerWebExchange.getAttributes()</code>按该key<code>segment</code>取值</p>
+<h4 id="4-9-Query-参数-谓词器"><a href="#4-9-Query-参数-谓词器" class="headerlink" title="4.9 Query(参数)谓词器"></a>4.9 Query(参数)谓词器</h4><p>验证参数是否存在，也可以附加按正则表达式验证值的类型是否合法</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">query_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Query=baz</span></span><br></pre></td></tr></table></figure>
+<p>要求必须携带<code>baz</code>参数</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">query_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Query=foo,</span> <span class="string">ba.</span></span><br></pre></td></tr></table></figure>
+<p>要求必须携带<code>foo</code>参数，并且参数的值需要匹配 <code>ba.</code> 正则表达式，比如<code>bar</code> 或 <code>bsz</code></p>
+<h4 id="4-10-RemoteAddr-客户端ip-谓词器"><a href="#4-10-RemoteAddr-客户端ip-谓词器" class="headerlink" title="4.10 RemoteAddr(客户端ip)谓词器"></a>4.10 RemoteAddr(客户端ip)谓词器</h4><p>客户端访问ip必须在指定的ip范围内，该请求才被会路由。</p>
+<p>比如<code>192.168.0.1/16</code>, <code>192.168.0.1</code>为ip, <code>16</code>为子网掩码</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">remoteaddr_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">RemoteAddr=192.168.1.1/24</span></span><br></pre></td></tr></table></figure>
+<p>多个ip或网段，用<code>,</code>逗号连接</p>
+<p><a href="http://www.bejson.com/convert/subnetmask/" target="_blank" rel="noopener">在线网络计算器</a></p>
+<h5 id="4-10-1-修改RemoteAddr-客户端ip-的解析方式"><a href="#4-10-1-修改RemoteAddr-客户端ip-的解析方式" class="headerlink" title="4.10.1 修改RemoteAddr(客户端ip)的解析方式"></a>4.10.1 修改RemoteAddr(客户端ip)的解析方式</h5><p>如果网关在代理的后端，则网关从Header头中获取的 <code>X-Forwarded-For</code>ip 也许并不是客户端真实的ip地址。</p>
+<p>我们可以自定义实现接口<code>RemoteAddressResolver</code>以完成客户端ip的解析，在Spring Cloud Gateway中，提供了一个针对<code>X-Forwarded-For</code>的默认解析器<code>XForwardedRemoteAddressResolver</code></p>
+<p>XForwardedRemoteAddressResolver有两个构造方法</p>
+<ul>
+<li><code>XForwardedRemoteAddressResolver::trustAll</code> 永远只接收获取到从<code>X-Forwarded-For</code>获取到的第一个ip值，这种方式风险较高，比如客户端主动上传一个<code>X-Forwarded-For</code>的header上来，就可以模拟访问ip</li>
+<li><code>XForwardedRemoteAddressResolver::maxTrustedIndex</code> 绑定代理的层数，以nginx为例，比如Spring Cloud Gateway前面只代理了一层nginx，则该值就需要设置为1，如果nginx之前还有一层代理，则需要设置为2，以此类推，这个需要根据实际情况设置。</li>
+</ul>
+<p>比如以<code>X-Forwarded-For: 0.0.0.1, 0.0.0.2, 0.0.0.3</code>为例，则有以下结果</p>
+<table>
+<thead>
+<tr>
+<th>maxTrustedIndex</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Integer.MIN_VALUE,0]</td>
+<td>(invalid, IllegalArgumentException during initialization)</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0.0.0.3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0.0.0.2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.0.0.1</td>
+</tr>
+<tr>
+<td>[4, Integer.MAX_VALUE]</td>
+<td>0.0.0.1</td>
+</tr>
+</tbody>
+</table>
+<p>java代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">RemoteAddressResolver resolver = XForwardedRemoteAddressResolver</span><br><span class="line">    .maxTrustedIndex(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">.route(<span class="string">"direct-route"</span>,</span><br><span class="line">    r -&gt; r.remoteAddr(<span class="string">"10.1.1.1"</span>, <span class="string">"10.10.1.1/24"</span>)</span><br><span class="line">        .uri(<span class="string">"https://downstream1"</span>)</span><br><span class="line">.route(<span class="string">"proxied-route"</span>,</span><br><span class="line">    r -&gt; r.remoteAddr(resolver,  <span class="string">"10.10.1.1"</span>, <span class="string">"10.10.1.1/24"</span>)</span><br><span class="line">        .uri(<span class="string">"https://downstream2"</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h3 id="5-路由过滤器工厂"><a href="#5-路由过滤器工厂" class="headerlink" title="5. 路由过滤器工厂"></a>5. 路由过滤器工厂</h3><p>路由过滤器能够以某种方式允许修改进入的Http请求或输出的对外的Http响应。</p>
+<p>Spring Cloud Gateway包含许多内置的GatewayFilter工厂。</p>
+<h4 id="5-1-添加-RequestHeader-Filter"><a href="#5-1-添加-RequestHeader-Filter" class="headerlink" title="5.1 添加 RequestHeader Filter"></a>5.1 添加 RequestHeader Filter</h4><p>可以向请求中添加指定的Header</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">add_request_header_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">AddRequestHeader=X-Request-Foo,</span> <span class="string">Bar</span></span><br></pre></td></tr></table></figure>
+<p>该配置表示会向该路由中的下游请求中添加<code>X-Request-Foo:Bar</code>这个header</p>
+<h4 id="5-2-添加-RequestParameter-Filter"><a href="#5-2-添加-RequestParameter-Filter" class="headerlink" title="5.2 添加 RequestParameter Filter"></a>5.2 添加 RequestParameter Filter</h4><p>可以向请求中添加指定的Parameter</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">add_request_parameter_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">AddRequestParameter=foo,</span> <span class="string">bar</span></span><br></pre></td></tr></table></figure>
+<p>该配置表示会向该路由中的下游请求中添加<code>foo=bar</code>这个参数</p>
+<h4 id="5-3-添加-ResponseHeader-Filter"><a href="#5-3-添加-ResponseHeader-Filter" class="headerlink" title="5.3 添加 ResponseHeader Filter"></a>5.3 添加 ResponseHeader Filter</h4><p>可以向响应中添加指定的Header</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">add_request_header_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">AddResponseHeader=X-Response-Foo,</span> <span class="string">Bar</span></span><br></pre></td></tr></table></figure>
+<p>该配置表示会向该路由的响应中添加<code>X-Response-Foo:Bar</code>这个Header</p>
+<h4 id="5-4-Hystrix-Filter"><a href="#5-4-Hystrix-Filter" class="headerlink" title="5.4 Hystrix Filter"></a>5.4 Hystrix Filter</h4><p><strong><a href="https://github.com/Netflix/Hystrix" target="_blank" rel="noopener">Hystrix</a></strong> 由 Netflix 开源的一种<strong><a href="https://martinfowler.com/bliki/CircuitBreaker.html" target="_blank" rel="noopener">断路器模式</a></strong>的实现。Hystrix过滤器允许你在路由上启用熔断器，避免级联故障(雪崩效应)，或实现降级服务。</p>
+<p>如果要使用Hystrix的熔断服务，需要加入依赖<strong><a href="http://spring.io/projects/spring-cloud-netflix" target="_blank" rel="noopener">spring-cloud-starter-netflix-hystrix</a></strong></p>
+<p>熔断过滤器工厂只接收一个参数<code>HystrixCommand</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">hystrix_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Hystrix=myCommandName</span></span><br></pre></td></tr></table></figure>
+<p>以上配置表示， Hystrix过滤器的<code>HystrixCommand</code>为<code>myCommandName</code></p>
+<p>当然，Hystrix过滤器也接收一个可选参数<code>fallbackUri</code>，当前版本只支持<code>forward:</code>, 目前只支持内部URI匹配，如果进入降级，则会将当前请求转发到<code>forward:</code>之后内容匹配的内部controller方法，比如:</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">hystrix_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">lb://backing-service:8088</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Path=/consumingserviceendpoint</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="attr">        - name:</span> <span class="string">Hystrix</span></span><br><span class="line"><span class="attr">          args:</span></span><br><span class="line"><span class="attr">            name:</span> <span class="string">fallbackcmd</span></span><br><span class="line"><span class="attr">            fallbackUri:</span> <span class="attr">forward:/incaseoffailureusethis</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">RewritePath=/consumingserviceendpoint,</span> <span class="string">/backingserviceendpoint</span></span><br></pre></td></tr></table></figure>
+<p>就表明，如果发生熔断降级，则将请求发送到<code>/incaseoffailureusethis</code>URI匹配的controller方法。</p>
+<blockquote>
+<p>本配置中还包含了<code>Spring Cloud Netflix Ribbon</code>负载均衡的示例，URI前缀关键字<code>lb</code></p>
+</blockquote>
+<p>Hystrix的更多配置可以参考<a href="https://github.com/Netflix/Hystrix/wiki/Configuration" target="_blank" rel="noopener">Hystrix WIKI</a></p>
+<p>比如超时时间要设置为5秒钟，则可以配置全局变量<code>hystrix.command.fallbackcmd.execution.isolation.thread.timeoutInMilliseconds: 5000</code></p>
+<h4 id="5-5-PrefixPath-路径前缀-Filter"><a href="#5-5-PrefixPath-路径前缀-Filter" class="headerlink" title="5.5 PrefixPath(路径前缀) Filter"></a>5.5 PrefixPath(路径前缀) Filter</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">prefixpath_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">PrefixPath=/mypath</span></span><br></pre></td></tr></table></figure>
+<p>这配置表示，会在所有请求的路径之前添加 <code>/mypath</code>，比如请求的路径为<code>/hello</code>，则会修改为<code>/mypath/hello</code></p>
+<h4 id="5-6-PreserveHostHeader-保留请求Host-Header-Filter"><a href="#5-6-PreserveHostHeader-保留请求Host-Header-Filter" class="headerlink" title="5.6 PreserveHostHeader(保留请求Host Header)Filter"></a>5.6 PreserveHostHeader(保留请求Host Header)Filter</h4><p>是否向下传递原始 Host</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">preserve_host_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">PreserveHostHeader</span></span><br></pre></td></tr></table></figure>
+<h4 id="5-7-RequestRateLimiter-请求限流-GatewayFilter-Factory"><a href="#5-7-RequestRateLimiter-请求限流-GatewayFilter-Factory" class="headerlink" title="5.7 RequestRateLimiter(请求限流) GatewayFilter Factory"></a>5.7 RequestRateLimiter(请求限流) GatewayFilter Factory</h4><p>RequestRateLimiter工厂使用<code>RateLimiter</code>的实现去判断当前请求是否被接受，如果不被接受，则默认返回<code>HTTP 429 - Too Many Requests</code>。</p>
+<p>当前Filter支持可选参数<code>keyResolver</code>去自定义实现请求的唯一值判断标准。<code>keyResolver</code>是一个接口，需要自定义实现，在实现中定义Bean的时候，指定名称，如<code>myKeyResolver</code>，则可以在参数<code>keyResolver</code>的值中，通过SpEL表达式指定<code>#{@myKeyResolver}</code>于该Bean。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">KeyResolver</span> </span>&#123;</span><br><span class="line">	<span class="function">Mono&lt;String&gt; <span class="title">resolve</span><span class="params">(ServerWebExchange exchange)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>KeyResolver是允许可插拔的，未来会有更多的实现支持。</p>
+<p>当前<code>KeyResolver</code>默认实现是通过<code>PrincipalNameKeyResolver</code>从<code>ServerWebExchange</code>获取<code>Principal.getName()</code>来实现的。</p>
+<h5 id="5-7-1-Redis-RateLimiter-通过Redis限流"><a href="#5-7-1-Redis-RateLimiter-通过Redis限流" class="headerlink" title="5.7.1 Redis RateLimiter (通过Redis限流)"></a>5.7.1 Redis RateLimiter (通过Redis限流)</h5><p>Redis实现依赖于<code>spring-boot-starter-data-redis-reactive</code>，需要在pom.xml中引入该依赖。</p>
+<p>算法使用的是 <a href="https://baike.baidu.com/item/%E4%BB%A4%E7%89%8C%E6%A1%B6%E7%AE%97%E6%B3%95/6597000" target="_blank" rel="noopener">Token Bucket</a>算法</p>
+<p>参数<code>redis-rate-limiter.replenishRate</code>配置允许同一个用户每秒允许的请求次数。</p>
+<p>参数<code>redis-rate-limiter.burstCapacity</code>配置同一秒总共接收多少个用户同时访问。如果设置为0则禁止所有访问。</p>
+<p><code>burstCapacity</code>的优先级高于<code>replenishRate</code>，如果超出限制，请求会得到<code>HTTP 429 - Too Many Requests</code>响应。</p>
+<p>比如</p>
+<p>application.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">requestratelimiter_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="attr">        - name:</span> <span class="string">RequestRateLimiter</span></span><br><span class="line"><span class="attr">          args:</span></span><br><span class="line">            <span class="string">redis-rate-limiter.replenishRate:</span> <span class="number">10</span></span><br><span class="line">            <span class="string">redis-rate-limiter.burstCapacity:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure>
+<p>Config.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function">KeyResolver <span class="title">userKeyResolver</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> exchange -&gt; Mono.just(exchange.getRequest().getQueryParams().getFirst(<span class="string">"user"</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>该配置表示每秒钟只允许20独立用户访问，并且每个用户在同一秒钟内最多可以发起10次请求。</p>
+<p><code>KeyResolver</code>定义了用户的判断标准是从请求参数<code>user</code>中获取。(当前这是很简单的做法，生产环境不建议这样处理。)</p>
+<p>当然我们也可以实现<code>RateLimiter</code>接口来实现自己的限流器，配置方式和<code>KeyResolver</code>类似，也支持SpEL表达式。比如我们定义的Bean名称为<code>myRateLimiter</code>，则可以通过<code>#{@myRateLimiter}</code>来完成配置，示例配置如下：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">requestratelimiter_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="attr">        - name:</span> <span class="string">RequestRateLimiter</span></span><br><span class="line"><span class="attr">          args:</span></span><br><span class="line"><span class="attr">            rate-limiter:</span> <span class="string">"#&#123;@myRateLimiter&#125;"</span></span><br><span class="line"><span class="attr">            key-resolver:</span> <span class="string">"#&#123;@userKeyResolver&#125;"</span></span><br></pre></td></tr></table></figure>
+<h4 id="5-8-RedirectTo-重定向-GatewayFilter-Factory"><a href="#5-8-RedirectTo-重定向-GatewayFilter-Factory" class="headerlink" title="5.8 RedirectTo(重定向) GatewayFilter Factory"></a>5.8 RedirectTo(重定向) GatewayFilter Factory</h4><p>重定向过滤器工厂接收状态码和url这两个参数。</p>
+<ul>
+<li>状态码必须是30x系列的重定向http code，比如301,302;</li>
+<li>url也必须是一个有效的url</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">prefixpath_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">RedirectTo=302,</span> <span class="attr">http://acme.org</span></span><br></pre></td></tr></table></figure>
+<p>上面配置会向客户端发送一个http code为302，并且地址为<a href="http://acme.org" target="_blank" rel="noopener">http://acme.org</a> 的header请求</p>
+<h4 id="5-9-RemoveNonProxyHeaders-GatewayFilter-Factory"><a href="#5-9-RemoveNonProxyHeaders-GatewayFilter-Factory" class="headerlink" title="5.9 RemoveNonProxyHeaders GatewayFilter Factory"></a>5.9 RemoveNonProxyHeaders GatewayFilter Factory</h4><p>RemoveNonProxyHeaders GatewayFilter Factory 会交指定的headers从代理中移除。</p>
+<p>默认情况下会移除 <a href="https://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging-14#section-7.1.3" target="_blank" rel="noopener">IETF</a> 规则的所有headers, 如下:</p>
+<ul>
+<li>Connection</li>
+<li>Keep-Alive</li>
+<li>Proxy-Authenticate</li>
+<li>Proxy-Authorization</li>
+<li>TE</li>
+<li>Trailer</li>
+<li>Transfer-Encoding</li>
+<li>Upgrade</li>
+</ul>
+<p>可以通过设置配置<code>spring.cloud.gateway.filter.remove-non-proxy-headers.headers</code>来指定要移除的header列表</p>
+<h4 id="5-10-RemoveRequestHeader-移除请求Header-GatewayFilter-Factory"><a href="#5-10-RemoveRequestHeader-移除请求Header-GatewayFilter-Factory" class="headerlink" title="5.10 RemoveRequestHeader(移除请求Header) GatewayFilter Factory"></a>5.10 RemoveRequestHeader(移除请求Header) GatewayFilter Factory</h4><p>工厂类接收一个参数，指定要移除的header的名字</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">removerequestheader_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">RemoveRequestHeader=X-Request-Foo</span></span><br></pre></td></tr></table></figure>
+<p>比如该配置表示要移除<code>X-Request-Foo</code>这个header，不会向下传递。</p>
+<h4 id="5-11-RemoveResponseHeader-移除响应Header-GatewayFilter-Factory"><a href="#5-11-RemoveResponseHeader-移除响应Header-GatewayFilter-Factory" class="headerlink" title="5.11 RemoveResponseHeader(移除响应Header) GatewayFilter Factory"></a>5.11 RemoveResponseHeader(移除响应Header) GatewayFilter Factory</h4><p>工厂类接收一个参数，指定要移除的header的名字</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">removeresponseheader_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">RemoveResponseHeader=X-Response-Foo</span></span><br></pre></td></tr></table></figure>
+<p>比如该配置表示要移除<code>X-Response-Foo</code>这个header，不会返回给请求客户端</p>
+<h4 id="5-12-RewritePath-重写请求地址-GatewayFilter-Factory"><a href="#5-12-RewritePath-重写请求地址-GatewayFilter-Factory" class="headerlink" title="5.12 RewritePath(重写请求地址) GatewayFilter Factory"></a>5.12 RewritePath(重写请求地址) GatewayFilter Factory</h4><p>工厂接收两个参数</p>
+<ul>
+<li>路径匹配正则表达式</li>
+<li>替换参数</li>
+</ul>
+<p>整个匹配采用Java regular expressions来进行处理</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line"><span class="attr">  cloud:</span></span><br><span class="line"><span class="attr">    gateway:</span></span><br><span class="line"><span class="attr">      routes:</span></span><br><span class="line"><span class="attr">      - id:</span> <span class="string">rewritepath_route</span></span><br><span class="line"><span class="attr">        uri:</span> <span class="attr">http://example.org</span></span><br><span class="line"><span class="attr">        predicates:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">Path=/foo/**</span></span><br><span class="line"><span class="attr">        filters:</span></span><br><span class="line"><span class="bullet">        -</span> <span class="string">RewritePath=/foo/(?&lt;segment&gt;.*),</span> <span class="string">/$\&#123;segment&#125;</span></span><br></pre></td></tr></table></figure>
+<p>比如请求路径为<code>/foo/bar</code>， 在上面的配置中，则会向下替换成请求<code>/bar</code>这个路径</p>
+<blockquote>
+<p>在YAML中 <code>$\</code> 会被替换成 <code>$</code>，这是YAML语法的定义</p>
+</blockquote>
+<h4 id="5-13-SaveSession-GatewayFilter-Factory"><a href="#5-13-SaveSession-GatewayFilter-Factory" class="headerlink" title="5.13 SaveSession GatewayFilter Factory"></a>5.13 SaveSession GatewayFilter Factory</h4><p>The SaveSession GatewayFilter Factory forces a WebSession::save operation before forwarding the call downstream. This is of particular use when using something like Spring Session with a lazy data store and need to ensure the session state has been saved before making the forwarded call.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: save_session<br>​        uri: <a href="http://example.org" target="_blank" rel="noopener">http://example.org</a><br>​        predicates:<br>​        - Path=/foo/**<br>​        filters:<br>​        - SaveSession<br>If you are integrating Spring Security with Spring Session, and want to ensure security details have been forwarded to the remote process, this is critical.</p>
+<h4 id="5-14-SecureHeaders-GatewayFilter-Factory"><a href="#5-14-SecureHeaders-GatewayFilter-Factory" class="headerlink" title="5.14 SecureHeaders GatewayFilter Factory"></a>5.14 SecureHeaders GatewayFilter Factory</h4><p>The SecureHeaders GatewayFilter Factory adds a number of headers to the response at the reccomendation from this blog post.</p>
+<p>The following headers are added (allong with default values):</p>
+<p>X-Xss-Protection:1; mode=block<br>Strict-Transport-Security:max-age=631138519<br>X-Frame-Options:DENY<br>X-Content-Type-Options:nosniff<br>Referrer-Policy:no-referrer<br>Content-Security-Policy:default-src ‘self’ https:; font-src ‘self’ https: data:; img-src ‘self’ https: data:; object-src ‘none’; script-src https:; style-src ‘self’ https: ‘unsafe-inline’<br>X-Download-Options:noopen<br>X-Permitted-Cross-Domain-Policies:none<br>To change the default values set the appropriate property in the spring.cloud.gateway.filter.secure-headers namespace:</p>
+<p>Property to change:</p>
+<p>xss-protection-header<br>strict-transport-security<br>frame-options<br>content-type-options<br>referrer-policy<br>content-security-policy<br>download-options<br>permitted-cross-domain-policies</p>
+<h4 id="5-15-SetPath-GatewayFilter-Factory"><a href="#5-15-SetPath-GatewayFilter-Factory" class="headerlink" title="5.15 SetPath GatewayFilter Factory"></a>5.15 SetPath GatewayFilter Factory</h4><p>The SetPath GatewayFilter Factory takes a path template parameter. It offers a simple way to manipulate the request path by allowing templated segments of the path. This uses the uri templates from Spring Framework. Multiple matching segments are allowed.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: setpath_route<br>​        uri: <a href="http://example.org" target="_blank" rel="noopener">http://example.org</a><br>​        predicates:<br>​        - Path=/foo/{segment}<br>​        filters:<br>​        - SetPath=/{segment}<br>For a request path of /foo/bar, this will set the path to /bar before making the downstream request.</p>
+<h4 id="5-16-SetResponseHeader-GatewayFilter-Factory"><a href="#5-16-SetResponseHeader-GatewayFilter-Factory" class="headerlink" title="5.16 SetResponseHeader GatewayFilter Factory"></a>5.16 SetResponseHeader GatewayFilter Factory</h4><p>The SetResponseHeader GatewayFilter Factory takes name and value parameters.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: setresponseheader_route<br>​        uri: <a href="http://example.org" target="_blank" rel="noopener">http://example.org</a><br>​        filters:<br>​        - SetResponseHeader=X-Response-Foo, Bar<br>This GatewayFilter replaces all headers with the given name, rather than adding. So if the downstream server responded with a X-Response-Foo:1234, this would be replaced with X-Response-Foo:Bar, which is what the gateway client would receive.</p>
+<h4 id="5-17-SetStatus-GatewayFilter-Factory"><a href="#5-17-SetStatus-GatewayFilter-Factory" class="headerlink" title="5.17 SetStatus GatewayFilter Factory"></a>5.17 SetStatus GatewayFilter Factory</h4><p>The SetStatus GatewayFilter Factory takes a single status parameter. It must be a valid Spring HttpStatus. It may be the integer value 404 or the string representation of the enumeration NOT_FOUND.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: setstatusstring_route<br>​        uri: <a href="http://example.org" target="_blank" rel="noopener">http://example.org</a><br>​        filters:<br>​        - SetStatus=BAD_REQUEST<br>​      - id: setstatusint_route<br>​        uri: <a href="http://example.org" target="_blank" rel="noopener">http://example.org</a><br>​        filters:<br>​        - SetStatus=401<br>In either case, the HTTP status of the response will be set to 401.</p>
+<h4 id="5-18-StripPrefix-GatewayFilter-Factory"><a href="#5-18-StripPrefix-GatewayFilter-Factory" class="headerlink" title="5.18 StripPrefix GatewayFilter Factory"></a>5.18 StripPrefix GatewayFilter Factory</h4><p>The StripPrefix GatewayFilter Factory takes one paramter, parts. The parts parameter indicated the number of parts in the path to strip from the request before sending it downstream.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: nameRoot<br>​        uri: <a href="http://nameservice" target="_blank" rel="noopener">http://nameservice</a><br>​        predicates:<br>​        - Path=/name/**<br>​        filters:<br>​        - StripPrefix=2<br>When a request is made through the gateway to /name/bar/foo the request made to nameservice will look like <a href="http://nameservice/foo" target="_blank" rel="noopener">http://nameservice/foo</a>.</p>
+<h4 id="5-19-Retry-GatewayFilter-Factory"><a href="#5-19-Retry-GatewayFilter-Factory" class="headerlink" title="5.19 Retry GatewayFilter Factory"></a>5.19 Retry GatewayFilter Factory</h4><p>The Retry GatewayFilter Factory takes retries, statuses, methods, and series as parameters.</p>
+<p>retries: the number of retries that should be attempted<br>statuses: the HTTP status codes that should be retried, represented using org.springframework.http.HttpStatus<br>methods: the HTTP methods that should be retried, represented using org.springframework.http.HttpMethod<br>series: the series of status codes to be retried, represented using org.springframework.http.HttpStatus.Series<br>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: retry_test<br>​        uri: <a href="http://localhost:8080/flakey" target="_blank" rel="noopener">http://localhost:8080/flakey</a><br>​        predicates:<br>​        - Host=*.retry.com<br>​        filters:<br>​        - name: Retry<br>​          args:<br>​            retries: 3<br>​            statuses: BAD_GATEWAY<br>[Note]<br>At this time a URI using the forward protocol does not support using the retry filter.</p>
+<h3 id="6-Global-Filters"><a href="#6-Global-Filters" class="headerlink" title="6. Global Filters"></a>6. Global Filters</h3><p>The GlobalFilter interface has the same signature as GatewayFilter. These are special filters that are conditionally applied to all routes. (This interface and usage are subject to change in future milestones).</p>
+<h4 id="6-1-Combined-Global-Filter-and-GatewayFilter-Ordering"><a href="#6-1-Combined-Global-Filter-and-GatewayFilter-Ordering" class="headerlink" title="6.1 Combined Global Filter and GatewayFilter Ordering"></a>6.1 Combined Global Filter and GatewayFilter Ordering</h4><p>When a request comes in (and matches a Route) the Filtering Web Handler will add all instances of GlobalFilter and all route specific instances of GatewayFilter to a filter chain. This combined filter chain is sorted by the org.springframework.core.Ordered interface, which can be set by implementing the getOrder() method or by using the @Order annotation.</p>
+<p>As Spring Cloud Gateway distinguishes between “pre” and “post” phases for filter logic execution (see: How It Works), the filter with the highest precedence will be the first in the “pre”-phase and the last in the “post”-phase.</p>
+<p>ExampleConfiguration.java. </p>
+<p>@Bean<br>@Order(-1)<br>public GlobalFilter a() {<br>​    return (exchange, chain) -&gt; {<br>​        log.info(“first pre filter”);<br>​        return chain.filter(exchange).then(Mono.fromRunnable(() -&gt; {<br>​            log.info(“third post filter”);<br>​        }));<br>​    };<br>}</p>
+<p>@Bean<br>@Order(0)<br>public GlobalFilter b() {<br>​    return (exchange, chain) -&gt; {<br>​        log.info(“second pre filter”);<br>​        return chain.filter(exchange).then(Mono.fromRunnable(() -&gt; {<br>​            log.info(“second post filter”);<br>​        }));<br>​    };<br>}</p>
+<p>@Bean<br>@Order(1)<br>public GlobalFilter c() {<br>​    return (exchange, chain) -&gt; {<br>​        log.info(“third pre filter”);<br>​        return chain.filter(exchange).then(Mono.fromRunnable(() -&gt; {<br>​            log.info(“first post filter”);<br>​        }));<br>​    };<br>}</p>
+<h4 id="6-2-Forward-Routing-Filter"><a href="#6-2-Forward-Routing-Filter" class="headerlink" title="6.2 Forward Routing Filter"></a>6.2 Forward Routing Filter</h4><p>The ForwardRoutingFilter looks for a URI in the exchange attribute ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR. If the url has a forward scheme (ie forward:///localendpoint), it will use the Spring DispatcherHandler to handler the request. The path part of the request URL will be overridden with the path in the forward URL. The unmodified original url is appended to the list in the ServerWebExchangeUtils.GATEWAY_ORIGINAL_REQUEST_URL_ATTR attribute.</p>
+<h4 id="6-3-LoadBalancerClient-Filter"><a href="#6-3-LoadBalancerClient-Filter" class="headerlink" title="6.3 LoadBalancerClient Filter"></a>6.3 LoadBalancerClient Filter</h4><p>The LoadBalancerClientFilter looks for a URI in the exchange attribute ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR. If the url has a lb scheme (ie lb://myservice), it will use the Spring Cloud LoadBalancerClient to resolve the name (myservice in the previous example) to an actual host and port and replace the URI in the same attribute. The unmodified original url is appended to the list in the ServerWebExchangeUtils.GATEWAY_ORIGINAL_REQUEST_URL_ATTR attribute. The filter will also look in the ServerWebExchangeUtils.GATEWAY_SCHEME_PREFIX_ATTR attribute to see if it equals lb and then the same rules apply.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: myRoute<br>​        uri: lb://service<br>​        predicates:<br>​        - Path=/service/**</p>
+<h4 id="6-4-Netty-Routing-Filter"><a href="#6-4-Netty-Routing-Filter" class="headerlink" title="6.4 Netty Routing Filter"></a>6.4 Netty Routing Filter</h4><p>The Netty Routing Filter runs if the url located in the ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR exchange attribute has a http or https scheme. It uses the Netty HttpClient to make the downstream proxy request. The response is put in the ServerWebExchangeUtils.CLIENT_RESPONSE_ATTR exchange attribute for use in a later filter. (There is an experimental WebClientHttpRoutingFilter that performs the same function, but does not require netty)</p>
+<h4 id="6-5-Netty-Write-Response-Filter"><a href="#6-5-Netty-Write-Response-Filter" class="headerlink" title="6.5 Netty Write Response Filter"></a>6.5 Netty Write Response Filter</h4><p>The NettyWriteResponseFilter runs if there is a Netty HttpClientResponse in the ServerWebExchangeUtils.CLIENT_RESPONSE_ATTR exchange attribute. It is run after all other filters have completed and writes the proxy response back to the gateway client response. (There is an experimental WebClientWriteResponseFilter that performs the same function, but does not require netty)</p>
+<h4 id="6-6-RouteToRequestUrl-Filter"><a href="#6-6-RouteToRequestUrl-Filter" class="headerlink" title="6.6 RouteToRequestUrl Filter"></a>6.6 RouteToRequestUrl Filter</h4><p>The RouteToRequestUrlFilter runs if there is a Route object in the ServerWebExchangeUtils.GATEWAY_ROUTE_ATTR exchange attribute. It creates a new URI, based off of the request URI, but updated with the URI attribute of the Route object. The new URI is placed in the ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR exchange attribute`.</p>
+<p>If the URI has a scheme prefix, such as lb:ws://serviceid, the lb scheme is stripped from the URI and placed in the ServerWebExchangeUtils.GATEWAY_SCHEME_PREFIX_ATTR for use later in the filter chain.</p>
+<h4 id="6-7-Websocket-Routing-Filter"><a href="#6-7-Websocket-Routing-Filter" class="headerlink" title="6.7 Websocket Routing Filter"></a>6.7 Websocket Routing Filter</h4><p>The Websocket Routing Filter runs if the url located in the ServerWebExchangeUtils.GATEWAY_REQUEST_URL_ATTR exchange attribute has a ws or wss scheme. It uses the Spring Web Socket infrastructure to forward the Websocket request downstream.</p>
+<p>Websockets may be load-balanced by prefixing the URI with lb, such as lb:ws://serviceid.</p>
+<p>[Note]<br>If you are using SockJS as a fallback over normal http, you should configure a normal HTTP route as well as the Websocket Route.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      # SockJS route<br>​      - id: websocket_sockjs_route<br>​        uri: <a href="http://localhost:3001" target="_blank" rel="noopener">http://localhost:3001</a><br>​        predicates:<br>​        - Path=/websocket/info/<strong><br>​      # Normwal Websocket route<br>​      - id: websocket_route<br>​        uri: ws://localhost:3001<br>​        predicates:<br>​        - Path=/websocket/</strong></p>
+<h4 id="6-8-Gateway-Metrics-Filter"><a href="#6-8-Gateway-Metrics-Filter" class="headerlink" title="6.8 Gateway Metrics Filter"></a>6.8 Gateway Metrics Filter</h4><p>To enable Gateway Metrics add spring-boot-starter-actuator as a project dependency. Then, by default, the Gateway Metrics Filter runs as long as the property spring.cloud.gateway.metrics.enabled is not set to false. This filter adds a timer metric named “gateway.requests” with the following tags:</p>
+<p>routeId: The route id<br>routeUri: The URI that the API will be routed to<br>outcome: Outcome as classified by HttpStatus.Series<br>status: Http Status of the request returned to the client<br>These metrics are then available to be scraped from /actuator/metrics/gateway.requests and can be easily integated with Prometheus to create a Grafana dashboard.</p>
+<p>[Note]<br>To enable the pometheus endpoint add micrometer-registry-prometheus as a project dependency.</p>
+<h4 id="6-9-Making-An-Exchange-As-Routed"><a href="#6-9-Making-An-Exchange-As-Routed" class="headerlink" title="6.9 Making An Exchange As Routed"></a>6.9 Making An Exchange As Routed</h4><p>After the Gateway has routed a ServerWebExchange it will mark that exchange as “routed” by adding gatewayAlreadyRouted to the exchange attributes. Once a request has been marked as routed, other routing filters will not route the request again, essentially skipping the filter. There are convenience methods that you can use to mark an exchange as routed or check if an exchange has already been routed.</p>
+<p>ServerWebExchangeUtils.isAlreadyRouted takes a ServerWebExchange object and checks if it has been “routed”<br>ServerWebExchangeUtils.setAlreadyRouted takes a ServerWebExchange object and marks it as “routed”</p>
+<h3 id="7-TLS-SSL"><a href="#7-TLS-SSL" class="headerlink" title="7. TLS / SSL"></a>7. TLS / SSL</h3><p>The Gateway can listen for requests on https by following the usual Spring server configuration. Example:</p>
+<p>application.yml. </p>
+<p>server:<br>  ssl:<br>​    enabled: true<br>​    key-alias: scg<br>​    key-store-password: scg1234<br>​    key-store: classpath:scg-keystore.p12<br>​    key-store-type: PKCS12<br>Gateway routes can be routed to both http and https backends. If routing to a https backend then the Gateway can be configured to trust all downstream certificates with the following configuration:</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      httpclient:<br>​        ssl:<br>​          useInsecureTrustManager: true<br>Using an insecure trust manager is not suitable for production. For a production deployment the Gateway can be configured with a set of known certificates that it can trust with the follwing configuration:</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      httpclient:<br>​        ssl:<br>​          trustedX509Certificates:<br>​          - cert1.pem<br>​          - cert2.pem</p>
+<h3 id="8-Configuration"><a href="#8-Configuration" class="headerlink" title="8. Configuration"></a>8. Configuration</h3><p>Configuration for Spring Cloud Gateway is driven by a collection of <code>RouteDefinitionLocator</code>s.</p>
+<p>RouteDefinitionLocator.java. </p>
+<p>public interface RouteDefinitionLocator {<br>​    Flux<routedefinition> getRouteDefinitions();<br>}<br>By default, a PropertiesRouteDefinitionLocator loads properties using Spring Boot’s @ConfigurationProperties mechanism.</routedefinition></p>
+<p>The configuration examples above all use a shortcut notation that uses positional arguments rather than named ones. The two examples below are equivalent:</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      routes:<br>​      - id: setstatus_route<br>​        uri: <a href="http://example.org" target="_blank" rel="noopener">http://example.org</a><br>​        filters:<br>​        - name: SetStatus<br>​          args:<br>​            status: 401<br>​      - id: setstatusshortcut_route<br>​        uri: <a href="http://example.org" target="_blank" rel="noopener">http://example.org</a><br>​        filters:<br>​        - SetStatus=401<br>For some usages of the gateway, properties will be adequate, but some production use cases will benefit from loading configuration from an external source, such as a database. Future milestone versions will have RouteDefinitionLocator implementations based off of Spring Data Repositories such as: Redis, MongoDB and Cassandra.</p>
+<h4 id="8-1-Fluent-Java-Routes-API"><a href="#8-1-Fluent-Java-Routes-API" class="headerlink" title="8.1 Fluent Java Routes API"></a>8.1 Fluent Java Routes API</h4><p>To allow for simple configuration in Java, there is a fluent API defined in the RouteLocatorBuilder bean.</p>
+<p>GatewaySampleApplication.java. </p>
+<p>// static imports from GatewayFilters and RoutePredicates<br>@Bean<br>public RouteLocator customRouteLocator(RouteLocatorBuilder builder, ThrottleGatewayFilterFactory throttle) {<br>​    return builder.routes()<br>​            .route(r -&gt; r.host(“<strong>.abc.org”).and().path(“/image/png”)<br>​                .filters(f -&gt;<br>​                        f.addResponseHeader(“X-TestHeader”, “foobar”))<br>​                .uri(“<a href="http://httpbin.org:80&quot;" target="_blank" rel="noopener">http://httpbin.org:80&quot;</a>)<br>​            )<br>​            .route(r -&gt; r.path(“/image/webp”)<br>​                .filters(f -&gt;<br>​                        f.addResponseHeader(“X-AnotherHeader”, “baz”))<br>​                .uri(“<a href="http://httpbin.org:80&quot;" target="_blank" rel="noopener">http://httpbin.org:80&quot;</a>)<br>​            )<br>​            .route(r -&gt; r.order(-1)<br>​                .host(“</strong>.throttle.org”).and().path(“/get”)<br>​                .filters(f -&gt; f.filter(throttle.apply(1,<br>​                        1,<br>​                        10,<br>​                        TimeUnit.SECONDS)))<br>​                .uri(“<a href="http://httpbin.org:80&quot;" target="_blank" rel="noopener">http://httpbin.org:80&quot;</a>)<br>​            )<br>​            .build();<br>}<br>This style also allows for more custom predicate assertions. The predicates defined by RouteDefinitionLocator beans are combined using logical and. By using the fluent Java API, you can use the and(), or() and negate() operators on the Predicate class.</p>
+<h4 id="8-2-DiscoveryClient-Route-Definition-Locator"><a href="#8-2-DiscoveryClient-Route-Definition-Locator" class="headerlink" title="8.2 DiscoveryClient Route Definition Locator"></a>8.2 DiscoveryClient Route Definition Locator</h4><p>The Gateway can be configured to create routes based on services registered with a DiscoveryClient compatible service registry.</p>
+<p>To enable this, set spring.cloud.gateway.discovery.locator.enabled=true and make sure a DiscoveryClient implementation is on the classpath and enabled (such as Netflix Eureka, Consul or Zookeeper).</p>
+<h3 id="9-CORS-Configuration"><a href="#9-CORS-Configuration" class="headerlink" title="9. CORS Configuration"></a>9. CORS Configuration</h3><p>The gateway can be configured to control CORS behavior. The “global” CORS configuration is a map of URL patterns to Spring Framework CorsConfiguration.</p>
+<p>application.yml. </p>
+<p>spring:<br>  cloud:<br>​    gateway:<br>​      globalcors:<br>​        corsConfigurations:<br>​          ‘[/**]’:<br>​            allowedOrigins: “docs.spring.io”<br>​            allowedMethods:<br>​            - GET<br>In the example above, CORS requests will be allowed from requests that originate from docs.spring.io for all GET requested paths.</p>
+<h3 id="10-Actuator-API"><a href="#10-Actuator-API" class="headerlink" title="10. Actuator API"></a>10. Actuator API</h3><p>TODO: document the /gateway actuator endpoint</p>
+<h3 id="11-Developer-Guide"><a href="#11-Developer-Guide" class="headerlink" title="11. Developer Guide"></a>11. Developer Guide</h3><p>TODO: overview of writing custom integrations</p>
+<h4 id="11-1-Writing-Custom-Route-Predicate-Factories"><a href="#11-1-Writing-Custom-Route-Predicate-Factories" class="headerlink" title="11.1 Writing Custom Route Predicate Factories"></a>11.1 Writing Custom Route Predicate Factories</h4><p>TODO: document writing Custom Route Predicate Factories</p>
+<h4 id="11-2-Writing-Custom-GatewayFilter-Factories"><a href="#11-2-Writing-Custom-GatewayFilter-Factories" class="headerlink" title="11.2 Writing Custom GatewayFilter Factories"></a>11.2 Writing Custom GatewayFilter Factories</h4><p>In order to write a GatewayFilter you will need to implement GatewayFilterFactory. There is an abstract class called AbstractGatewayFilterFactory which you can extend.</p>
+<p>PreGatewayFilterFactory.java. </p>
+<p>public class PreGatewayFilterFactory extends AbstractGatewayFilterFactory&lt;PreGatewayFilterFactory.Config&gt; {</p>
+<pre><code>public PreGatewayFilterFactory() {
+    super(Config.class);
+}
+
+@Override
+public GatewayFilter apply(Config config) {
+    // grab configuration from Config object
+    return (exchange, chain) -&gt; {
+        //If you want to build a &quot;pre&quot; filter you need to manipulate the
+        //request before calling change.filter
+        ServerHttpRequest.Builder builder = exchange.getRequest().mutate();
+        //use builder to manipulate the request
+        return chain.filter(exchange.mutate().request(request).build());
+    };
+}
+
+public static class Config {
+    //Put the configuration properties for your filter here
+}
+</code></pre><p>}<br>PostGatewayFilterFactory.java. </p>
+<p>public class PostGatewayFilterFactory extends AbstractGatewayFilterFactory&lt;PostGatewayFilterFactory.Config&gt; {</p>
+<pre><code>public PostGatewayFilterFactory() {
+    super(Config.class);
+}
+
+@Override
+public GatewayFilter apply(Config config) {
+    // grab configuration from Config object
+    return (exchange, chain) -&gt; {
+        return chain.filter(exchange).then(Mono.fromRunnable(() -&gt; {
+            ServerHttpResponse response = exchange.getResponse();
+            //Manipulate the response in some way
+        }));
+    };
+}
+
+public static class Config {
+    //Put the configuration properties for your filter here
+}
+</code></pre><p>}</p>
+<h4 id="11-3-Writing-Custom-Global-Filters"><a href="#11-3-Writing-Custom-Global-Filters" class="headerlink" title="11.3 Writing Custom Global Filters"></a>11.3 Writing Custom Global Filters</h4><p>TODO: document writing Custom Global Filters</p>
+<h4 id="11-4-Writing-Custom-Route-Locators-and-Writers"><a href="#11-4-Writing-Custom-Route-Locators-and-Writers" class="headerlink" title="11.4 Writing Custom Route Locators and Writers"></a>11.4 Writing Custom Route Locators and Writers</h4><p>TODO: document writing Custom Route Locators and Writers</p>
+<h3 id="12-Building-a-Simple-Gateway-Using-Spring-MVC-or-Webflux"><a href="#12-Building-a-Simple-Gateway-Using-Spring-MVC-or-Webflux" class="headerlink" title="12. Building a Simple Gateway Using Spring MVC or Webflux"></a>12. Building a Simple Gateway Using Spring MVC or Webflux</h3><p>Spring Cloud Gateway provides a utility object called ProxyExchange which you can use inside a regular Spring web handler as a method parameter. It supports basic downstream HTTP exchanges via methods that mirror the HTTP verbs. With MVC it also supports forwarding to a local handler via the forward() method. To use the ProxyExchange just include the right module in your classpath (either spring-cloud-gateway-mvc or spring-cloud-gateway-webflux).</p>
+<p>MVC example (proxying a request to “/test” downstream to a remote server):</p>
+<p>@RestController<br>@SpringBootApplication<br>public class GatewaySampleApplication {</p>
+<pre><code>@Value(&quot;${remote.home}&quot;)
+private URI home;
+
+@GetMapping(&quot;/test&quot;)
+public ResponseEntity&lt;?&gt; proxy(ProxyExchange&lt;byte[]&gt; proxy) throws Exception {
+    return proxy.uri(home.toString() + &quot;/image/png&quot;).get();
+}
+</code></pre><p>}<br>The same thing with Webflux:</p>
+<p>@RestController<br>@SpringBootApplication<br>public class GatewaySampleApplication {</p>
+<pre><code>@Value(&quot;${remote.home}&quot;)
+private URI home;
+
+@GetMapping(&quot;/test&quot;)
+public Mono&lt;ResponseEntity&lt;?&gt;&gt; proxy(ProxyExchange&lt;byte[]&gt; proxy) throws Exception {
+    return proxy.uri(home.toString() + &quot;/image/png&quot;).get();
+}
+</code></pre><p>}<br>There are convenience methods on the ProxyExchange to enable the handler method to discover and enhance the URI path of the incoming request. For example you might want to extract the trailing elements of a path to pass them downstream:</p>
+<p>@GetMapping(“/proxy/path/**”)<br>public ResponseEntity&lt;?&gt; proxyPath(ProxyExchange&lt;byte[]&gt; proxy) throws Exception {<br>  String path = proxy.path(“/proxy/path/“);<br>  return proxy.uri(home.toString() + “/foos/“ + path).get();<br>}<br>All the features of Spring MVC or Webflux are available to Gateway handler methods. So you can inject request headers and query parameters, for instance, and you can constrain the incoming requests with declarations in the mapping annotation. See the documentation for @RequestMapping in Spring MVC for more details of those features.</p>
+<p>Headers can be added to the downstream response using the header() methods on ProxyExchange.</p>
+<p>You can also manipulate response headers (and anything else you like in the response) by adding a mapper to the get() etc. method. The mapper is a Function that takes the incoming ResponseEntity and converts it to an outgoing one.</p>
+<p>First class support is provided for “sensitive” headers (“cookie” and “authorization” by default) which are not passed downstream, and for “proxy” headers (x-forwarded-*).</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2019/01/04/ssh/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+        <section id="reward-box">
+          <img class="ali" src="/resources/images/defei_alipay.png?raw=true" />
+          <span class="support-author">写作不易，谢谢支持</span>
+          <img class="wechat" src="/resources/images/defei_wechatPay.png?raw=true" />
+        </section>
+
+    </article>
+</main>
+
+
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Codelogger 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+        <section>
+            <a target="_blank" href="//info.flagcounter.com/hIg9">
+                <img src="//s01.flagcounter.com/count/hIg9/bg_F7FAFB/txt_000000/border_F7FAFB/columns_4/maxflags_8/viewers_3/labels_0/pageviews_1/flags_0/" alt="Flag Counter" border="0" style="opacity: 1;" lightbox='false'>
+            </a>
+        </section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
