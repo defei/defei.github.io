@@ -1085,6 +1085,11 @@ span.ds-thread-count:after {
     }
 }
 
+#reward-box .reward-box-qr-container{
+    display: none;
+    margin-top: 10px;
+}
+
 #reward-box img.ali{
     border: 10px solid #009fe4;
 }

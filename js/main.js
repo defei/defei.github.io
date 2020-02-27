@@ -249,6 +249,9 @@ function afterPjax() {
         $('.nexus').css('width', 'auto');
     }
 
+    $("#support-author").click(function () {
+        $("#reward-box .reward-box-qr-container").show();
+    });
 };
 //      PJAX init
 $(document).pjax('a[data-pjax]', '.container', { fragment: '.container', timeout: 10000 });
