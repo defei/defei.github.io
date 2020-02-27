@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>快速创建一个Java Web项目 | Codelogger</title>
+  <title>Archives: 2020 | Codelogger</title>
   <meta name="description" content="Recored every thing." />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -486,7 +486,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">快速创建一个Java Web项目</a></li>
+                        <li id="navbar-title"><a href="#">undefined</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -505,115 +505,58 @@
 
 
 
-
 <main class="content" role="main">
-    <article class="post" >
-    <span class="post-meta">
-                  <div class="tag-tile">
-                      
-                      
-                      <a data-pjax href='/tags/web项目/' style='color:#D5D5D5'>web项目</a>
-                      
-                      <a data-pjax href='/tags/Web相关概念/' style='color:#D5D5D5'>Web相关概念</a>
-                      
-                      
-                  </div>
-                <h1 class="post-title" style="margin: 14px 0;color:#50585D">快速创建一个Java Web项目</h1>
 
-                    <div class="post-meta">
-                        Post on<span class="fa fa-clock-o"></span>
-                        <time datetime="2015-01-06T03:34:08.000Z"
-                              itemprop="datePublished">2015-01-06 11:34</time>
-                    </div>
-    </span>
+    
+    <article class="post">
 
-        <section class="post-content">
-            <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>有了Maven管理项目，要创建一个Java Project已经是非常方便的了，我在github上面托管了几个用codelogger框架（基于Hibernate和Spring MVC）创建的项目demo ，有需要的朋友可以clone下来看一看。</p>
-<h4 id="DEMO下载"><a href="#DEMO下载" class="headerlink" title="DEMO下载"></a>DEMO下载</h4><ol>
-<li>传统Java Web项目，页面是在服务器端生成的，这样处理的好处是方便做seo及权限管理，坏处是加大服务器资源消耗，响应缓慢。</li>
-<li><a href="https://github.com/defei/web-demo-angular" target="_blank" rel="noopener">基于AngularJs的Java Web项目</a>，服务器只提供REST接口，不负责页面内容的展示，好处是响应快速，富客户端，轻服务器端，但SEO和权限管理相对不太方便。</li>
-</ol>
-<blockquote>
-<p>如果你不知道Git是什么的话，请阅读<a href="http://gitref.org/zh/index.html" target="_blank" rel="noopener">Git参考手册</a>，以后对项目的管理很多都会用到Git。</p>
-</blockquote>
-<p>将上面的项目clone到本地，用IDE导入Maven项目，然后选择这个项目就可以了，以Eclipse为例：<strong>File &gt; Import… &gt; Maven - Existing Maven Projects &gt; Next &gt; Browse.. &gt; 选择项目(根目含pom.xml)  &gt; Finishh</strong>，然后就可以在IDE里查看源码及进行后续的开发了。</p>
-<h4 id="什么是WEB-Project"><a href="#什么是WEB-Project" class="headerlink" title="什么是WEB Project"></a>什么是WEB Project</h4><p>Web Project一共分两种，一个是静态的，一种是动态的。上面两个WEB项目都是Java Dynamic Web project。</p>
-<p>动态web project提供后台交互服务，能够根据页面的请求，返回或存储数据，这样用户以后再次访问站点的时候，能得到之前的数据。Java EE动态项目提供servlets,、JSP files、 filters及相关资源，而静态网站则只包含静态的资源，不提供数据的交互服务。静态项目后期可以转为动态项目，动态项目只有在移除掉所有动态特性后才能转为静态项目。</p>
-<p>Jave EE项目按照Java Servlet标准，创建好对应的目录及文件，就可以部署到支持servlet的web容器（如tomcat，jetty)中运行，一般情况下都是将整个项目打包为war包进行部署。</p>
-<h4 id="Jave-Servlet标准"><a href="#Jave-Servlet标准" class="headerlink" title="Jave Servlet标准"></a>Jave Servlet标准</h4><p>可运行的JaveEE 主文件夹(maven中是<em>src/main/webapp</em>)下面包含：</p>
-<ol>
-<li><strong>META-INF</strong>：该文件夹下面包含MANIFEST.MF文件，该文件用于映射项目依赖的class path和jar地址（jar可以放在任意有权限访问的目录，maven的目录默认是用户目录下的.m2文件夹），在打包的时候会根据这些映射，分别将class path放到WEB-INF/classes目录下，依赖的jar放到WEB-INF/lib目录下。</li>
-<li><strong>WEB-INF</strong>：该文件夹一般用于放置web项目的配置文件，并且必须包含web.xml，用于配置该web项目的信息。</li>
-</ol>
-<p>以及相应的html或jsp文件、css和js，如果不在该目录或其子目录里的文件是不能被访问的。</p>
-<blockquote>
-<p>需要注意的一点就是WEB-INF目录下的资源，程序外部是不能访问的，意思也就是说只能web程序内部访问，通过url(<code>http://codelogger.org/WEB-INF/web.xml</code>)访问是不行的。</p>
-</blockquote>
-<h4 id="Web项目工作流程"><a href="#Web项目工作流程" class="headerlink" title="Web项目工作流程"></a>Web项目工作流程</h4><p>Java Web项目工作流程如下图所示：</p>
-<p><img src="/resources/images/web-requestHandling.gif?raw=true" alt="*Java Web Request Handling"></p>
-<ol>
-<li><strong>Web Client</strong>: 客户端，所以可以发送Http Request请求的客户端，如浏览器，HttpClient程序。</li>
-<li><strong>Web Components</strong>: 接收客户端发起的Http Request，在数据处理完成后，返回Http Response到客户端。</li>
-<li><strong>JavaBeans Components</strong>: 受Web Components管理的Java程序，在Web Component接收到Web Client请求后，根据其请求，调用相应的JavaBean Component做相应的逻辑与数据操作。</li>
-<li><strong>DateBase</strong>：数据库，提供接口，可由Web Components或JavaBeans Component调用，进行数据查询或存储。DateBase只是一个抽象，可以具体到文件系统等，并不仅限于传统的数据库。</li>
-</ol>
-<h4 id="需要了解的一点概念"><a href="#需要了解的一点概念" class="headerlink" title="需要了解的一点概念"></a>需要了解的一点概念</h4><p>做Web开发，下面一些概念你是需要了解的。</p>
-<h5 id="session"><a href="#session" class="headerlink" title="session"></a><em>session</em></h5><p>session常用语叫做 _会话_，一般用于存储用户信息。</p>
-<p>比如你登陆淘宝，你和淘宝之间的一系列交互就是一次session，在这个session中，你登陆一次之后，淘宝就知道你是谁了，不用你重复登陆，因为你所有的交互都是在同一个session内。但是，在长时间不进行任何操作的情况下（或关掉浏览器，重新打开），淘宝会要求你重新登陆，以验证你的身份。</p>
-<p>所以，<strong>session是有唯一性和时间性的</strong>。</p>
-<p>当你第一次访问网站的时候，网站会分配给你一个session-id用于确认你是谁，如果这个网站的session时间是10分钟，如果你在10分钟之内都没的和服务器有任何交互的话，这个session就失效了，好比一个陌生人和你打招呼，你在短时间内还能认识他，时长一长，你也就不记得他了是一个效果（<em>只是一个比喻，服务器保存session信息是需要消耗内存空间的，所以一般情况下不会长时持有一个session</em>）。有一点必需要知道的就是，浏览器是不会保存session-id的，也就是说，当你关闭浏览器后，浏览器就已经丢失了你的session-id，所以服务器也就会让你重新登陆。</p>
-<h5 id="request"><a href="#request" class="headerlink" title="request"></a>request</h5><p>顾名思意，就是请求的问题。</p>
-<p>你访问一次网站，刷新页面，都是一次请求。整个过程就是，你通过浏览器地上栏和服务器发请求，服务器接收并处理到你的请求，然后向你返回一个response，你页面上就根据这个response显示数据。</p>
-<p><strong>request的生命周期在response返回之后就已经失效了</strong>，所以它是一次性的。服务器上forward到一个url操作是在服务器内部跳转并处理同一个request，所以可以通过该request传递数据；而redirect到一个url则是结束当前请求，通过response向客户端发送一个url跳转的信息，让客户端重新请求返回的这个url，所以是两次不同的request，所以不能通过request传递数据。</p>
-<p>在同一个request中，servlet可以通过request给其它servlet和jsp传递数据，这个也就是同一个jsp页面，为什么可以显示不同的数据的原因。</p>
-<blockquote>
-<p>使用&lt;jsp:include page=”template/page.jsp”&gt;导入页面，其实是访问服务器的虚拟地址然后插入返回的内容，所以是它会产生另一次request，虽然这个过程是在服务器端完成，但因为是另一个request，所以这个是不能传递数据的，如果想做为模板插入，并要传递数据，请用&lt;%@include file=”template/page.jsp”%&gt; ，它是用的文件系统，直接定位到文件并集成进当前的jsp，所以是在同一个request中，所以就可以传递数据。</p>
-</blockquote>
-<h5 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h5><p>cookie是网站为了辨别用户身份、进行session跟踪而储存在用户本地浏览器上的数据，在你关闭浏览器后重新打开也是有效的，使用场景就是，比如你登陆一个网站，可以勾选“一周之不用重复登陆”或“记住我”这些，都是将用户登陆信息存储在本地的cookie中的，还有就是比如网站的购物车，几个商品分别添加，然后进行比较这些，都是cookie(session maybe)的应用。</p>
-<p>cookie在生成时就会被指定一个expire值，这就是cookie的生存周期，在这个周期内cookie有效，超出周期cookie就会被清除。有些页面将cookie的生存周期设置为“0”或负值，这样在关闭浏览器时，就马上清除cookie，不会记录用户信息，更加安全。</p>
-<h5 id="请求的分类"><a href="#请求的分类" class="headerlink" title="请求的分类"></a>请求的分类</h5><p>详细分类请对看<a href="http://www.ietf.org/rfc/rfc2616.txt" target="_blank" rel="noopener">RFC 2616</a>，我主要讲以下两种：</p>
-<ol>
-<li><strong>get</strong>：你通过浏览器地址栏直接访问，这个就是get请求，特点是速度比post快，但能传递的数据相对比较小。</li>
-<li><strong>post</strong>：通过表单传递数据，比如你在页面上的注册登陆，发表帖子，上传文件等，都属于post类型。其它请求类型如PUT,DELETE,PATCH等，都是基于post而衍生出的子类型，form表单的method只有get和post，所以对于这种类型的请求，都是在post请求的表单里，添加一个<code>_method:PUT</code>这种类似的字段，表明执行哪个option。</li>
-</ol>
-<p>不管是get还是post，对服务器来说，都是一次request，所以是可以相互传递的，所以对于servlet常用的偷懒方法是这样的：</p>
-<pre><code>@Override
-protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException,
-  IOException {
-  doPost(req, resp);
-}
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/编程规范/'>编程规范</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2020/02/27/programming-specifications-to-improve-code-quality/">改善代码质量的编程规范</a>
+            </h1>
 
-@Override
-protected void doDelete(HttpServletRequest req, HttpServletResponse resp)
-  throws ServletException, IOException {
-  // do something here.
-}
-</code></pre><p>其实想表达的意思就是，方法是死的，人是活的，要怎样用，自己看着处理就是。</p>
-<h4 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h4><p>暂时就写到这里，如果朋友们有什么比较常见的疑问，我都会更新上来，所以现在这个页面暂时就这样吧，谢谢你的阅读，希望对你有所帮助。</p>
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2020-02-27T07:06:53.000Z"
+                      itemprop="datePublished">2020-02-27 15:06</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                改善代码质量的编程规范编码规范大部分都简单明了，在代码细节方面，能立竿见影地改善质量。除此之外，持续低层次、小规模重构依赖的基本上都是编码规范，这也是改善代码可读性的有效手段。
+关于编码规范、如何编写可读代码，很多书籍已经讲得很好了，这里推荐几篇不错的书籍：
 
+代码整洁之道
+代码大全
+编写可读代码的艺术
+重构
+
+下面的内容大致会分为三个部分
+
+命名与注释
+代码风格
+编程技巧
+
+一、命名与注释1. 命名大到项目名、模块名、包名、对外暴露的
+                
+            </p>
+            
         </section>
-        <hr/>
-        <nav class="pagination" style="width:auto" role="pagination">
-            
-            <a data-pjax class="newer-posts" href="/2015/04/03/git-introduce/">← Prev Post</a>
-            
-            <a class="share-button" data-original-title title>Share this Post</a>
-            
-            <a data-pjax class="older-posts" href="/2014/12/22/classical-and-contemporary-cryptology/">Next Post →</a>
-            
-        </nav>
-        <br/>
-        <br/>
-        <section id="comment">
-            <div id="comment-box"></div>
-        </section>
-        <section id="reward-box">
-          <img class="ali" src="/resources/images/defei_alipay.png?raw=true" />
-          <span class="support-author">写作不易，谢谢支持</span>
-          <img class="wechat" src="/resources/images/defei_wechatPay.png?raw=true" />
-        </section>
-
     </article>
+    
+    <nav class="pagination" role="pagination">
+        
+        <span class="page-number">Page 1 of 1</span>
+        
+    </nav>
 </main>
 
 

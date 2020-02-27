@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>改善代码质量的编程规范 | Codelogger</title>
+  <meta name="description" content="Recored every thing." />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Codelogger">
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2020/02/27/programming-specifications-to-improve-code-quality/">改善代码质量的编程规范</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2019/01/26/spring-cloud-gateway/">Spring Cloud Gateway</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2019/01/04/ssh/">SSH使用指北</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2018/10/30/export-swagger2-api-document/">Swagger离线文档输出</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/12/13/change-myself/">改变自己</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/12/13/twelve-ball/">十二个球</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/04/03/git-introduce/">Git快速入门</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/26/cors/">跨域源资源共享</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/15/maven/">Maven的使用</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/lod/">迪米特法则</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Life/">&nbsp;&nbsp;&nbsp;Life</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/运维/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Security/">&nbsp;&nbsp;&nbsp;Security</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/Java/Web/">&nbsp;&nbsp;&nbsp;Web</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/版本控制/">&nbsp;&nbsp;&nbsp;版本控制</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/编程规范/">&nbsp;&nbsp;&nbsp;编程规范</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/运维/">&nbsp;&nbsp;&nbsp;运维</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/逻辑思考/">&nbsp;&nbsp;&nbsp;逻辑思考</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Ansible/">&nbsp;&nbsp;&nbsp;Ansible</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/CORS/">&nbsp;&nbsp;&nbsp;CORS</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Maven/">&nbsp;&nbsp;&nbsp;Maven</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Spring-Cloud/">&nbsp;&nbsp;&nbsp;Spring Cloud</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ThreadLocal/">&nbsp;&nbsp;&nbsp;ThreadLocal</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Web相关概念/">&nbsp;&nbsp;&nbsp;Web相关概念</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/code-style/">&nbsp;&nbsp;&nbsp;code style</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cryptology/">&nbsp;&nbsp;&nbsp;cryptology</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/eclipse/">&nbsp;&nbsp;&nbsp;eclipse</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/gateway/">&nbsp;&nbsp;&nbsp;gateway</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/git/">&nbsp;&nbsp;&nbsp;git</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/i18n/">&nbsp;&nbsp;&nbsp;i18n</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ssh/">&nbsp;&nbsp;&nbsp;ssh</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/swagger/">&nbsp;&nbsp;&nbsp;swagger</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/ubuntu/">&nbsp;&nbsp;&nbsp;ubuntu</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/web项目/">&nbsp;&nbsp;&nbsp;web项目</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/国际化/">&nbsp;&nbsp;&nbsp;国际化</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/多线程安全/">&nbsp;&nbsp;&nbsp;多线程安全</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/密码学/">&nbsp;&nbsp;&nbsp;密码学</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/线程共享变量/">&nbsp;&nbsp;&nbsp;线程共享变量</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/编程规范/">&nbsp;&nbsp;&nbsp;编程规范</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/设计原则/">&nbsp;&nbsp;&nbsp;设计原则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/迪米特法则/">&nbsp;&nbsp;&nbsp;迪米特法则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/逻辑-分析/">&nbsp;&nbsp;&nbsp;逻辑 分析</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/顿悟/">&nbsp;&nbsp;&nbsp;顿悟</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                    <li><a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/defei" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2020/02/27/programming-specifications-to-improve-code-quality/">改善代码质量的编程规范</a>
+                
+                    <a  data-pjax href="/2019/01/26/spring-cloud-gateway/">Spring Cloud Gateway</a>
+                
+                    <a  data-pjax href="/2019/01/04/ssh/">SSH使用指北</a>
+                
+                    <a  data-pjax href="/2018/11/28/ansible/">自动化运维工具 Ansible</a>
+                
+                    <a  data-pjax href="/2018/10/30/export-swagger2-api-document/">Swagger离线文档输出</a>
+                
+                    <a  data-pjax href="/2016/12/13/change-myself/">改变自己</a>
+                
+                    <a  data-pjax href="/2016/12/13/twelve-ball/">十二个球</a>
+                
+                    <a  data-pjax href="/2015/04/03/git-introduce/">Git快速入门</a>
+                
+                    <a  data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
+                
+                    <a  data-pjax href="/2014/12/22/classical-and-contemporary-cryptology/">经典密码学</a>
+                
+                    <a  data-pjax href="/2014/12/19/ThreadLocal/">ThreadLocal</a>
+                
+                    <a  data-pjax href="/2014/12/15/Eclipse-Code-Style/">Eclipse Code Style</a>
+                
+                    <a  data-pjax href="/2014/11/30/Spring-MVC-i18n/">Spring MVC 国际化</a>
+                
+                    <a  data-pjax href="/2014/11/26/cors/">跨域源资源共享</a>
+                
+                    <a  data-pjax href="/2014/11/15/maven/">Maven的使用</a>
+                
+                    <a  data-pjax href="/2014/11/14/install-java-develop-environment-on-ubuntu/">在Ubuntu下安装Java开发环境</a>
+                
+                    <a  data-pjax href="/2014/10/28/lod/">迪米特法则</a>
+                
+                    <a  data-pjax href="/2014/10/28/design-practice/">优秀程序设计的18大原则</a>
+                
+                
+                    <a data-pjax href="/categories/IDE/">&nbsp;&nbsp;IDE</a>
+                
+                    <a data-pjax href="/categories/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/categories/Life/">&nbsp;&nbsp;Life</a>
+                
+                    <a data-pjax href="/categories/运维/Linux/">&nbsp;&nbsp;Linux</a>
+                
+                    <a data-pjax href="/categories/Security/">&nbsp;&nbsp;Security</a>
+                
+                    <a data-pjax href="/categories/Java/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/categories/Java/Web/">&nbsp;&nbsp;Web</a>
+                
+                    <a data-pjax href="/categories/版本控制/">&nbsp;&nbsp;版本控制</a>
+                
+                    <a data-pjax href="/categories/编程规范/">&nbsp;&nbsp;编程规范</a>
+                
+                    <a data-pjax href="/categories/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/categories/运维/">&nbsp;&nbsp;运维</a>
+                
+                    <a data-pjax href="/categories/逻辑思考/">&nbsp;&nbsp;逻辑思考</a>
+                
+                
+                    <a data-pjax href="/tags/Ansible/">&nbsp;&nbsp;Ansible</a>
+                
+                    <a data-pjax href="/tags/CORS/">&nbsp;&nbsp;CORS</a>
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Maven/">&nbsp;&nbsp;Maven</a>
+                
+                    <a data-pjax href="/tags/Spring-Cloud/">&nbsp;&nbsp;Spring Cloud</a>
+                
+                    <a data-pjax href="/tags/ThreadLocal/">&nbsp;&nbsp;ThreadLocal</a>
+                
+                    <a data-pjax href="/tags/Web相关概念/">&nbsp;&nbsp;Web相关概念</a>
+                
+                    <a data-pjax href="/tags/code-style/">&nbsp;&nbsp;code style</a>
+                
+                    <a data-pjax href="/tags/cryptology/">&nbsp;&nbsp;cryptology</a>
+                
+                    <a data-pjax href="/tags/eclipse/">&nbsp;&nbsp;eclipse</a>
+                
+                    <a data-pjax href="/tags/gateway/">&nbsp;&nbsp;gateway</a>
+                
+                    <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
+                
+                    <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/ssh/">&nbsp;&nbsp;ssh</a>
+                
+                    <a data-pjax href="/tags/swagger/">&nbsp;&nbsp;swagger</a>
+                
+                    <a data-pjax href="/tags/ubuntu/">&nbsp;&nbsp;ubuntu</a>
+                
+                    <a data-pjax href="/tags/web项目/">&nbsp;&nbsp;web项目</a>
+                
+                    <a data-pjax href="/tags/国际化/">&nbsp;&nbsp;国际化</a>
+                
+                    <a data-pjax href="/tags/多线程安全/">&nbsp;&nbsp;多线程安全</a>
+                
+                    <a data-pjax href="/tags/密码学/">&nbsp;&nbsp;密码学</a>
+                
+                    <a data-pjax href="/tags/线程共享变量/">&nbsp;&nbsp;线程共享变量</a>
+                
+                    <a data-pjax href="/tags/编程规范/">&nbsp;&nbsp;编程规范</a>
+                
+                    <a data-pjax href="/tags/设计原则/">&nbsp;&nbsp;设计原则</a>
+                
+                    <a data-pjax href="/tags/迪米特法则/">&nbsp;&nbsp;迪米特法则</a>
+                
+                    <a data-pjax href="/tags/逻辑-分析/">&nbsp;&nbsp;逻辑 分析</a>
+                
+                    <a data-pjax href="/tags/顿悟/">&nbsp;&nbsp;顿悟</a>
+                
+                <li><a class="fa fa-coffee" href="/java">&nbsp;&nbsp;&nbsp;Java从入门到实战</a></li>
+                <a class="fa fa-user" href="/defei" target="_blank">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Codelogger</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">改善代码质量的编程规范</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/编程规范/' style='color:#D5D5D5'>编程规范</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">改善代码质量的编程规范</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2020-02-27T07:06:53.000Z"
+                              itemprop="datePublished">2020-02-27 15:06</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h1 id="改善代码质量的编程规范"><a href="#改善代码质量的编程规范" class="headerlink" title="改善代码质量的编程规范"></a>改善代码质量的编程规范</h1><p>编码规范大部分都简单明了，在代码细节方面，能立竿见影地改善质量。除此之外，持续低层次、小规模重构依赖的基本上都是编码规范，这也是改善代码可读性的有效手段。</p>
+<p>关于编码规范、如何编写可读代码，很多书籍已经讲得很好了，这里推荐几篇不错的书籍：</p>
+<ul>
+<li><a href="https://book.douban.com/subject/4199741/" target="_blank" rel="noopener">代码整洁之道</a></li>
+<li><a href="https://book.douban.com/subject/1477390/" target="_blank" rel="noopener">代码大全</a></li>
+<li><a href="https://book.douban.com/subject/10797189/" target="_blank" rel="noopener">编写可读代码的艺术</a></li>
+<li><a href="https://book.douban.com/subject/4262627/" target="_blank" rel="noopener">重构</a></li>
+</ul>
+<p>下面的内容大致会分为三个部分</p>
+<ol>
+<li>命名与注释</li>
+<li>代码风格</li>
+<li>编程技巧</li>
+</ol>
+<h2 id="一、命名与注释"><a href="#一、命名与注释" class="headerlink" title="一、命名与注释"></a>一、命名与注释</h2><h3 id="1-命名"><a href="#1-命名" class="headerlink" title="1. 命名"></a>1. 命名</h3><p>大到项目名、模块名、包名、对外暴露的接口，小到类名、函数名、变量名、参数名，只要是做开发，我们就逃不过“起名字”这一关。</p>
+<p>命名的好坏，对于代码的可读性来说非常重要，甚至可以说是起决定性作用的。除此之外，<strong>命名能力也体现了一个程序员的基本编程素养</strong>。</p>
+<p>取一个特别合适的名字是一件非常有挑战的事情，想要起一个能准确达意的名字，更是难上加难了。</p>
+<p>实际上，命名这件事说难也不难，关键还是看你重不重视，愿不愿意花时间。</p>
+<p>以下为经验讲解</p>
+<h4 id="1-1-命名多长最合适？"><a href="#1-1-命名多长最合适？" class="headerlink" title="1. 1 命名多长最合适？"></a>1. 1 命名多长最合适？</h4><blockquote>
+<p>在过往的团队和项目中，我遇到过两种截然不同的同事。有一种同事特别喜欢用很长的命名方式，觉得命名一定要准确达意，哪怕长一点也没关系，所以，这类同事的项目里，类名、函数名都很长。另外一种同事喜欢用短的命名方式，能用缩写就尽量用缩写，所以，项目里到处都是包含各种缩写的命名。</p>
+<p>你觉得这两种命名方式，哪种更值得推荐呢？</p>
+</blockquote>
+<p>在我看来，尽管长的命名可以包含更多的信息，更能准确直观地表达意图，但是，如果函数、变量的命名很长，那由它们组成的语句就会很长。在代码列长度有限制的情况下，就会经常出现一条语句被分割成两行的情况，这其实会影响代码可读性。</p>
+<p>实际上，在足够表达其含义的情况下，命名当然是越短越好。但是，大部分情况下，短的命名都没有长的命名更能达意。所以，很多书籍或者文章都不推荐在命名时使用缩写。对于一些默认的、大家都比较熟知的词，我比较推荐用缩写。这样一方面能让命名短一些，另一方面又不影响阅读理解，比如，sec 表示 second、str 表示 string、num 表示 number、doc 表示 document。除此之外，对于作用域比较小的变量，我们可以使用相对短的命名，比如一些函数内的临时变量。相反，对于类名这种作用域比较大的，我更推荐用长的命名方式。</p>
+<p>总之，命名的一个原则就是以能准确达意为目标。不过，对于代码的编写者来说，自己对代码的逻辑很清楚，总感觉用什么样的命名都可以达意，实际上，对于不熟悉你代码的同事来讲，可能就不这么认为了。所以，命名的时候，我们一定要学会换位思考，假设自己不熟悉这块代码，从代码阅读者的角度去考量命名是否足够直观。</p>
+<h4 id="1-2-利用上下文简化命名"><a href="#1-2-利用上下文简化命名" class="headerlink" title="1.2 利用上下文简化命名"></a>1.2 利用上下文简化命名</h4><p>我们先来看一个简单的例子。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> String userName;</span><br><span class="line">  <span class="keyword">private</span> String userPassword;</span><br><span class="line">  <span class="keyword">private</span> String userAvatarUrl;</span><br><span class="line">  <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在 User 类这样一个上下文中，我们没有在成员变量的命名中重复添加“user”这样一个前缀单词，而是直接命名为 name、password、avatarUrl。在使用这些属性时候，我们能借助对象这样一个上下文，表意也足够明确。具体代码如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">User user = <span class="keyword">new</span> User();</span><br><span class="line">user.getName(); <span class="comment">// 借助user对象这个上下文</span></span><br></pre></td></tr></table></figure>
+<p>除了类之外，函数参数也可以借助函数这个上下文来简化命名。关于这一点，我举了下面这个例子，你一看就能明白，我就不多啰嗦了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">uploadUserAvatarImageToAliyun</span><span class="params">(String userAvatarImageUri)</span></span>;</span><br><span class="line"><span class="comment">//利用上下文简化为：</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">uploadUserAvatarImageToAliyun</span><span class="params">(String imageUri)</span></span>;</span><br></pre></td></tr></table></figure>
+<h4 id="1-3-命名要可读、可搜索"><a href="#1-3-命名要可读、可搜索" class="headerlink" title="1.3 命名要可读、可搜索"></a>1.3 命名要可读、可搜索</h4><p>首先，我们来看，什么是命名可读。先解释一下，我这里所说的“可读”，指的是不要用一些特别生僻、难发音的英文单词来命名。</p>
+<p>在沟通的时候，每当有人提到这个名字的时候，都会尴尬地卡顿一下，影响沟通交流，这就算是不太好的名字。</p>
+<p>我们再来讲一下命名可搜索。我们在 IDE 中编写代码的时候，经常会用“关键词联想”的方法来自动补全和搜索。比如，键入某个对象“.get”，希望 IDE 返回这个对象的所有 get 开头的方法。再比如，通过在 IDE 搜索框中输入“Array”，搜索 JDK 中数组相关的类。所以，我们在命名的时候，最好能符合整个项目的命名习惯。大家都用“selectXXX”表示查询，你就不要用“queryXXX”；大家都用“insertXXX”表示插入一条数据，你就要不用“addXXX”，统一规约是很重要的，能减少很多不必要的麻烦。</p>
+<h4 id="1-4-如何命名接口和抽象类？"><a href="#1-4-如何命名接口和抽象类？" class="headerlink" title="1.4 如何命名接口和抽象类？"></a>1.4 如何命名接口和抽象类？</h4><p>对于接口的命名，一般有两种比较常见的方式。一种是加前缀“I”，表示一个 Interface。比如 IUserService，对应的实现类命名为 UserService。另一种是不加前缀，比如 UserService，对应的实现类加后缀“Impl”，比如 UserServiceImpl。</p>
+<p>对于抽象类的命名，也有两种方式，一种是带上前缀“Abstract”，比如 AbstractConfiguration；另一种是不带前缀“Abstract”。实际上，对于接口和抽象类，选择哪种命名方式都是可以的，只要项目里能够统一就行。</p>
+<h3 id="2-注释"><a href="#2-注释" class="headerlink" title="2. 注释"></a>2. 注释</h3><p>命名很重要，注释跟命名同等重要。很多书籍认为，好的命名完全可以替代注释。如果需要注释，那说明命名不够好，需要在命名上下功夫，而不是添加注释。实际上，观点不能太过极端。命名再好，毕竟有长度限制，不可能足够详尽，而这个时候，注释就是一个很好的补充。</p>
+<h4 id="2-1-注释到底该写什么？"><a href="#2-1-注释到底该写什么？" class="headerlink" title="2.1 注释到底该写什么？"></a>2.1 注释到底该写什么？</h4><p>注释的目的就是让代码更容易看懂。只要符合这个要求的内容，你就可以将它写到注释里。总结一下，注释的内容主要包含这样三个方面：做什么、为什么、怎么做。我来举一个例子给你具体解释一下。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* (what) Bean factory to create beans. </span></span><br><span class="line"><span class="comment">* </span></span><br><span class="line"><span class="comment">* (why) The class likes Spring IOC framework, but is more lightweight. </span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* (how) Create objects from different sources sequentially:</span></span><br><span class="line"><span class="comment">* user specified object &gt; SPI &gt; configuration &gt; default object.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BeansFactory</span> </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>有些人认为，注释是要提供一些代码没有的额外信息，所以不要写“做什么、怎么做”，这两方面在代码中都可以体现出来，只需要写清楚“为什么”，表明代码的设计意图即可。我个人不是特别认可这样的观点，理由主要有下面 3 点。</p>
+<ul>
+<li>注释比代码承载的信息更多</li>
+</ul>
+<p>命名的主要目的是解释“做什么”。比如，void increaseWalletAvailableBalance(BigDecimal amount) 表明这个函数用来增加钱包的可用余额，boolean isValidatedPassword 表明这个变量用来标识是否是合法密码。函数和变量如果命名得好，确实可以不用再在注释中解释它是做什么的。但是，对于类来说，包含的信息比较多，一个简单的命名就不够全面详尽了。这个时候，在注释中写明“做什么”就合情合理了。</p>
+<ul>
+<li>注释起到总结性作用、文档的作用</li>
+</ul>
+<p>代码之下无秘密。阅读代码可以明确地知道代码是“怎么做”的，也就是知道代码是如何实现的，那注释中是不是就不用写“怎么做”了？实际上也可以写。在注释中，关于具体的代码实现思路，我们可以写一些总结性的说明、特殊情况的说明。这样能够让阅读代码的人通过注释就能大概了解代码的实现思路，阅读起来就会更加容易。</p>
+<p>实际上，对于有些比较复杂的类或者接口，我们可能还需要在注释中写清楚“如何用”，举一些简单的 quick start 的例子，让使用者在不阅读代码的情况下，快速地知道该如何使用。</p>
+<ul>
+<li>一些总结性注释能让代码结构更清晰</li>
+</ul>
+<p>对于逻辑比较复杂的代码或者比较长的函数，如果不好提炼、不好拆分成小的函数调用，那我们可以借助总结性的注释来让代码结构更清晰、更有条理。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidPasword</span><span class="params">(String password)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// check if password is null or empty</span></span><br><span class="line">  <span class="keyword">if</span> (StringUtils.isBlank(password)) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// check if the length of password is between 4 and 64</span></span><br><span class="line">  <span class="keyword">int</span> length = password.length();</span><br><span class="line">  <span class="keyword">if</span> (length &lt; <span class="number">4</span> || length &gt; <span class="number">64</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line">    </span><br><span class="line">  <span class="comment">// check if password contains only a~z,0~9,dot</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; length; ++i) &#123;</span><br><span class="line">    <span class="keyword">char</span> c = password.charAt(i);</span><br><span class="line">    <span class="keyword">if</span> (!((c &gt;= <span class="string">'a'</span> &amp;&amp; c &lt;= <span class="string">'z'</span>) || (c &gt;= <span class="string">'0'</span> &amp;&amp; c &lt;= <span class="string">'9'</span>) || c == <span class="string">'.'</span>)) &#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-2-注释是不是越多越好？"><a href="#2-2-注释是不是越多越好？" class="headerlink" title="2.2 注释是不是越多越好？"></a>2.2 注释是不是越多越好？</h4><p>注释太多和太少都有问题。太多，有可能意味着代码写得不够可读，需要写很多注释来补充。除此之外，注释太多也会对代码本身的阅读起到干扰。而且，后期的维护成本也比较高，有时候代码改了，注释忘了同步修改，就会让代码阅读者更加迷惑。当然，如果代码中一行注释都没有，那只能说明这个程序员很懒，我们要适当督促一下，让他注意添加一些必要的注释。</p>
+<p>按照我的经验来说，类和函数一定要写注释，而且要写得尽可能全面、详细，而函数内部的注释要相对少一些，一般都是靠好的命名、提炼函数、解释性变量、总结性注释来提高代码的可读性。</p>
+<h2 id="二、代码风格"><a href="#二、代码风格" class="headerlink" title="二、代码风格"></a>二、代码风格</h2><p>说起代码风格，我们其实很难说哪种风格更好。</p>
+<p>最重要的，也是最需要我们做到的，是在团队、项目中保持风格统一，让代码像同一个人写出来的，整齐划一。这样能减少阅读干扰，提高代码的可读性。这才是我们在实际工作中想要实现的目标。</p>
+<p>以下为我认为最值得关注的点。</p>
+<h3 id="1-类、函数多大才合适？"><a href="#1-类、函数多大才合适？" class="headerlink" title="1. 类、函数多大才合适？"></a>1. 类、函数多大才合适？</h3><p>总体上来讲，类或函数的代码行数不能太多，但也不能太少。类或函数的代码行数太多，一个类上千行，一个函数几百行，逻辑过于繁杂，阅读代码的时候，很容易就会看了后面忘了前面。相反，类或函数的代码行数太少，在代码总量相同的情况下，被分割成的类和函数就会相应增多，调用关系就会变得更复杂，阅读某个代码逻辑的时候，需要频繁地在 n 多类或者 n 多函数之间跳来跳去，阅读体验也不好。</p>
+<p>对于函数代码行数的最大限制，网上有一种说法，那就是不要超过一个显示屏的垂直高度。比如，在我的电脑上，如果要让一个函数的代码完整地显示在 IDE 中，那最大代码行数不能超过 50。这个说法我觉得挺有道理的。因为超过一屏之后，在阅读代码的时候，为了串联前后的代码逻辑，就可能需要频繁地上下滚动屏幕，阅读体验不好不说，还容易出错。</p>
+<p>对于类的代码行数的最大限制，这个就更难给出一个确切的值了。不过我们可以有一个间接的判断标准，那就是，当一个类的代码读起来让你感觉头大了，实现某个功能时不知道该用哪个函数了，想用哪个函数翻半天都找不到了，只用到一个小功能要引入整个类（类中包含很多无关此功能实现的函数）的时候，这就说明类的行数过多了。</p>
+<h3 id="2-一行代码多长最合适？"><a href="#2-一行代码多长最合适？" class="headerlink" title="2. 一行代码多长最合适？"></a>2. 一行代码多长最合适？</h3><p>在<a href="https://google.github.io/styleguide/javaguide.html" target="_blank" rel="noopener">Google Java Style Guide</a>文档中，一行代码最长限制为 100 个字符。不过，不同的编程语言、不同的规范、不同的项目团队，对此的限制可能都不相同。不管这个限制是多少，总体上来讲我们要遵循的一个原则是：一行代码最长不能超过 IDE 显示的宽度。需要滚动鼠标才能查看一行的全部代码，显然不利于代码的阅读。当然，这个限制也不能太小，太小会导致很多稍长点的语句被折成两行，也会影响到代码的整洁，不利于阅读。</p>
+<h3 id="3-善用空行分割单元块"><a href="#3-善用空行分割单元块" class="headerlink" title="3. 善用空行分割单元块"></a>3. 善用空行分割单元块</h3><p>对于比较长的函数，如果逻辑上可以分为几个独立的代码块，在不方便将这些独立的代码块抽取成小函数的情况下，为了让逻辑更加清晰，除了上一节课中提到的用总结性注释的方法之外，我们还可以使用空行来分割各个代码块。</p>
+<p>除此之外，在类的成员变量与函数之间、静态成员变量与普通成员变量之间、各函数之间、甚至各成员变量之间，我们都可以通过添加空行的方式，让这些不同模块的代码之间，界限更加明确。写代码就类似写文章，善于应用空行，可以让代码的整体结构看起来更加有清晰、有条理。</p>
+<h3 id="4-四格缩进还是两格缩进？"><a href="#4-四格缩进还是两格缩进？" class="headerlink" title="4. 四格缩进还是两格缩进？"></a>4. 四格缩进还是两格缩进？</h3><p>“PHP 是世界上最好的编程语言？代码换行应该四格缩进还是两格缩进？”这应该是程序员争论得最多的两个话题了。据我所知，Java 语言倾向于两格缩进，PHP 语言倾向于四格缩进。至于到底应该是两格缩进还是四格缩进，我觉得这个取决于个人喜好。只要项目内部能够统一就行了。</p>
+<p>当然，还有一个选择的标准，那就是跟业内推荐的风格统一、跟著名开源项目统一。当我们需要拷贝一些开源的代码到项目里的时候，能够让引入的代码跟我们项目本身的代码，保持风格统一。</p>
+<p>不过，我个人比较推荐使用两格缩进，这样可以节省空间。特别是在代码嵌套层次比较深的情况下，累计缩进较多的话，容易导致一个语句被折成两行，影响代码可读性。</p>
+<p>除此之外，值得强调的是，不管是用两格缩进还是四格缩进，一定不要用 tab 键缩进。因为在不同的 IDE 下，tab 键的显示宽度不同，有的显示为四格缩进，有的显示为两格缩进。如果在同一个项目中，不同的同事使用不同的缩进方式（空格缩进或 tab 键缩进），有可能会导致有的代码显示为两格缩进、有的代码显示为四格缩进。</p>
+<h3 id="5-大括号是否要另起一行？"><a href="#5-大括号是否要另起一行？" class="headerlink" title="5. 大括号是否要另起一行？"></a>5. 大括号是否要另起一行？</h3><p>左大括号是否要另起一行呢？这个也有争论。据我所知，PHP 程序员喜欢另起一行，Java 程序员喜欢跟上一条语句放到一起。具体代码示例如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// PHP</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ClassName</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> function <span class="title">foo</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">// method body</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Java</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassName</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// method body</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我个人还是比较推荐，将括号放到跟语句同一行的风格。理由跟上面类似，节省代码行数。但是将大括号另起新的一行的方式，也有它的优势。这样的话，左右括号可以垂直对齐，哪些代码属于哪一个代码块，更一目了然。</p>
+<p>不过，还是那句话，大括号跟上一条语句在同一行，还是另起新的一行，只要团队统一、业内统一、跟开源项目看齐就好了，没有绝对的优劣之分。</p>
+<h3 id="6-类中成员的排列顺序"><a href="#6-类中成员的排列顺序" class="headerlink" title="6. 类中成员的排列顺序"></a>6. 类中成员的排列顺序</h3><p>在 Java 类文件中，先要书写类所属的包名，然后再罗列 import 引入的依赖类。在 Google 编码规范中，依赖类按照字母序从小到大排列。</p>
+<p>在类中，成员变量排在函数的前面。成员变量之间或函数之间，都是按照“先静态（静态函数或静态成员变量）、后普通（非静态函数或非静态成员变量）”的方式来排列的。除此之外，成员变量之间或函数之间，还会按照作用域范围从大到小的顺序来排列，先写 public 成员变量或函数，然后是 protected 的，最后是 private 的。</p>
+<p>不过，不同的编程语言中，类内部成员的排列顺序可能会有比较大的差别。比如 C++ 中，成员变量会习惯性放到函数后面。除此之外，函数之间的排列顺序，会按照刚刚我们提到的作用域的大小来排列。实际上，还有另外一种排列习惯，那就是把有调用关系的函数放到一块。比如，一个 public 函数调用了另外一个 private 函数，那就把这两者放到一块。</p>
+<h2 id="三、编程技巧"><a href="#三、编程技巧" class="headerlink" title="三、编程技巧"></a>三、编程技巧</h2><p>这部分技巧比较琐碎，也很难罗列全面，这里只总结了一些我认为比较关键的，更多的技巧需要你在实践中自己慢慢总结、积累。</p>
+<h3 id="1-把代码分割成更小的单元块"><a href="#1-把代码分割成更小的单元块" class="headerlink" title="1. 把代码分割成更小的单元块"></a>1. 把代码分割成更小的单元块</h3><p>大部分人阅读代码的习惯都是，先看整体再看细节。所以，我们要有模块化和抽象思维，善于将大块的复杂逻辑提炼成类或者函数，屏蔽掉细节，让阅读代码的人不至于迷失在细节中，这样能极大地提高代码的可读性。不过，只有代码逻辑比较复杂的时候，我们其实才建议提炼类或者函数。毕竟如果提炼出的函数只包含两三行代码，在阅读代码的时候，还得跳过去看一下，这样反倒增加了阅读成本。</p>
+<p>这里我举一个例子来进一步解释一下。代码具体如下所示。重构前，在 invest() 函数中，最开始的那段关于时间处理的代码，是不是很难看懂？重构之后，我们将这部分逻辑抽象成一个函数，并且命名为 isLastDayOfMonth，从名字就能清晰地了解它的功能，判断今天是不是当月的最后一天。这里，我们就是通过将复杂的逻辑代码提炼成函数，大大提高了代码的可读性。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 重构前的代码</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">invest</span><span class="params">(<span class="keyword">long</span> userId, <span class="keyword">long</span> financialProductId)</span> </span>&#123;</span><br><span class="line">  Calendar calendar = Calendar.getInstance();</span><br><span class="line">  calendar.setTime(date);</span><br><span class="line">  calendar.set(Calendar.DATE, (calendar.get(Calendar.DATE) + <span class="number">1</span>));</span><br><span class="line">  <span class="keyword">if</span> (calendar.get(Calendar.DAY_OF_MONTH) == <span class="number">1</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 重构后的代码：提炼函数之后逻辑更加清晰</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">invest</span><span class="params">(<span class="keyword">long</span> userId, <span class="keyword">long</span> financialProductId)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (isLastDayOfMonth(<span class="keyword">new</span> Date())) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isLastDayOfMonth</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">  Calendar calendar = Calendar.getInstance();</span><br><span class="line">  calendar.setTime(date);</span><br><span class="line">  calendar.set(Calendar.DATE, (calendar.get(Calendar.DATE) + <span class="number">1</span>));</span><br><span class="line">  <span class="keyword">if</span> (calendar.get(Calendar.DAY_OF_MONTH) == <span class="number">1</span>) &#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-避免函数参数过多"><a href="#2-避免函数参数过多" class="headerlink" title="2. 避免函数参数过多"></a>2. 避免函数参数过多</h3><p>我个人觉得，函数包含 3、4 个参数的时候还是能接受的，大于等于 5 个的时候，我们就觉得参数有点过多了，会影响到代码的可读性，使用起来也不方便。针对参数过多的情况，一般有 2 种处理方法。</p>
+<ul>
+<li>考虑函数是否职责单一，是否能通过拆分成多个函数的方式来减少参数。示例代码如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">getUser</span><span class="params">(String username, String telephone, String email)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 拆分成多个函数</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">getUserByUsername</span><span class="params">(String username)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">getUserByTelephone</span><span class="params">(String telephone)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">getUserByEmail</span><span class="params">(String email)</span></span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>将函数的参数封装成对象。示例代码如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">postBlog</span><span class="params">(String title, String summary, String keywords, String content, String category, <span class="keyword">long</span> authorId)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将参数封装成对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Blog</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> String title;</span><br><span class="line">  <span class="keyword">private</span> String summary;</span><br><span class="line">  <span class="keyword">private</span> String keywords;</span><br><span class="line">  <span class="keyword">private</span> Strint content;</span><br><span class="line">  <span class="keyword">private</span> String category;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">long</span> authorId;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">postBlog</span><span class="params">(Blog blog)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>除此之外，如果函数是对外暴露的远程接口，将参数封装成对象，还可以提高接口的兼容性。在往接口中添加新的参数的时候，老的远程接口调用者有可能就不需要修改代码来兼容新的接口了。</p>
+<h3 id="3-勿用函数参数来控制逻辑"><a href="#3-勿用函数参数来控制逻辑" class="headerlink" title="3. 勿用函数参数来控制逻辑"></a>3. 勿用函数参数来控制逻辑</h3><p>不要在函数中使用布尔类型的标识参数来控制内部逻辑，true 的时候走这块逻辑，false 的时候走另一块逻辑。这明显违背了单一职责原则和接口隔离原则。我建议将其拆成两个函数，可读性上也要更好。我举个例子来说明一下。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buyCourse</span><span class="params">(<span class="keyword">long</span> userId, <span class="keyword">long</span> courseId, <span class="keyword">boolean</span> isVip)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将其拆分成两个函数</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buyCourse</span><span class="params">(<span class="keyword">long</span> userId, <span class="keyword">long</span> courseId)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buyCourseForVip</span><span class="params">(<span class="keyword">long</span> userId, <span class="keyword">long</span> courseId)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>不过，如果函数是 private 私有函数，影响范围有限，或者拆分之后的两个函数经常同时被调用，我们可以酌情考虑保留标识参数。示例代码如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 拆分成两个函数的调用方式</span></span><br><span class="line"><span class="keyword">boolean</span> isVip = <span class="keyword">false</span>;</span><br><span class="line"><span class="comment">//...省略其他逻辑...</span></span><br><span class="line"><span class="keyword">if</span> (isVip) &#123;</span><br><span class="line">  buyCourseForVip(userId, courseId);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  buyCourse(userId, courseId);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 保留标识参数的调用方式更加简洁</span></span><br><span class="line"><span class="keyword">boolean</span> isVip = <span class="keyword">false</span>;</span><br><span class="line"><span class="comment">//...省略其他逻辑...</span></span><br><span class="line">buyCourse(userId, courseId, isVip);</span><br></pre></td></tr></table></figure>
+<p>除了布尔类型作为标识参数来控制逻辑的情况外，还有一种“根据参数是否为 null”来控制逻辑的情况。针对这种情况，我们也应该将其拆分成多个函数。拆分之后的函数职责更明确，不容易用错。具体代码示例如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Transaction&gt; <span class="title">selectTransactions</span><span class="params">(Long userId, Date startDate, Date endDate)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (startDate != <span class="keyword">null</span> &amp;&amp; endDate != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="comment">// 查询两个时间区间的transactions</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (startDate != <span class="keyword">null</span> &amp;&amp; endDate == <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="comment">// 查询startDate之后的所有transactions</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (startDate == <span class="keyword">null</span> &amp;&amp; endDate != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="comment">// 查询endDate之前的所有transactions</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (startDate == <span class="keyword">null</span> &amp;&amp; endDate == <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="comment">// 查询所有的transactions</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 拆分成多个public函数，更加清晰、易用</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Transaction&gt; <span class="title">selectTransactionsBetween</span><span class="params">(Long userId, Date startDate, Date endDate)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> selectTransactions(userId, startDate, endDate);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Transaction&gt; <span class="title">selectTransactionsStartWith</span><span class="params">(Long userId, Date startDate)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> selectTransactions(userId, startDate, <span class="keyword">null</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Transaction&gt; <span class="title">selectTransactionsEndWith</span><span class="params">(Long userId, Date endDate)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> selectTransactions(userId, <span class="keyword">null</span>, endDate);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Transaction&gt; <span class="title">selectAllTransactions</span><span class="params">(Long userId)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> selectTransactions(userId, <span class="keyword">null</span>, <span class="keyword">null</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> List&lt;Transaction&gt; <span class="title">selectTransactions</span><span class="params">(Long userId, Date startDate, Date endDate)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-函数设计要职责单一"><a href="#4-函数设计要职责单一" class="headerlink" title="4. 函数设计要职责单一"></a>4. 函数设计要职责单一</h3><p>我们在讲到单一职责原则的时候，针对的是类、模块这样的应用对象。实际上，对于函数的设计来说，更要满足单一职责原则。相对于类和模块，函数的粒度比较小，代码行数少，所以在应用单一职责原则的时候，没有像应用到类或者模块那样模棱两可，能多单一就多单一。</p>
+<p>具体的代码示例如下所示：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkUserIfExisting</span><span class="params">(String telephone, String username, String email)</span>  </span>&#123; </span><br><span class="line">  <span class="keyword">if</span> (!StringUtils.isBlank(telephone)) &#123;</span><br><span class="line">    User user = userRepo.selectUserByTelephone(telephone);</span><br><span class="line">    <span class="keyword">return</span> user != <span class="keyword">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span> (!StringUtils.isBlank(username)) &#123;</span><br><span class="line">    User user = userRepo.selectUserByUsername(username);</span><br><span class="line">    <span class="keyword">return</span> user != <span class="keyword">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span> (!StringUtils.isBlank(email)) &#123;</span><br><span class="line">    User user = userRepo.selectUserByEmail(email);</span><br><span class="line">    <span class="keyword">return</span> user != <span class="keyword">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 拆分成三个函数</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkUserIfExistingByTelephone</span><span class="params">(String telephone)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkUserIfExistingByUsername</span><span class="params">(String username)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">checkUserIfExistingByEmail</span><span class="params">(String email)</span></span>;</span><br></pre></td></tr></table></figure>
+<h3 id="5-移除过深的嵌套层次"><a href="#5-移除过深的嵌套层次" class="headerlink" title="5. 移除过深的嵌套层次"></a>5. 移除过深的嵌套层次</h3><p>代码嵌套层次过深往往是因为 if-else、switch-case、for 循环过度嵌套导致的。我个人建议，嵌套最好不超过两层，超过两层之后就要思考一下是否可以减少嵌套。过深的嵌套本身理解起来就比较费劲，除此之外，嵌套过深很容易因为代码多次缩进，导致嵌套内部的语句超过一行的长度而折成两行，影响代码的整洁。</p>
+<p>解决嵌套过深的方法也比较成熟，有下面 4 种常见的思路。</p>
+<ul>
+<li>去掉多余的 if 或 else 语句。代码示例如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 示例一</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">caculateTotalAmount</span><span class="params">(List&lt;Order&gt; orders)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (orders == <span class="keyword">null</span> || orders.isEmpty()) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0.0</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123; <span class="comment">// 此处的else可以去掉</span></span><br><span class="line">    <span class="keyword">double</span> amount = <span class="number">0.0</span>;</span><br><span class="line">    <span class="keyword">for</span> (Order order : orders) &#123;</span><br><span class="line">      <span class="keyword">if</span> (order != <span class="keyword">null</span>) &#123;</span><br><span class="line">        amount += (order.getCount() * order.getPrice());</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> amount;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 示例二</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">matchStrings</span><span class="params">(List&lt;String&gt; strList,String substr)</span> </span>&#123;</span><br><span class="line">  List&lt;String&gt; matchedStrings = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">  <span class="keyword">if</span> (strList != <span class="keyword">null</span> &amp;&amp; substr != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> (String str : strList) &#123;</span><br><span class="line">      <span class="keyword">if</span> (str != <span class="keyword">null</span>) &#123; <span class="comment">// 跟下面的if语句可以合并在一起</span></span><br><span class="line">        <span class="keyword">if</span> (str.contains(substr)) &#123;</span><br><span class="line">          matchedStrings.add(str);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> matchedStrings;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用编程语言提供的 continue、break、return 关键字，提前退出嵌套。代码示例如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 重构前的代码</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">matchStrings</span><span class="params">(List&lt;String&gt; strList,String substr)</span> </span>&#123;</span><br><span class="line">  List&lt;String&gt; matchedStrings = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">  <span class="keyword">if</span> (strList != <span class="keyword">null</span> &amp;&amp; substr != <span class="keyword">null</span>)&#123; </span><br><span class="line">    <span class="keyword">for</span> (String str : strList) &#123;</span><br><span class="line">      <span class="keyword">if</span> (str != <span class="keyword">null</span> &amp;&amp; str.contains(substr)) &#123;</span><br><span class="line">        matchedStrings.add(str);</span><br><span class="line">        <span class="comment">// 此处还有10行代码...</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> matchedStrings;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 重构后的代码：使用continue提前退出</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">matchStrings</span><span class="params">(List&lt;String&gt; strList,String substr)</span> </span>&#123;</span><br><span class="line">  List&lt;String&gt; matchedStrings = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">  <span class="keyword">if</span> (strList != <span class="keyword">null</span> &amp;&amp; substr != <span class="keyword">null</span>)&#123; </span><br><span class="line">    <span class="keyword">for</span> (String str : strList) &#123;</span><br><span class="line">      <span class="keyword">if</span> (str == <span class="keyword">null</span> || !str.contains(substr)) &#123;</span><br><span class="line">        <span class="keyword">continue</span>; </span><br><span class="line">      &#125;</span><br><span class="line">      matchedStrings.add(str);</span><br><span class="line">      <span class="comment">// 此处还有10行代码...</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> matchedStrings;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>调整执行顺序来减少嵌套。具体的代码示例如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 重构前的代码</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">matchStrings</span><span class="params">(List&lt;String&gt; strList,String substr)</span> </span>&#123;</span><br><span class="line">  List&lt;String&gt; matchedStrings = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">  <span class="keyword">if</span> (strList != <span class="keyword">null</span> &amp;&amp; substr != <span class="keyword">null</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> (String str : strList) &#123;</span><br><span class="line">      <span class="keyword">if</span> (str != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (str.contains(substr)) &#123;</span><br><span class="line">          matchedStrings.add(str);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> matchedStrings;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 重构后的代码：先执行判空逻辑，再执行正常逻辑</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">matchStrings</span><span class="params">(List&lt;String&gt; strList,String substr)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (strList == <span class="keyword">null</span> || substr == <span class="keyword">null</span>) &#123; <span class="comment">//先判空</span></span><br><span class="line">    <span class="keyword">return</span> Collections.emptyList();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  List&lt;String&gt; matchedStrings = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">  <span class="keyword">for</span> (String str : strList) &#123;</span><br><span class="line">    <span class="keyword">if</span> (str != <span class="keyword">null</span>) &#123;</span><br><span class="line">      <span class="keyword">if</span> (str.contains(substr)) &#123;</span><br><span class="line">        matchedStrings.add(str);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> matchedStrings;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>将部分嵌套逻辑封装成函数调用，以此来减少嵌套。具体的代码示例如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 重构前的代码</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">appendSalts</span><span class="params">(List&lt;String&gt; passwords)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (passwords == <span class="keyword">null</span> || passwords.isEmpty()) &#123;</span><br><span class="line">    <span class="keyword">return</span> Collections.emptyList();</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  List&lt;String&gt; passwordsWithSalt = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">  <span class="keyword">for</span> (String password : passwords) &#123;</span><br><span class="line">    <span class="keyword">if</span> (password == <span class="keyword">null</span>) &#123;</span><br><span class="line">      <span class="keyword">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (password.length() &lt; <span class="number">8</span>) &#123;</span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> passwordsWithSalt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 重构后的代码：将部分逻辑抽成函数</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;String&gt; <span class="title">appendSalts</span><span class="params">(List&lt;String&gt; passwords)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (passwords == <span class="keyword">null</span> || passwords.isEmpty()) &#123;</span><br><span class="line">    <span class="keyword">return</span> Collections.emptyList();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  List&lt;String&gt; passwordsWithSalt = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">  <span class="keyword">for</span> (String password : passwords) &#123;</span><br><span class="line">    <span class="keyword">if</span> (password == <span class="keyword">null</span>) &#123;</span><br><span class="line">      <span class="keyword">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    passwordsWithSalt.add(appendSalt(password));</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> passwordsWithSalt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> String <span class="title">appendSalt</span><span class="params">(String password)</span> </span>&#123;</span><br><span class="line">  String passwordWithSalt = password;</span><br><span class="line">  <span class="keyword">if</span> (password.length() &lt; <span class="number">8</span>) &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> passwordWithSalt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>除此之外，常用的还有通过使用多态来替代 if-else、switch-case 条件判断的方法。这个思路涉及代码结构的改动，我们会在后面的章节中讲到，这里就暂时不展开说明了。</p>
+<h3 id="6-学会使用解释性变量"><a href="#6-学会使用解释性变量" class="headerlink" title="6. 学会使用解释性变量"></a>6. 学会使用解释性变量</h3><p>常用的用解释性变量来提高代码的可读性的情况有下面 2 种。</p>
+<ul>
+<li>常量取代魔法数字。示例代码如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">CalculateCircularArea</span><span class="params">(<span class="keyword">double</span> radius)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (<span class="number">3.1415</span>) * radius * radius;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 常量替代魔法数字</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Double PI = <span class="number">3.1415</span>;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">CalculateCircularArea</span><span class="params">(<span class="keyword">double</span> radius)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> PI * radius * radius;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用解释性变量来解释复杂表达式。示例代码如下所示：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (date.after(SUMMER_START) &amp;&amp; date.before(SUMMER_END)) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 引入解释性变量后逻辑更加清晰</span></span><br><span class="line"><span class="keyword">boolean</span> isSummer = date.after(SUMMER_START)&amp;&amp;date.before(SUMMER_END);</span><br><span class="line"><span class="keyword">if</span> (isSummer) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>最后，还有一条非常重要的，那就是，项目、团队，甚至公司，一定要制定统一的编码规范，并且通过 Code Review 督促执行，这对提高代码质量有立竿见影的效果。</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2019/01/26/spring-cloud-gateway/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+        <section id="reward-box">
+          <img class="ali" src="/resources/images/defei_alipay.png?raw=true" />
+          <span class="support-author">写作不易，谢谢支持</span>
+          <img class="wechat" src="/resources/images/defei_wechatPay.png?raw=true" />
+        </section>
+
+    </article>
+</main>
+
+
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Codelogger 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+        <section>
+            <a target="_blank" href="//info.flagcounter.com/hIg9">
+                <img src="//s01.flagcounter.com/count/hIg9/bg_F7FAFB/txt_000000/border_F7FAFB/columns_4/maxflags_8/viewers_3/labels_0/pageviews_1/flags_0/" alt="Flag Counter" border="0" style="opacity: 1;" lightbox='false'>
+            </a>
+        </section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+</body>
+</html>
