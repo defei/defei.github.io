@@ -42,6 +42,10 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2020/11/27/intellij_idea_skills/">Intellij IDEA 使用技巧</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2020/02/27/programming-specifications-to-improve-code-quality/">改善代码质量的编程规范</a>
                                 </li>
                                 
@@ -133,7 +137,7 @@
                                 
                                 <li class="search-category-li mp-pjax">
                                     <a href="/categories/IDE/">&nbsp;&nbsp;&nbsp;IDE</a>
-                                    <small>1</small>
+                                    <small>2</small>
                                 </li>
                                 
                                 <li class="search-category-li mp-pjax">
@@ -279,6 +283,11 @@
                                 </li>
                                 
                                 <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/idea/">&nbsp;&nbsp;&nbsp;idea</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
                                     <a href="/tags/ssh/">&nbsp;&nbsp;&nbsp;ssh</a>
                                     <small>1</small>
                                 </li>
@@ -358,6 +367,8 @@
         </nav>
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2020/11/27/intellij_idea_skills/">Intellij IDEA 使用技巧</a>
                 
                     <a  data-pjax href="/2020/02/27/programming-specifications-to-improve-code-quality/">改善代码质量的编程规范</a>
                 
@@ -448,6 +459,8 @@
                     <a data-pjax href="/tags/git/">&nbsp;&nbsp;git</a>
                 
                     <a data-pjax href="/tags/i18n/">&nbsp;&nbsp;i18n</a>
+                
+                    <a data-pjax href="/tags/idea/">&nbsp;&nbsp;idea</a>
                 
                     <a data-pjax href="/tags/ssh/">&nbsp;&nbsp;ssh</a>
                 
@@ -570,7 +583,7 @@
 <p><strong>到这里，国际化已经可以用了。如果您还需要后台进行国际化响应，那么下面的资料你可以参考下 :)</strong></p>
 <hr>
 <p>在Spring MVC controller的响应方法上，加上参数（Locale locale），Spring MVC就会自动注入当前请求的Locale信息，后台就够根据locale做出相应的响应了。</p>
-<p>当然也可以调用静态方法<code>LocaleContextHolder.getLocale()</code>，得到当前线程所请求的Locale信息，原理是基于<a href="http://codelogger.org/2014/12/19/ThreadLocal/">ThreadLocal</a>实现的。</p>
+<p>当然也可以调用静态方法<code>LocaleContextHolder.getLocale()</code>，得到当前线程所请求的Locale信息，原理是基于<a href="http://www.codelogger.org/2014/12/19/ThreadLocal/">ThreadLocal</a>实现的。</p>
 <p>如果在后台需要获取定义的message.properties数据，只需要注入ReloadableResourceBundleMessageSource ：</p>
 <pre><code>@Autowired
 private ReloadableResourceBundleMessageSource messageSource;

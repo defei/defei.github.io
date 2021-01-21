@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <title>Tag: web项目 | Codelogger</title>
+  <title>Intellij IDEA 使用技巧 | Codelogger</title>
   <meta name="description" content="Recored every thing." />
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
@@ -499,7 +499,7 @@
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
-                        <li id="navbar-title"><a href="#">undefined</a></li>
+                        <li id="navbar-title"><a href="#">Intellij IDEA 使用技巧</a></li>
                         <li id="navbar-toc" style="border-left: none">
                             <a style="padding-right: 15px">
                                 <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
@@ -518,49 +518,82 @@
 
 
 
+
 <main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/idea/' style='color:#D5D5D5'>idea</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">Intellij IDEA 使用技巧</h1>
 
-    
-    <article class="post">
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2020-11-27T08:27:26.000Z"
+                              itemprop="datePublished">2020-11-27 16:27</time>
+                    </div>
+    </span>
 
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/web项目/'>web项目</a>
-                
-                <a data-pjax href='/tags/Web相关概念/'>Web相关概念</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2015/01/06/first-java-web-project/">快速创建一个Java Web项目</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2015-01-06T03:34:08.000Z"
-                      itemprop="datePublished">2015-01-06 11:34</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                前言有了Maven管理项目，要创建一个Java Project已经是非常方便的了，我在github上面托管了几个用codelogger框架（基于Hibernate和Spring MVC）创建的项目demo ，有需要的朋友可以clone下来看一看。
-DEMO下载
-传统Java Web项目，页面是在服务器端生成的，这样处理的好处是方便做seo及权限管理，坏处是加大服务器资源消耗，响应缓慢。
-基于AngularJs的Java Web项目，服务
-                
-            </p>
-            
+        <section class="post-content">
+            <blockquote>
+<p>适用于版本 IntelliJ IDEA 2019.1.4 (Ultimate Edition), 其它版本未测试。<br>操作系统 macOS</p>
+</blockquote>
+<h4 id="开启命名行启动器"><a href="#开启命名行启动器" class="headerlink" title="开启命名行启动器"></a>开启命名行启动器</h4><p>打开IDEA, 点击 <code>Tools-&gt;Create Command-Line Launcher...</code> 激活命令行启动功能。</p>
+<ul>
+<li><code>idea .</code> 以项目形式打开当前目录</li>
+<li><code>idea pom.xml</code> 打开maven项目</li>
+<li><code>idea diff &lt;left&gt; &lt;right&gt;</code> 运行比较工具，用于比较左右两个文本的不同</li>
+<li><code>idea merge &lt;local&gt; &lt;remote&gt; [base] &lt;merged&gt;</code> 合并</li>
+</ul>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><h5 id="Java-Import"><a href="#Java-Import" class="headerlink" title="Java Import"></a>Java Import</h5><p>通过<code>Preference -&gt; Edit -&gt; General -&gt; Auto import</code>进行配置, 勾上</p>
+<ul>
+<li>Add unambiguous imports on the fly</li>
+<li>Optimize imports on the fly (for current project)</li>
+</ul>
+<h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><h5 id="GenerateAllSetter"><a href="#GenerateAllSetter" class="headerlink" title="GenerateAllSetter"></a>GenerateAllSetter</h5><p><a href="https://plugins.jetbrains.com/plugin/9360-generateallsetter" target="_blank" rel="noopener">官方介绍</a></p>
+<p>一键生成指定对象的所有的set方法</p>
+<h5 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h5><p><a href="https://plugins.jetbrains.com/plugin/7275-codeglance" target="_blank" rel="noopener">官方介绍</a></p>
+<p>生成类似于Sublime右侧的迷你代码地图</p>
+<h5 id="GsonFormat"><a href="#GsonFormat" class="headerlink" title="GsonFormat"></a>GsonFormat</h5><p><a href="https://plugins.jetbrains.com/plugin/7654-gsonformat" target="_blank" rel="noopener">官方介绍</a></p>
+<h5 id="RestfulToolkit"><a href="#RestfulToolkit" class="headerlink" title="RestfulToolkit"></a>RestfulToolkit</h5><ul>
+<li>快速跳转到Restful Api处( use: Ctrl(Command) + or Ctrl + Alt + N )</li>
+<li>展示Resultful 接口结构</li>
+<li>http 简单请求工具</li>
+</ul>
+<p>快速把json转换为一个Entity文件</p>
+<h5 id="maven-helper"><a href="#maven-helper" class="headerlink" title="maven helper"></a>maven helper</h5><p><a href="https://plugins.jetbrains.com/plugin/7179-maven-helper" target="_blank" rel="noopener">官方介绍</a></p>
+<p>maven 依赖管理助手 ，解析maven pom结构，分析冲突；</p>
+<h5 id="FindBugs"><a href="#FindBugs" class="headerlink" title="FindBugs"></a>FindBugs</h5><h5 id="Alibaba-Java-Coding-Guidelines"><a href="#Alibaba-Java-Coding-Guidelines" class="headerlink" title="Alibaba Java Coding Guidelines"></a>Alibaba Java Coding Guidelines</h5>
         </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2020/02/27/programming-specifications-to-improve-code-quality/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+        <section id="reward-box">
+          <a href="#" id="support-author">如果您觉得这篇文章对您有所帮助, 点我, 可以请我喝杯咖啡。</a>
+          <div class="reward-box-qr-container">
+            <img class="ali" src="/resources/images/defei_alipay.png?raw=true" />
+            <span class="support-author">< 支付宝 | 微信 ></span>
+            <img class="wechat" src="/resources/images/defei_wechatPay.png?raw=true" />
+          </div>
+        </section>
+
     </article>
-    
-    <nav class="pagination" role="pagination">
-        
-        <span class="page-number">Page 1 of 1</span>
-        
-    </nav>
 </main>
 
 
